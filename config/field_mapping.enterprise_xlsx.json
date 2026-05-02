@@ -1,0 +1,73 @@
+{
+  "source": {
+    "file": "data/企业信息暂存.xlsx",
+    "sheet": 0,
+    "header_row": 0,
+    "enterprise_id_prefix": "ENT",
+    "default_delimiters": ["\n", "；", ";", "，", ",", "、", "|", "/"]
+  },
+  "enterprise": {
+    "name_field": "公司名称",
+    "properties": {
+      "core_technology": "核心技术",
+      "technology_maturity": "技术成熟度",
+      "possible_scenarios": "可能应用场景",
+      "business_model": "商务模式",
+      "delivery_capability": "交付能力",
+      "certification_ip": "认证/资质/知识产权",
+      "founder_team_and_gap": "创始团队与短板",
+      "recent_revenue_profit": "近三年营收及利润",
+      "competition_and_diff": "竞对及技术差异",
+      "match_level": "匹配程度"
+    }
+  },
+  "relations": [
+    {
+      "field": "产品",
+      "target_label": "Product",
+      "relation_type": "PROVIDES_PRODUCT",
+      "target_id_prefix": "PROD"
+    },
+    {
+      "field": "核心技术",
+      "target_label": "Capability",
+      "relation_type": "HAS_CAPABILITY",
+      "target_id_prefix": "CAP"
+    },
+    {
+      "field": "产品应用行业",
+      "target_label": "Industry",
+      "relation_type": "SERVES_INDUSTRY",
+      "target_id_prefix": "IND"
+    },
+    {
+      "field": "应用场景",
+      "target_label": "Scenario",
+      "relation_type": "APPLIES_TO_SCENARIO",
+      "target_id_prefix": "SCN"
+    },
+    {
+      "field": "客户",
+      "target_label": "Customer",
+      "relation_type": "HAS_CUSTOMER",
+      "target_id_prefix": "CUS"
+    },
+    {
+      "field": "供应商",
+      "target_label": "Supplier",
+      "relation_type": "HAS_SUPPLIER",
+      "target_id_prefix": "SUP"
+    },
+    {
+      "field": "当前最需要的资源类型",
+      "target_label": "DemandTag",
+      "relation_type": "HAS_DEMAND",
+      "target_id_prefix": "DEM"
+    }
+  ],
+  "normalization": {
+    "strip_tokens": ["暂无", "无", "未披露", "不详", "--", "-", "N/A", "NA", "null", "NULL", "无。", "暂无。"],
+    "collapse_whitespace": true,
+    "deduplicate_values": true
+  }
+}
