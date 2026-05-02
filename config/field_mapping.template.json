@@ -1,0 +1,70 @@
+{
+  "source": {
+    "file": "data/raw/enterprise_source.xlsx",
+    "sheet": 0,
+    "header_row": 0,
+    "enterprise_id_prefix": "ENT",
+    "default_delimiters": ["\n", "；", ";", "，", ",", "、", "|", "/"]
+  },
+  "enterprise": {
+    "name_field": "公司名称",
+    "properties": {
+      "intro": "企业简介",
+      "business_model": "商业模式",
+      "certification_ip": "认证/资质/知识产权",
+      "founder_team": "创始团队/团队背景",
+      "revenue_financing": "营收/融资/经营情况",
+      "advantage": "竞争优势/补充说明",
+      "match_level": "匹配度"
+    }
+  },
+  "relations": [
+    {
+      "field": "产品",
+      "target_label": "Product",
+      "relation_type": "PROVIDES_PRODUCT",
+      "target_id_prefix": "PROD"
+    },
+    {
+      "field": "核心能力/技术",
+      "target_label": "Capability",
+      "relation_type": "HAS_CAPABILITY",
+      "target_id_prefix": "CAP"
+    },
+    {
+      "field": "产品应用行业",
+      "target_label": "Industry",
+      "relation_type": "SERVES_INDUSTRY",
+      "target_id_prefix": "IND"
+    },
+    {
+      "field": "应用场景",
+      "target_label": "Scenario",
+      "relation_type": "APPLIES_TO_SCENARIO",
+      "target_id_prefix": "SCN"
+    },
+    {
+      "field": "客户",
+      "target_label": "Customer",
+      "relation_type": "HAS_CUSTOMER",
+      "target_id_prefix": "CUS"
+    },
+    {
+      "field": "供应商",
+      "target_label": "Supplier",
+      "relation_type": "HAS_SUPPLIER",
+      "target_id_prefix": "SUP"
+    },
+    {
+      "field": "当前最需要资源/需求",
+      "target_label": "DemandTag",
+      "relation_type": "HAS_DEMAND",
+      "target_id_prefix": "DEM"
+    }
+  ],
+  "normalization": {
+    "strip_tokens": ["暂无", "无", "未披露", "不详", "--", "-", "N/A", "NA", "null", "NULL"],
+    "collapse_whitespace": true,
+    "deduplicate_values": true
+  }
+}
