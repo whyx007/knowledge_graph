@@ -1,0 +1,12 @@
+enterprise_id,enterprise_name,raw_capability_text,mapped_key_capability,sub_track_name,stage_name,mapping_basis,has_delivery_evidence,confidence,manual_review_status,review_notes,reviewer
+E001,,,,,,企业能力描述/产品描述/案例描述映射,false,0.00,待判断,,
+
+# 字段说明
+# raw_capability_text: 企业原始能力描述，建议直接保留原文，便于回溯
+# mapped_key_capability: 映射后的标准关键能力，例如“高精度检测算法能力”
+# sub_track_name: 能力所属子赛道
+# stage_name: 该能力主要支撑的产业链环节
+# mapping_basis: 记录映射依据，例如“原文出现缺陷检测+已交付半导体检测设备”
+# has_delivery_evidence: true / false，是否已有案例或客户场景支持
+# confidence: 0~1
+# manual_review_status: 待判断 / 待复核 / 已确认 / 不适用

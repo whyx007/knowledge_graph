@@ -1,0 +1,9 @@
+enterprise_id,enterprise_name,main_sub_track,secondary_sub_tracks,judgement_basis,confidence,manual_review_status,review_notes,reviewer
+E001,,,,企业简介/产品/技术/场景关键词综合判断,0.00,待判断,,
+
+# 字段说明
+# main_sub_track: 主子赛道，只能填 1 个，候选值：光学检测/机器视觉 | 光通信/光模块 | 激光加工/光学装备
+# secondary_sub_tracks: 次子赛道，可填多个，使用 | 分隔
+# judgement_basis: 记录判断依据，例如“产品关键词命中+行业场景命中”
+# confidence: 0~1
+# manual_review_status: 待判断 / 待复核 / 已确认 / 不适用

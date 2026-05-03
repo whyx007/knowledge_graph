@@ -1,0 +1,11 @@
+enterprise_id,enterprise_name,sub_track_name,main_stage,secondary_stages,stage_type,judgement_basis,confidence,manual_review_status,review_notes,reviewer
+E001,,,,,主环节,企业产品/能力/交付形态综合判断,0.00,待判断,,
+
+# 字段说明
+# sub_track_name: 企业所属子赛道，应先参考“企业-子赛道映射表.csv”填写
+# main_stage: 主环节，只能填 1 个
+# secondary_stages: 次环节，可填多个，使用 | 分隔
+# stage_type: 主环节 / 次环节 / 多环节（模板首行仅作示例）
+# judgement_basis: 例如“主营产品命中环节+客户类型印证”
+# confidence: 0~1
+# manual_review_status: 待判断 / 待复核 / 已确认 / 不适用
