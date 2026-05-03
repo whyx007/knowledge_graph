@@ -1,0 +1,4 @@
+domain_id,domain_name,sub_track_id,sub_track_name,sub_track_description
+DOM_001,光电子,SUB_001,光学检测/机器视觉,围绕工业检测/成像检测/精密视觉装备的子赛道
+DOM_001,光电子,SUB_002,光通信/光模块,围绕光通信核心器件/模块/封装测试/终端应用的子赛道
+DOM_001,光电子,SUB_003,激光加工/光学装备,围绕激光源/执行单元/整机装备/工艺交付的子赛道

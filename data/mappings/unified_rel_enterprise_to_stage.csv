@@ -1,0 +1,11 @@
+start_id,start_label,end_id,end_label,relation_type,confidence,source
+E001,Enterprise,STG_LA_007,ChainStage,LOCATED_IN_STAGE,0.90,enterprise_mapping_v1
+E003,Enterprise,STG_MV_007,ChainStage,LOCATED_IN_STAGE,0.84,enterprise_mapping_v1
+E005,Enterprise,STG_MV_008,ChainStage,LOCATED_IN_STAGE,0.79,enterprise_mapping_v1
+E006,Enterprise,STG_OC_001,ChainStage,LOCATED_IN_STAGE,0.88,enterprise_mapping_v1
+E013,Enterprise,STG_MV_008,ChainStage,LOCATED_IN_STAGE,0.97,enterprise_mapping_v1
+E020,Enterprise,STG_OC_012,ChainStage,LOCATED_IN_STAGE,0.80,enterprise_mapping_v1
+E021,Enterprise,STG_OC_001,ChainStage,LOCATED_IN_STAGE,0.78,enterprise_mapping_v1
+E024,Enterprise,STG_MV_008,ChainStage,LOCATED_IN_STAGE,0.81,enterprise_mapping_v1
+E036,Enterprise,STG_OC_012,ChainStage,LOCATED_IN_STAGE,0.72,enterprise_mapping_v1
+E037,Enterprise,STG_OC_009,ChainStage,LOCATED_IN_STAGE,0.95,enterprise_mapping_v1

@@ -1,0 +1,11 @@
+start_id,start_label,end_id,end_label,relation_type,confidence,source
+E001,Enterprise,SUB_003,SubTrack,FOCUSES_ON_SUB_TRACK,0.93,enterprise_mapping_v1
+E003,Enterprise,SUB_001,SubTrack,FOCUSES_ON_SUB_TRACK,0.89,enterprise_mapping_v1
+E005,Enterprise,SUB_001,SubTrack,FOCUSES_ON_SUB_TRACK,0.79,enterprise_mapping_v1
+E006,Enterprise,SUB_002,SubTrack,FOCUSES_ON_SUB_TRACK,0.91,enterprise_mapping_v1
+E013,Enterprise,SUB_001,SubTrack,FOCUSES_ON_SUB_TRACK,0.97,enterprise_mapping_v1
+E020,Enterprise,SUB_002,SubTrack,FOCUSES_ON_SUB_TRACK,0.86,enterprise_mapping_v1
+E021,Enterprise,SUB_002,SubTrack,FOCUSES_ON_SUB_TRACK,0.82,enterprise_mapping_v1
+E024,Enterprise,SUB_001,SubTrack,FOCUSES_ON_SUB_TRACK,0.81,enterprise_mapping_v1
+E036,Enterprise,SUB_002,SubTrack,FOCUSES_ON_SUB_TRACK,0.76,enterprise_mapping_v1
+E037,Enterprise,SUB_002,SubTrack,FOCUSES_ON_SUB_TRACK,0.94,enterprise_mapping_v1

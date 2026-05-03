@@ -1,0 +1,17 @@
+start_id,start_label,end_id,end_label,relation_type,confidence,source
+E001,Enterprise,KCAP_LA_001,KeyCapability,HAS_KEY_CAPABILITY,0.93,enterprise_mapping_v1
+E001,Enterprise,KCAP_LA_003,KeyCapability,HAS_KEY_CAPABILITY,0.90,enterprise_mapping_v1
+E003,Enterprise,KCAP_MV_001,KeyCapability,HAS_KEY_CAPABILITY,0.86,enterprise_mapping_v1
+E003,Enterprise,KCAP_MV_002,KeyCapability,HAS_KEY_CAPABILITY,0.82,enterprise_mapping_v1
+E005,Enterprise,KCAP_MV_001,KeyCapability,HAS_KEY_CAPABILITY,0.79,enterprise_mapping_v1
+E006,Enterprise,KCAP_OC_001,KeyCapability,HAS_KEY_CAPABILITY,0.80,enterprise_mapping_v1
+E013,Enterprise,KCAP_MV_002,KeyCapability,HAS_KEY_CAPABILITY,0.95,enterprise_mapping_v1
+E013,Enterprise,KCAP_MV_001,KeyCapability,HAS_KEY_CAPABILITY,0.88,enterprise_mapping_v1
+E013,Enterprise,KCAP_MV_005,KeyCapability,HAS_KEY_CAPABILITY,0.90,enterprise_mapping_v1
+E020,Enterprise,KCAP_OC_006,KeyCapability,HAS_KEY_CAPABILITY,0.76,enterprise_mapping_v1
+E021,Enterprise,KCAP_OC_001,KeyCapability,HAS_KEY_CAPABILITY,0.73,enterprise_mapping_v1
+E024,Enterprise,KCAP_MV_001,KeyCapability,HAS_KEY_CAPABILITY,0.81,enterprise_mapping_v1
+E036,Enterprise,KCAP_OC_006,KeyCapability,HAS_KEY_CAPABILITY,0.71,enterprise_mapping_v1
+E036,Enterprise,KCAP_LA_002,KeyCapability,HAS_KEY_CAPABILITY,0.70,enterprise_mapping_v1
+E037,Enterprise,KCAP_OC_004,KeyCapability,HAS_KEY_CAPABILITY,0.95,enterprise_mapping_v1
+E037,Enterprise,KCAP_OC_003,KeyCapability,HAS_KEY_CAPABILITY,0.91,enterprise_mapping_v1
