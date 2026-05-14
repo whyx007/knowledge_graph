@@ -1,0 +1,7 @@
+start_id,end_id,confidence,source,enterprise_name,sub_track_name,key_capability_name
+ENT_2E925683CAA7,KCAP_FUS_002,0.88,manual_expansion_patch_2026-05-12,中智科仪（北京）科技有限公司,光融合（量子光学新原理）,超灵敏光学探测能力
+ENT_2E925683CAA7,KCAP_FUS_003,0.86,manual_expansion_patch_2026-05-12,中智科仪（北京）科技有限公司,光融合（量子光学新原理）,新原理成像系统集成能力
+ENT_2E925683CAA7,KCAP_FUS_004,0.82,manual_expansion_patch_2026-05-12,中智科仪（北京）科技有限公司,光融合（量子光学新原理）,科研平台产品化能力
+ENT_566B382C75C5,KCAP_FUS_003,0.80,manual_expansion_patch_2026-05-12,西安中科立德红外科技有限公司,光融合（量子光学新原理）,新原理成像系统集成能力
+ENT_566B382C75C5,KCAP_FUS_005,0.74,manual_expansion_patch_2026-05-12,西安中科立德红外科技有限公司,光融合（量子光学新原理）,前沿场景验证能力
+ENT_85CEF884C821,KCAP_FUS_002,0.72,manual_expansion_patch_2026-05-12,深圳扑浪量子半导体有限公司,光融合（量子光学新原理）,超灵敏光学探测能力

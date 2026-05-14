@@ -1,0 +1,11 @@
+start_id,end_id,confidence,source,enterprise_name,sub_track_name,key_capability_name
+ENT_B30A7E91837E,KCAP_COMP_001,0.95,manual_expansion_patch_2026-05-12,杭州曦智科技有限公司,光计算,光计算芯片架构设计能力
+ENT_B30A7E91837E,KCAP_COMP_003,0.90,manual_expansion_patch_2026-05-12,杭州曦智科技有限公司,光计算,光电混合系统协同能力
+ENT_B30A7E91837E,KCAP_COMP_005,0.85,manual_expansion_patch_2026-05-12,杭州曦智科技有限公司,光计算,场景化算力适配能力
+ENT_976F52DAD74D,KCAP_COMP_001,0.95,manual_expansion_patch_2026-05-12,"Lightelligence,Inc",光计算,光计算芯片架构设计能力
+ENT_976F52DAD74D,KCAP_COMP_003,0.90,manual_expansion_patch_2026-05-12,"Lightelligence,Inc",光计算,光电混合系统协同能力
+ENT_8A318E588779,KCAP_COMP_002,0.88,manual_expansion_patch_2026-05-12,英伟芯（西安）科技有限公司,光计算,高速光互连集成能力
+ENT_8A318E588779,KCAP_COMP_004,0.82,manual_expansion_patch_2026-05-12,英伟芯（西安）科技有限公司,光计算,系统级算力平台交付能力
+ENT_FF9D8CF6C436,KCAP_COMP_002,0.78,manual_expansion_patch_2026-05-12,西安奇芯光电科技有限公司,光计算,高速光互连集成能力
+ENT_E1D3FB10F935,KCAP_COMP_001,0.76,manual_expansion_patch_2026-05-12,苏州山河光电科技有限公司,光计算,光计算芯片架构设计能力
+ENT_E1D3FB10F935,KCAP_COMP_003,0.80,manual_expansion_patch_2026-05-12,苏州山河光电科技有限公司,光计算,光电混合系统协同能力

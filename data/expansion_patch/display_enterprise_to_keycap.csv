@@ -1,0 +1,7 @@
+start_id,end_id,confidence,source,enterprise_name,sub_track_name,key_capability_name
+ENT_48510E2FE34E,KCAP_DISP_001,0.90,manual_expansion_patch_2026-05-12,光宇元芯（杭州）光电有限责任公司,光显示,显示芯片设计能力
+ENT_48510E2FE34E,KCAP_DISP_002,0.85,manual_expansion_patch_2026-05-12,光宇元芯（杭州）光电有限责任公司,光显示,封装键合良率控制能力
+ENT_48510E2FE34E,KCAP_DISP_005,0.82,manual_expansion_patch_2026-05-12,光宇元芯（杭州）光电有限责任公司,光显示,微显示应用适配能力
+ENT_85CEF884C821,KCAP_DISP_002,0.80,manual_expansion_patch_2026-05-12,深圳扑浪量子半导体有限公司,光显示,封装键合良率控制能力
+ENT_85CEF884C821,KCAP_DISP_003,0.76,manual_expansion_patch_2026-05-12,深圳扑浪量子半导体有限公司,光显示,光学模组集成能力
+ENT_713C5D501D82,KCAP_DISP_004,0.72,manual_expansion_patch_2026-05-12,深圳市光途显示科技有限公司,光显示,显示系统方案交付能力

@@ -1,0 +1,8 @@
+start_id,end_id,confidence,source,enterprise_name,sub_track_name,stage_name
+ENT_48510E2FE34E,STG_004_002,0.90,manual_expansion_patch_2026-05-12,光宇元芯（杭州）光电有限责任公司,光显示,显示芯片
+ENT_48510E2FE34E,STG_004_005,0.86,manual_expansion_patch_2026-05-12,光宇元芯（杭州）光电有限责任公司,光显示,封装/键合/转移工艺
+ENT_48510E2FE34E,STG_004_008,0.82,manual_expansion_patch_2026-05-12,光宇元芯（杭州）光电有限责任公司,光显示,AR/VR微显示应用
+ENT_85CEF884C821,STG_004_001,0.84,manual_expansion_patch_2026-05-12,深圳扑浪量子半导体有限公司,光显示,显示材料/外延/衬底
+ENT_85CEF884C821,STG_004_005,0.80,manual_expansion_patch_2026-05-12,深圳扑浪量子半导体有限公司,光显示,封装/键合/转移工艺
+ENT_85CEF884C821,STG_004_010,0.78,manual_expansion_patch_2026-05-12,深圳扑浪量子半导体有限公司,光显示,大屏与专业显示应用
+ENT_713C5D501D82,STG_004_007,0.72,manual_expansion_patch_2026-05-12,深圳市光途显示科技有限公司,光显示,显示整机与系统方案

@@ -1,0 +1,14 @@
+start_id,end_id,confidence,source,enterprise_name,sub_track_name,stage_name
+ENT_B30A7E91837E,STG_005_003,0.94,manual_expansion_patch_2026-05-12,杭州曦智科技有限公司,光计算,光计算/光交换芯片
+ENT_B30A7E91837E,STG_005_006,0.90,manual_expansion_patch_2026-05-12,杭州曦智科技有限公司,光计算,光电混合计算平台
+ENT_B30A7E91837E,STG_005_007,0.86,manual_expansion_patch_2026-05-12,杭州曦智科技有限公司,光计算,AI集群与数据中心应用
+ENT_976F52DAD74D,STG_005_003,0.94,manual_expansion_patch_2026-05-12,"Lightelligence,Inc",光计算,光计算/光交换芯片
+ENT_976F52DAD74D,STG_005_006,0.90,manual_expansion_patch_2026-05-12,"Lightelligence,Inc",光计算,光电混合计算平台
+ENT_976F52DAD74D,STG_005_008,0.84,manual_expansion_patch_2026-05-12,"Lightelligence,Inc",光计算,科学计算与专用算力应用
+ENT_8A318E588779,STG_005_004,0.88,manual_expansion_patch_2026-05-12,英伟芯（西安）科技有限公司,光计算,高速互连与封装模块
+ENT_8A318E588779,STG_005_005,0.84,manual_expansion_patch_2026-05-12,英伟芯（西安）科技有限公司,光计算,板级/系统级集成
+ENT_8A318E588779,STG_005_007,0.80,manual_expansion_patch_2026-05-12,英伟芯（西安）科技有限公司,光计算,AI集群与数据中心应用
+ENT_FF9D8CF6C436,STG_005_001,0.80,manual_expansion_patch_2026-05-12,西安奇芯光电科技有限公司,光计算,光计算材料与工艺平台
+ENT_FF9D8CF6C436,STG_005_004,0.78,manual_expansion_patch_2026-05-12,西安奇芯光电科技有限公司,光计算,高速互连与封装模块
+ENT_E1D3FB10F935,STG_005_002,0.76,manual_expansion_patch_2026-05-12,苏州山河光电科技有限公司,光计算,光计算核心器件
+ENT_E1D3FB10F935,STG_005_006,0.80,manual_expansion_patch_2026-05-12,苏州山河光电科技有限公司,光计算,光电混合计算平台
