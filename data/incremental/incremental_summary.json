@@ -1,0 +1,8 @@
+{
+  "input_rows": 433,
+  "existing_enterprises": 375,
+  "incremental_enterprises": 58,
+  "incremental_entities": 740,
+  "incremental_relationships": 1084,
+  "skipped_existing_unique": 374
+}

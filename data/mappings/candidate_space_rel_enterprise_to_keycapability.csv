@@ -1,0 +1,6 @@
+start_id,start_label,end_id,end_label,relation_type,confidence,source
+ENT_0D0600D360F2,Enterprise,KCAP_SPACE_007,KeyCapability,HAS_KEY_CAPABILITY,0.76,candidate_space_enterprise_v1
+ENT_D77802019100,Enterprise,KCAP_SPACE_003,KeyCapability,HAS_KEY_CAPABILITY,0.72,candidate_space_enterprise_v1
+ENT_D77802019100,Enterprise,KCAP_SPACE_007,KeyCapability,HAS_KEY_CAPABILITY,0.66,candidate_space_enterprise_v1
+ENT_7D993D7B1BF3,Enterprise,KCAP_SPACE_006,KeyCapability,HAS_KEY_CAPABILITY,0.68,candidate_space_enterprise_v1
+ENT_42868B94B6AE,Enterprise,KCAP_SPACE_005,KeyCapability,HAS_KEY_CAPABILITY,0.55,candidate_space_enterprise_v1

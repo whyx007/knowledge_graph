@@ -1,0 +1,5 @@
+start_id,start_label,end_id,end_label,relation_type,confidence,source
+ENT_0D0600D360F2,Enterprise,SUB_SPACE_001,SubTrack,FOCUSES_ON_SUB_TRACK,0.78,candidate_space_enterprise_v1
+ENT_D77802019100,Enterprise,SUB_SPACE_001,SubTrack,FOCUSES_ON_SUB_TRACK,0.72,candidate_space_enterprise_v1
+ENT_7D993D7B1BF3,Enterprise,SUB_SPACE_001,SubTrack,FOCUSES_ON_SUB_TRACK,0.68,candidate_space_enterprise_v1
+ENT_42868B94B6AE,Enterprise,SUB_SPACE_001,SubTrack,FOCUSES_ON_SUB_TRACK,0.55,candidate_space_enterprise_v1

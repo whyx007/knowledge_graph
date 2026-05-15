@@ -1,0 +1,7 @@
+start_id,start_label,end_id,end_label,relation_type,confidence,source
+SCN_677ACE9F46CC,Scenario,ASCN_MV_006,ApplicationScenario,MAPPED_TO,0.70,legacy_to_unified_v1
+SCN_D1DDC82C5D3E,Scenario,ASCN_MV_004,ApplicationScenario,MAPPED_TO,0.74,legacy_to_unified_v1
+SCN_264071B0A29D,Scenario,ASCN_MV_002,ApplicationScenario,MAPPED_TO,0.66,legacy_to_unified_v1
+SCN_10BDC7263005,Scenario,ASCN_MV_006,ApplicationScenario,MAPPED_TO,0.62,legacy_to_unified_v1
+SCN_ABAC0B532F02,Scenario,ASCN_MV_006,ApplicationScenario,MAPPED_TO,0.55,legacy_to_unified_v1
+SCN_E61C6045149E,Scenario,ASCN_MV_006,ApplicationScenario,MAPPED_TO,0.55,legacy_to_unified_v1

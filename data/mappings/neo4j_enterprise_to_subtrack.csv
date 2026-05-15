@@ -1,5 +1,5 @@
-enterprise_id,enterprise_name,sub_track_name,relation_type,confidence
-E001,西安中科光凝科技有限公司（人工核对）,激光加工/光学装备,FOCUSES_ON_SUB_TRACK,0.93
+﻿enterprise_id,enterprise_name,sub_track_name,relation_type,confidence
+E001,西安中科光凝科技有限公司,激光加工/光学装备,FOCUSES_ON_SUB_TRACK,0.93
 E003,西湖智能视觉科技（杭州）有限公司,光学检测/机器视觉,FOCUSES_ON_SUB_TRACK,0.89
 E005,中智科仪（北京）科技有限公司,光学检测/机器视觉,FOCUSES_ON_SUB_TRACK,0.79
 E006,徐州光引科技发展有限公司,光通信/光模块,FOCUSES_ON_SUB_TRACK,0.91
@@ -9,3 +9,4 @@ E021,光宇元芯（杭州）光电有限责任公司,光通信/光模块,FOCUSE
 E024,西安中科立德红外科技有限公司,光学检测/机器视觉,FOCUSES_ON_SUB_TRACK,0.81
 E036,西安朗威科技有限公司,光通信/光模块,FOCUSES_ON_SUB_TRACK,0.76
 E037,镭神技术（深圳）有限公司,光通信/光模块,FOCUSES_ON_SUB_TRACK,0.94
+

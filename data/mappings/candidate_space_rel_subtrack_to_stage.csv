@@ -1,0 +1,11 @@
+start_id,start_label,end_id,end_label,relation_type,confidence,source
+SUB_SPACE_001,SubTrack,STG_SPACE_001,ChainStage,HAS_STAGE,1.00,candidate_space_v1
+SUB_SPACE_001,SubTrack,STG_SPACE_002,ChainStage,HAS_STAGE,1.00,candidate_space_v1
+SUB_SPACE_001,SubTrack,STG_SPACE_003,ChainStage,HAS_STAGE,1.00,candidate_space_v1
+SUB_SPACE_001,SubTrack,STG_SPACE_004,ChainStage,HAS_STAGE,1.00,candidate_space_v1
+SUB_SPACE_001,SubTrack,STG_SPACE_005,ChainStage,HAS_STAGE,1.00,candidate_space_v1
+SUB_SPACE_001,SubTrack,STG_SPACE_006,ChainStage,HAS_STAGE,1.00,candidate_space_v1
+SUB_SPACE_001,SubTrack,STG_SPACE_007,ChainStage,HAS_STAGE,1.00,candidate_space_v1
+SUB_SPACE_001,SubTrack,STG_SPACE_008,ChainStage,HAS_STAGE,1.00,candidate_space_v1
+SUB_SPACE_001,SubTrack,STG_SPACE_009,ChainStage,HAS_STAGE,1.00,candidate_space_v1
+SUB_SPACE_001,SubTrack,STG_SPACE_010,ChainStage,HAS_STAGE,1.00,candidate_space_v1

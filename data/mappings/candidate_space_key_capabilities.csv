@@ -1,0 +1,9 @@
+capability_id,sub_track_id,sub_track_name,capability_name,description
+KCAP_SPACE_001,SUB_SPACE_001,商业航天,系统级总装集成能力,围绕卫星/火箭/载荷的系统级总装、集成与测试交付能力
+KCAP_SPACE_002,SUB_SPACE_001,商业航天,高可靠制造能力,围绕航天级质量、可靠性与一致性控制的制造能力
+KCAP_SPACE_003,SUB_SPACE_001,商业航天,精密控制与执行能力,围绕制导、控制、指向、姿态与执行机构的能力
+KCAP_SPACE_004,SUB_SPACE_001,商业航天,发射与在轨保障能力,围绕发射保障、在轨运行保障与异常处置的能力
+KCAP_SPACE_005,SUB_SPACE_001,商业航天,地面系统交付能力,围绕地面站、终端、测控与地面配套系统的交付能力
+KCAP_SPACE_006,SUB_SPACE_001,商业航天,卫星运营服务能力,围绕测运控、星座运营与资源管理的服务能力
+KCAP_SPACE_007,SUB_SPACE_001,商业航天,卫星应用产品化能力,围绕通信/导航/遥感等场景的产品化能力
+KCAP_SPACE_008,SUB_SPACE_001,商业航天,数据处理与商业化能力,围绕航天数据处理、分析与商业化变现能力

@@ -1,0 +1,9 @@
+scenario_id,sub_track_id,sub_track_name,scenario_name,description
+ASCN_SPACE_001,SUB_SPACE_001,商业航天,应急通信,面向应急与保障场景的卫星通信应用
+ASCN_SPACE_002,SUB_SPACE_001,商业航天,宽带接入,面向宽带连接与覆盖扩展的卫星通信应用
+ASCN_SPACE_003,SUB_SPACE_001,商业航天,高精度定位,面向导航增强与高精度时空服务的应用
+ASCN_SPACE_004,SUB_SPACE_001,商业航天,对地观测,面向观测、成像与地表信息获取的遥感应用
+ASCN_SPACE_005,SUB_SPACE_001,商业航天,资源监测,面向资源、环境、农业等监测应用
+ASCN_SPACE_006,SUB_SPACE_001,商业航天,安全监测,面向安防、灾害、边境等监测应用
+ASCN_SPACE_007,SUB_SPACE_001,商业航天,太空算力/数据处理,面向在轨计算与航天数据处理的新兴应用
+ASCN_SPACE_008,SUB_SPACE_001,商业航天,手机直连卫星,面向终端直连与大众通信扩展的新兴应用

@@ -1,0 +1,9 @@
+tech_direction_id,sub_track_id,sub_track_name,tech_direction_name,description,source
+TD_SPACE_001,SUB_SPACE_001,商业航天,卫星平台集成技术,围绕卫星平台设计、总装与系统集成的技术方向,candidate_space_v1
+TD_SPACE_002,SUB_SPACE_001,商业航天,航天载荷技术,围绕卫星有效载荷、专用功能模块与任务载荷集成的技术方向,candidate_space_v1
+TD_SPACE_003,SUB_SPACE_001,商业航天,运载与制导控制技术,围绕火箭运载、姿态控制、制导与控制系统的技术方向,candidate_space_v1
+TD_SPACE_004,SUB_SPACE_001,商业航天,航天地面测控技术,围绕地面测控、地面站系统与终端支撑的技术方向,candidate_space_v1
+TD_SPACE_005,SUB_SPACE_001,商业航天,在轨运营与资源调度技术,围绕测运控、星座调度与在轨资源管理的技术方向,candidate_space_v1
+TD_SPACE_006,SUB_SPACE_001,商业航天,卫星通信链路技术,围绕卫星通信、链路建立、终端接入与通信保障的技术方向,candidate_space_v1
+TD_SPACE_007,SUB_SPACE_001,商业航天,遥感数据处理技术,围绕遥感成像、数据处理、分析与应用输出的技术方向,candidate_space_v1
+TD_SPACE_008,SUB_SPACE_001,商业航天,终端直连与新型应用技术,围绕手机直连、在轨算力与新型空间应用的技术方向,candidate_space_v1

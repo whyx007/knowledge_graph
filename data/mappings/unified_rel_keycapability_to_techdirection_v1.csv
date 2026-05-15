@@ -1,0 +1,8 @@
+start_id,start_label,end_id,end_label,relation_type,confidence,source
+KCAP_MV_001,KeyCapability,TD_MV_001,TechDirection,SUPPORTED_BY,0.78,keycap_techdirection_v1
+KCAP_MV_001,KeyCapability,TD_MV_002,TechDirection,SUPPORTED_BY,0.76,keycap_techdirection_v1
+KCAP_OC_001,KeyCapability,TD_OC_001,TechDirection,SUPPORTED_BY,0.84,keycap_techdirection_v1
+KCAP_OC_001,KeyCapability,TD_OC_002,TechDirection,SUPPORTED_BY,0.82,keycap_techdirection_v1
+KCAP_OC_001,KeyCapability,TD_OC_003,TechDirection,SUPPORTED_BY,0.82,keycap_techdirection_v1
+KCAP_LA_001,KeyCapability,TD_LA_001,TechDirection,SUPPORTED_BY,0.88,keycap_techdirection_v1
+KCAP_LA_002,KeyCapability,TD_LA_002,TechDirection,SUPPORTED_BY,0.84,keycap_techdirection_v1

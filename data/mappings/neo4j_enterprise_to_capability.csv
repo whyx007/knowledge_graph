@@ -1,6 +1,6 @@
-enterprise_id,enterprise_name,key_capability,relation_type,confidence,sub_track_name,stage_name
-E001,西安中科光凝科技有限公司（人工核对）,激光工艺适配能力,HAS_CAPABILITY,0.93,激光加工/光学装备,高端/专用光学装备
-E001,西安中科光凝科技有限公司（人工核对）,装备整机集成能力,HAS_CAPABILITY,0.90,激光加工/光学装备,高端/专用光学装备
+﻿enterprise_id,enterprise_name,key_capability,relation_type,confidence,sub_track_name,stage_name
+E001,西安中科光凝科技有限公司,激光工艺适配能力,HAS_CAPABILITY,0.93,激光加工/光学装备,高端/专用光学装备
+E001,西安中科光凝科技有限公司,装备整机集成能力,HAS_CAPABILITY,0.90,激光加工/光学装备,高端/专用光学装备
 E003,西湖智能视觉科技（杭州）有限公司,成像方案设计能力,HAS_CAPABILITY,0.86,光学检测/机器视觉,标准视觉系统方案
 E003,西湖智能视觉科技（杭州）有限公司,高精度检测算法能力,HAS_CAPABILITY,0.82,光学检测/机器视觉,视觉算法平台
 E005,中智科仪（北京）科技有限公司,成像方案设计能力,HAS_CAPABILITY,0.79,光学检测/机器视觉,专用检测设备
@@ -15,3 +15,4 @@ E036,西安朗威科技有限公司,客户认证导入能力,HAS_CAPABILITY,0.71
 E036,西安朗威科技有限公司,高精度加工控制能力,HAS_CAPABILITY,0.70,激光加工/光学装备,振镜/加工头/执行单元
 E037,镭神技术（深圳）有限公司,高速测试能力,HAS_CAPABILITY,0.95,光通信/光模块,模块测试校准
 E037,镭神技术（深圳）有限公司,封装良率控制能力,HAS_CAPABILITY,0.91,光通信/光模块,模块封装组装
+

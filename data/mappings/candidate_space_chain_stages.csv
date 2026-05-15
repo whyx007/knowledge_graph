@@ -1,0 +1,11 @@
+stage_id,sub_track_id,sub_track_name,stage_order,stage_name,stage_level,stage_category,upstream_stage_id,downstream_stage_id
+STG_SPACE_001,SUB_SPACE_001,商业航天,1,卫星制造,上游,整机制造,,STG_SPACE_002
+STG_SPACE_002,SUB_SPACE_001,商业航天,2,火箭制造,上游,整机制造,STG_SPACE_001,STG_SPACE_003
+STG_SPACE_003,SUB_SPACE_001,商业航天,3,核心材料与元器件,上游,核心配套,STG_SPACE_002,STG_SPACE_004
+STG_SPACE_004,SUB_SPACE_001,商业航天,4,发射服务,中游,基础设施/服务,STG_SPACE_003,STG_SPACE_005
+STG_SPACE_005,SUB_SPACE_001,商业航天,5,地面设备制造,中游,基础设施/设备,STG_SPACE_004,STG_SPACE_006
+STG_SPACE_006,SUB_SPACE_001,商业航天,6,卫星运营,中游,运营服务,STG_SPACE_005,STG_SPACE_007
+STG_SPACE_007,SUB_SPACE_001,商业航天,7,卫星通信,下游,应用场景,STG_SPACE_006,STG_SPACE_008
+STG_SPACE_008,SUB_SPACE_001,商业航天,8,卫星导航,下游,应用场景,STG_SPACE_007,STG_SPACE_009
+STG_SPACE_009,SUB_SPACE_001,商业航天,9,卫星遥感,下游,应用场景,STG_SPACE_008,STG_SPACE_010
+STG_SPACE_010,SUB_SPACE_001,商业航天,10,新兴应用,下游,应用场景,STG_SPACE_009,

@@ -1,0 +1,9 @@
+start_id,start_label,end_id,end_label,relation_type,confidence,source
+CAP_3B9CB9716396,Capability,TD_MV_001,TechDirection,DERIVES_FROM,0.95,capability_techdirection_v1
+CAP_8B9A8F9F1CC3,Capability,TD_MV_002,TechDirection,DERIVES_FROM,0.95,capability_techdirection_v1
+CAP_38A7F1216D7F,Capability,TD_OC_001,TechDirection,DERIVES_FROM,0.92,capability_techdirection_v1
+CAP_79C82F79C209,Capability,TD_OC_002,TechDirection,DERIVES_FROM,0.93,capability_techdirection_v1
+CAP_53989F81C252,Capability,TD_OC_003,TechDirection,DERIVES_FROM,0.93,capability_techdirection_v1
+CAP_42EFAAE43C01,Capability,TD_LA_001,TechDirection,DERIVES_FROM,0.92,capability_techdirection_v1
+CAP_922213104E53,Capability,TD_LA_002,TechDirection,DERIVES_FROM,0.90,capability_techdirection_v1
+CAP_2E9ECD7C223D,Capability,TD_LA_002,TechDirection,DERIVES_FROM,0.92,capability_techdirection_v1

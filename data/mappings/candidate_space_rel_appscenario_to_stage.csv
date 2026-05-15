@@ -1,0 +1,9 @@
+start_id,start_label,end_id,end_label,relation_type,confidence,source
+ASCN_SPACE_001,ApplicationScenario,STG_SPACE_007,ChainStage,DRIVES_STAGE,1.00,candidate_space_v1
+ASCN_SPACE_002,ApplicationScenario,STG_SPACE_007,ChainStage,DRIVES_STAGE,1.00,candidate_space_v1
+ASCN_SPACE_003,ApplicationScenario,STG_SPACE_008,ChainStage,DRIVES_STAGE,1.00,candidate_space_v1
+ASCN_SPACE_004,ApplicationScenario,STG_SPACE_009,ChainStage,DRIVES_STAGE,1.00,candidate_space_v1
+ASCN_SPACE_005,ApplicationScenario,STG_SPACE_009,ChainStage,DRIVES_STAGE,1.00,candidate_space_v1
+ASCN_SPACE_006,ApplicationScenario,STG_SPACE_009,ChainStage,DRIVES_STAGE,1.00,candidate_space_v1
+ASCN_SPACE_007,ApplicationScenario,STG_SPACE_010,ChainStage,DRIVES_STAGE,1.00,candidate_space_v1
+ASCN_SPACE_008,ApplicationScenario,STG_SPACE_010,ChainStage,DRIVES_STAGE,1.00,candidate_space_v1

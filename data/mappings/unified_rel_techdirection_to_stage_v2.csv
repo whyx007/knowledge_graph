@@ -1,0 +1,16 @@
+start_id,start_label,end_id,end_label,relation_type,confidence,source
+TD_MV_001,TechDirection,STG_MV_003,ChainStage,ENABLES_STAGE,0.86,tech_direction_v2
+TD_MV_001,TechDirection,STG_MV_008,ChainStage,ENABLES_STAGE,0.80,tech_direction_v2
+TD_MV_002,TechDirection,STG_MV_003,ChainStage,ENABLES_STAGE,0.82,tech_direction_v2
+TD_MV_002,TechDirection,STG_MV_008,ChainStage,ENABLES_STAGE,0.78,tech_direction_v2
+TD_OC_001,TechDirection,STG_OC_001,ChainStage,ENABLES_STAGE,0.88,tech_direction_v2
+TD_OC_001,TechDirection,STG_OC_006,ChainStage,ENABLES_STAGE,0.82,tech_direction_v2
+TD_OC_002,TechDirection,STG_OC_001,ChainStage,ENABLES_STAGE,0.90,tech_direction_v2
+TD_OC_003,TechDirection,STG_OC_001,ChainStage,ENABLES_STAGE,0.84,tech_direction_v2
+TD_OC_003,TechDirection,STG_OC_006,ChainStage,ENABLES_STAGE,0.80,tech_direction_v2
+TD_LA_001,TechDirection,STG_LA_001,ChainStage,ENABLES_STAGE,0.88,tech_direction_v2
+TD_LA_001,TechDirection,STG_LA_007,ChainStage,ENABLES_STAGE,0.92,tech_direction_v2
+TD_LA_001,TechDirection,STG_LA_015,ChainStage,ENABLES_STAGE,0.78,tech_direction_v2
+TD_LA_002,TechDirection,STG_LA_003,ChainStage,ENABLES_STAGE,0.92,tech_direction_v2
+TD_LA_002,TechDirection,STG_LA_004,ChainStage,ENABLES_STAGE,0.82,tech_direction_v2
+TD_LA_002,TechDirection,STG_LA_007,ChainStage,ENABLES_STAGE,0.76,tech_direction_v2
