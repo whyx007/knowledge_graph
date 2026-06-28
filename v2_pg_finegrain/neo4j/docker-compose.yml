@@ -6,7 +6,7 @@ services:
       - "7475:7474"
       - "7688:7687"
     environment:
-      NEO4J_AUTH: neo4j/neo4j123
+      NEO4J_AUTH: neo4j/neo4j2026
       NEO4J_server_default__listen__address: 0.0.0.0
       NEO4J_server_default__advertised__address: 192.168.10.61
       NEO4J_server_memory_heap_initial__size: 1G
