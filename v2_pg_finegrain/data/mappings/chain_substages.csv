@@ -1,0 +1,49 @@
+substage_id,stage_id,substage_name,definition,keywords
+SUB_OC_001,STG_OC_UP_001,激光器芯片,用于光信号发射的激光器芯片,激光器芯片|DFB|EML|VCSEL
+SUB_OC_002,STG_OC_UP_001,探测器芯片,用于光信号接收和探测的芯片,探测器芯片|PD|APD
+SUB_OC_003,STG_OC_UP_001,调制器芯片,用于高速光信号调制的芯片,调制器芯片|MZM|高速调制
+SUB_OC_004,STG_OC_UP_001,硅光芯片,基于硅光子工艺的集成光芯片,硅光|Silicon Photonics|PIC|硅光引擎
+SUB_OC_005,STG_OC_UP_001,驱动/TIA芯片,用于光模块发射接收链路的电芯片,驱动芯片|TIA|DSP
+SUB_OC_006,STG_OC_UP_002,光纤预制棒,用于拉制通信光纤的预制棒材料,光纤预制棒|预制棒
+SUB_OC_007,STG_OC_UP_002,特种光纤,面向特殊通信或传感场景的光纤,特种光纤|保偏光纤|多芯光纤
+SUB_OC_008,STG_OC_UP_002,通信用光纤,面向通信网络传输的光纤,通信用光纤|单模光纤|多模光纤
+SUB_OC_009,STG_OC_UP_003,光学镀膜材料,用于光学器件镀膜的材料,光学镀膜|镀膜材料
+SUB_OC_010,STG_OC_UP_003,封装材料,用于光器件或光模块封装的材料,陶瓷封装|金属封装|高分子封装
+SUB_OC_011,STG_OC_UP_003,热管理材料,用于高速光模块散热的材料,热管理|导热材料|散热
+SUB_OC_012,STG_OC_UP_004,透镜/隔离器/准直器,光路准直隔离和聚焦组件,透镜|隔离器|准直器
+SUB_OC_013,STG_OC_UP_004,光电转换元件,支撑光电转换的基础元件,光电转换|光电元件
+SUB_OC_014,STG_OC_UP_004,微光学组件,小型化集成光学组件,微光学|微透镜|光学组件
+SUB_OC_015,STG_OC_MID_001,TOSA,光发射组件,TOSA|发射组件
+SUB_OC_016,STG_OC_MID_001,ROSA,光接收组件,ROSA|接收组件
+SUB_OC_017,STG_OC_MID_001,BOSA,双向光组件,BOSA|双向组件
+SUB_OC_018,STG_OC_MID_001,EML/DFB器件,高速激光器相关有源器件,EML|DFB
+SUB_OC_019,STG_OC_MID_002,光分路器,完成光功率分配的无源器件,光分路器|PLC
+SUB_OC_020,STG_OC_MID_002,光耦合器,完成光信号耦合的无源器件,光耦合器|耦合
+SUB_OC_021,STG_OC_MID_002,滤波器,完成波长选择或滤波的光器件,滤波器|光滤波
+SUB_OC_022,STG_OC_MID_002,AWG,阵列波导光栅器件,AWG|阵列波导光栅
+SUB_OC_023,STG_OC_MID_003,光连接器,光纤链路连接组件,光连接器|连接头
+SUB_OC_024,STG_OC_MID_003,光跳线,光纤跳接线缆组件,光跳线|跳线
+SUB_OC_025,STG_OC_MID_003,MPO/MTP组件,高密度光互连组件,MPO|MTP
+SUB_OC_026,STG_OC_MID_004,10G/25G光模块,中低速光模块产品,10G光模块|25G光模块
+SUB_OC_027,STG_OC_MID_004,100G/400G光模块,高速光模块产品,100G光模块|400G光模块
+SUB_OC_028,STG_OC_MID_004,800G/1.6T光模块,面向AI和数据中心的超高速光模块,800G光模块|1.6T光模块
+SUB_OC_029,STG_OC_MID_004,硅光模块,基于硅光方案的光模块,硅光模块|硅光引擎
+SUB_OC_030,STG_OC_MID_004,相干光模块,用于长距离或高速相干传输的光模块,相干光模块| coherent
+SUB_OC_031,STG_OC_MID_005,CPO引擎,光电共封装中的核心光引擎,CPO引擎|光引擎
+SUB_OC_032,STG_OC_MID_005,光I/O,芯片或板级光输入输出方案,光I/O|Optical I/O
+SUB_OC_033,STG_OC_MID_005,板级光互连,板级高速光互连方案,板级光互连|Board optical interconnect
+SUB_OC_034,STG_OC_MID_006,WDM复用器件,波分复用相关器件,WDM|DWDM|CWDM
+SUB_OC_035,STG_OC_MID_006,OTN板卡/模块,光传送网板卡或模块,OTN|OTN板卡
+SUB_OC_036,STG_OC_MID_006,ROADM相关器件,可重构光分插复用相关器件,ROADM|WSS
+SUB_OC_037,STG_OC_DOWN_001,前传设备,基站前传光通信设备,前传|fronthaul
+SUB_OC_038,STG_OC_DOWN_001,中传设备,基站中传光通信设备,中传|midhaul
+SUB_OC_039,STG_OC_DOWN_001,回传设备,基站回传光通信设备,回传|backhaul
+SUB_OC_040,STG_OC_DOWN_002,交换机光互联,交换机侧高速光互联,交换机光互联|交换机
+SUB_OC_041,STG_OC_DOWN_002,服务器间光互联,服务器之间高速光互联,服务器光互联|机柜互联
+SUB_OC_042,STG_OC_DOWN_002,AI集群互联,AI训练或推理集群的光互联,AI集群|GPU集群|算力互联
+SUB_OC_043,STG_OC_DOWN_003,城域光传输,城域网络光传输系统,城域光传输|城域网
+SUB_OC_044,STG_OC_DOWN_003,骨干网传输,骨干网络光传输系统,骨干网|长距传输
+SUB_OC_045,STG_OC_DOWN_003,接入网传输,接入网络光传输系统,接入网|PON
+SUB_OC_046,STG_OC_DOWN_004,云计算数据中心,云数据中心光互联应用,云计算|数据中心
+SUB_OC_047,STG_OC_DOWN_004,电信运营商网络,运营商网络应用,运营商|电信网络
+SUB_OC_048,STG_OC_DOWN_004,算力中心/AI基础设施,算力中心和AI基础设施应用,算力中心|AI基础设施

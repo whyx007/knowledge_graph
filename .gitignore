@@ -1,0 +1,13 @@
+.env
+.env.*
+!.env.example
+v2_pg_finegrain/.env
+v2_pg_finegrain/.env.*
+!v2_pg_finegrain/.env.example
+
+*.log
+__pycache__/
+.DS_Store
+
+v2_pg_finegrain/neo4j/import/*.csv
+v2_pg_finegrain/data/staging/enterprise_evidence.csv

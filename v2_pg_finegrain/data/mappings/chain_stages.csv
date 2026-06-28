@@ -1,0 +1,15 @@
+stage_id,chain_id,segment_id,stage_name,stage_order,definition,include_criteria,exclude_criteria,keywords
+STG_OC_UP_001,CHAIN_OC_001,SEG_OC_UP,光芯片,1,用于光通信光电转换和高速调制的核心芯片,自研或量产光通信相关芯片,仅做普通IC或代理销售,光芯片|激光器芯片|探测器芯片|调制器芯片|硅光芯片|TIA
+STG_OC_UP_002,CHAIN_OC_001,SEG_OC_UP,光纤与预制材料,2,光通信传输用光纤及其上游预制材料,提供光纤预制棒或通信用/特种光纤,与光通信无关的普通线缆,光纤预制棒|特种光纤|通信用光纤
+STG_OC_UP_003,CHAIN_OC_001,SEG_OC_UP,光学材料与封装材料,3,用于光器件和光模块的光学及封装材料,材料明确进入光通信器件或模块封装,泛材料且无光通信证据,光学镀膜材料|封装材料|热管理材料
+STG_OC_UP_004,CHAIN_OC_001,SEG_OC_UP,光电元器件,4,光模块和光器件中的基础光电组件,提供透镜隔离器准直器等关键组件,普通电子元件贸易,隔离器|准直器|透镜|微光学组件
+STG_OC_MID_001,CHAIN_OC_001,SEG_OC_MID,有源光器件,1,具备光电转换或发射接收功能的有源器件,产品为TOSA/ROSA/BOSA等光通信器件,仅做整机系统无器件产品,TOSA|ROSA|BOSA|EML|DFB
+STG_OC_MID_002,CHAIN_OC_001,SEG_OC_MID,无源光器件,2,不依赖电源完成光路分配滤波耦合的器件,提供分路器耦合器滤波器AWG等,无光通信用途的普通光学件,分路器|耦合器|滤波器|AWG
+STG_OC_MID_003,CHAIN_OC_001,SEG_OC_MID,光连接器与互连,3,光通信链路中的连接与跳接组件,提供连接器跳线MPO/MTP组件,普通电连接器,光连接器|光跳线|MPO|MTP
+STG_OC_MID_004,CHAIN_OC_001,SEG_OC_MID,光模块,4,面向通信和数据中心互联的光模块产品,提供10G到1.6T光模块硅光模块相干模块,仅做下游设备集成且无模块产品,光模块|400G|800G|1.6T|硅光模块|相干光模块
+STG_OC_MID_005,CHAIN_OC_001,SEG_OC_MID,CPO/光电共封装,5,面向高速互联的光电共封装和光I/O方案,提供CPO引擎光I/O或板级光互连,仅概念研究无产品证据,CPO|光电共封装|光I/O|板级光互连
+STG_OC_MID_006,CHAIN_OC_001,SEG_OC_MID,WDM/OTN器件,6,波分复用和光传输网络相关器件或模块,提供WDM OTN ROADM相关器件或模块,纯软件网管系统,WDM|OTN|ROADM
+STG_OC_DOWN_001,CHAIN_OC_001,SEG_OC_DOWN,5G/6G基站光设备,1,面向基站前中回传的光通信设备,设备用于前传中传回传,普通无线射频设备无光传输证据,前传|中传|回传|基站光设备
+STG_OC_DOWN_002,CHAIN_OC_001,SEG_OC_DOWN,数据中心光互联设备,2,面向数据中心和AI集群的高速光互联设备,产品用于交换机服务器AI集群光互联,普通机房设备无光互联证据,数据中心光互联|交换机光互联|AI集群互联
+STG_OC_DOWN_003,CHAIN_OC_001,SEG_OC_DOWN,光传输系统,3,面向城域骨干接入网络的光传输系统,提供光传输系统或相关设备,仅做终端应用软件,城域光传输|骨干网|接入网
+STG_OC_DOWN_004,CHAIN_OC_001,SEG_OC_DOWN,行业应用,4,由光通信链条支撑的终端应用场景,明确服务云计算运营商算力中心等场景,泛行业客户无光通信关联,云计算数据中心|电信运营商|算力中心|AI基础设施
