@@ -2,3 +2,6 @@ segment_id,chain_id,segment_name,segment_order
 SEG_OC_UP,CHAIN_OC_001,上游,1
 SEG_OC_MID,CHAIN_OC_001,中游,2
 SEG_OC_DOWN,CHAIN_OC_001,下游,3
+SEG_LA_UP,CHAIN_LA_001,上游,1
+SEG_LA_MID,CHAIN_LA_001,中游,2
+SEG_LA_DOWN,CHAIN_LA_001,下游,3
