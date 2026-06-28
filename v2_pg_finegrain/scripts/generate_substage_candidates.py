@@ -25,6 +25,16 @@ def split_keywords(raw: str) -> list[str]:
     return items
 
 
+def keyword_matches(text: str, text_norm: str, keyword: str) -> bool:
+    # Acronyms such as ROS, CPO, WDM must match as standalone tokens.
+    # Otherwise substrings like "Rosa" can create false positives for "ROS".
+    if keyword.isascii():
+        pattern = rf"(?<![A-Za-z0-9]){re.escape(keyword)}(?![A-Za-z0-9])"
+        flags = 0 if keyword.isupper() else re.IGNORECASE
+        return re.search(pattern, text, flags) is not None
+    return normalize(keyword) in text_norm
+
+
 def excerpt(text: str, keyword: str, size: int = 160) -> str:
     compact = re.sub(r"\s+", " ", text or "").strip()
     pos = normalize(compact).find(normalize(keyword))
@@ -56,7 +66,7 @@ def main() -> None:
             text = row.get("evidence_text", "") or ""
             text_norm = normalize(text)
             for substage in substages:
-                matched = [kw for kw in substage["keywords"] if normalize(kw) in text_norm]
+                matched = [kw for kw in substage["keywords"] if keyword_matches(text, text_norm, kw)]
                 if not matched:
                     continue
                 key = (row["enterprise_id"], substage["substage_id"])

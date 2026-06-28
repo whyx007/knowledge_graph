@@ -258,7 +258,7 @@ SUB_ROBOT_028,STG_ROBOT_UP_007,机器人电池包,移动和服务机器人供能
 SUB_ROBOT_029,STG_ROBOT_UP_007,BMS电池管理,机器人电池管理和安全监控系统,BMS|电池管理
 SUB_ROBOT_030,STG_ROBOT_UP_007,自动充电桩,移动机器人自动充电设备,自动充电桩|机器人充电
 SUB_ROBOT_031,STG_ROBOT_UP_007,换电系统,机器人电池自动更换系统,换电系统|机器人换电
-SUB_ROBOT_032,STG_ROBOT_UP_008,机器人操作系统,机器人软件运行和模块管理系统,机器人操作系统|ROS
+SUB_ROBOT_032,STG_ROBOT_UP_008,机器人操作系统,机器人软件运行和模块管理系统,机器人操作系统|Robot Operating System
 SUB_ROBOT_033,STG_ROBOT_UP_008,路径规划算法,机器人移动和机械臂轨迹规划算法,路径规划|轨迹规划
 SUB_ROBOT_034,STG_ROBOT_UP_008,任务调度平台,机器人任务分配和队列调度软件,任务调度|机器人调度
 SUB_ROBOT_035,STG_ROBOT_UP_008,仿真与数字孪生平台,机器人仿真调试和虚拟产线平台,机器人仿真|数字孪生
