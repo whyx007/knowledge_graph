@@ -8,6 +8,9 @@ SUBSTAGES = ROOT / "data/mappings/chain_substages.csv"
 EVIDENCE = ROOT / "data/staging/enterprise_evidence.csv"
 OUTPUT = ROOT / "data/staging/enterprise_to_substage.csv"
 
+MATCH_FIELDS = ["core_tech", "products", "scenario", "industry", "domain"]
+CORE_FIELDS = {"core_tech", "products"}
+
 
 def normalize(text: str) -> str:
     return (text or "").lower()
@@ -63,24 +66,40 @@ def main() -> None:
     seen = set()
     with EVIDENCE.open(newline="", encoding="utf-8-sig") as f:
         for row in csv.DictReader(f):
-            text = row.get("evidence_text", "") or ""
-            text_norm = normalize(text)
             for substage in substages:
-                matched = [kw for kw in substage["keywords"] if keyword_matches(text, text_norm, kw)]
+                matched = []
+                matched_fields = []
+                evidence_text = ""
+                for field in MATCH_FIELDS:
+                    text = row.get(field, "") or ""
+                    if not text:
+                        continue
+                    text_norm = normalize(text)
+                    field_matches = [
+                        kw
+                        for kw in substage["keywords"]
+                        if keyword_matches(text, text_norm, kw)
+                    ]
+                    if not field_matches:
+                        continue
+                    matched.extend(field_matches)
+                    matched_fields.append(field)
+                    if not evidence_text:
+                        evidence_text = text
                 if not matched:
                     continue
                 key = (row["enterprise_id"], substage["substage_id"])
                 if key in seen:
                     continue
                 seen.add(key)
-                confidence = "medium" if len(matched) >= 2 else "low"
+                confidence = "medium" if CORE_FIELDS.intersection(matched_fields) or len(set(matched)) >= 2 else "low"
                 candidates.append(
                     {
                         "enterprise_id": row["enterprise_id"],
                         "substage_id": substage["substage_id"],
                         "confidence": confidence,
-                        "evidence": excerpt(text, matched[0]),
-                        "source_field": row.get("source_field", ""),
+                        "evidence": excerpt(evidence_text, matched[0]),
+                        "source_field": ",".join(matched_fields),
                         "source_system": row.get("source_system", "postgresql"),
                         "needs_review": "true",
                     }

@@ -20,14 +20,20 @@ SELECT
   now() AS last_sync_at
 FROM companies;
 
-CREATE OR REPLACE VIEW kg_v2_enterprise_evidence AS
+DROP VIEW IF EXISTS kg_v2_enterprise_evidence;
+
+CREATE VIEW kg_v2_enterprise_evidence AS
 SELECT
   ('ENT_PG_' || c.id::text) AS enterprise_id,
   c.id::text AS source_pk,
   c.name AS enterprise_name,
   c.domain,
   c.industry,
+  c.core_tech,
+  c.products,
   c.scenario,
+  c.cert_ip,
+  c.homepage_html,
   concat_ws(' ',
     c.domain,
     c.industry,
@@ -37,7 +43,7 @@ SELECT
     c.cert_ip,
     c.homepage_html
   ) AS evidence_text,
-  'domain,industry,core_tech,products,scenario,cert_ip,homepage_html' AS source_field,
+  'domain,industry,core_tech,products,scenario' AS source_field,
   'postgresql' AS source_system,
   now() AS extracted_at
 FROM companies c;

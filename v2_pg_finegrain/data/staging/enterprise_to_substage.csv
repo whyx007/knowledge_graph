@@ -1,215 +1,214 @@
 enterprise_id,substage_id,confidence,evidence,source_field,source_system,needs_review
-ENT_PG_100,SUB_LA_040,low,光子 高功率激光工业清洗、激光生物医疗、精细微加工和科研等领域 高平均功率、大能量短脉冲激光和高平均功率窄线宽激光两大主要方向产品，涵括从红外到紫外波段、从毫秒到皮秒等多种脉宽 高平均功率脉冲激光器产品 高功率,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_101,SUB_LA_057,low,外镀膜技术；光学系统全流程设计能力；球面、非球面、自由面、平面棱镜及复杂光学结构元件制造 高精度光学镜片、光学系统（全流程设计产品） 光刻机光学系统（曝光系统、照明系统）、卫星激光通讯（高精度离轴非球面）、高精度检测系统、成像系统、激光照明系统、显微物镜系统。 暂无。,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_109,SUB_FUSION_020,low,光子 光通信（相干光通信）、激光雷达、生物医疗（光学相干层析成像、无创连续血糖监测）、科研领域（量子计算、量子精密测量）、长距离传感、精密仪器 集成高性能激光器技术（自注入锁定、外腔调控） 集成高性能激光器，基于自注入锁定技术的集成超窄线宽激光器（线宽<10 Hz）和基于外腔调,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_114,SUB_LA_001,low,光子 高性能光纤激光器技术 高性能光纤激光器、微型激光电源、特种激光光源 清华大学深圳国际研究生院以技术入股,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_116,SUB_COMP_025,low,人工智能 人工智能、大模型推理。具体服务于需要运行AI大模型（特别是7B~13B参数的垂直行业小模型及更大规模的通用大模型）的各类行业。 大模型时代AI芯片设计 致力于研发大模型时代的新一代,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_121,SUB_DISP_015,low,新材料 新型显示、新能源、光伏、高分子材料研发。 薄膜双向拉伸试验机（用于高分子薄膜双向拉伸工艺、配方开发、试验的设备） 高端PET光学膜（如偏光片支撑膜、低取向角离型膜）的研发、生产及产业化 1. 新型显示领域的光学膜应用；2. 新能源、光伏领域的功能薄膜应用；3. 高分子材料研发领域的工艺与配方开发测试,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_123,SUB_LA_067,low,先进制造 大飞机、舰载机、战斗机、重型运载火箭等重大装备 重大装备高性能金属增材制造（3D打印）、重大装备关键机械运动零部件表面工程、重大装备高性能金属结构新材料 金属增材制造(3D打印)零部件 重大装备研制和批产,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_123,SUB_SPACE_020,low,先进制造 大飞机、舰载机、战斗机、重型运载火箭等重大装备 重大装备高性能金属增材制造（3D打印）、重大装备关键机械运动零部件表面工程、重大装备高性能金属结构新材料 金属增材制造(3D打印)零部件 重大装备研,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_124,SUB_SPACE_020,low,、航天、船舶、兵器等领域。 强度试验技术：静力与疲劳、动力学、静力-热、振动-热复合试验等；环境可靠性试验技术；加速贮存试验及寿命评估技术等；[冠军营补充]中国运载火箭技术研究院背景，创始人是国内多个航天型号的试验技术负责人 强度试验与可靠性试验服务 军工领域的结构强度和环境检测。,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_130,SUB_LA_003,low,光子 光电子、高端制造、科研、医疗（激光器为通用核心部件，具体下游行业未明确说明） 紫外及深紫外固体激光器、半导体激光器、准分子激光器的研发、生产、销售 紫外固体激光器、半导体激光器、准分子激光器 高新技术企业（根据企业介绍推断），具体知识产权数量及资质未披露,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_130,SUB_LA_004,low,光子 光电子、高端制造、科研、医疗（激光器为通用核心部件，具体下游行业未明确说明） 紫外及深紫外固体激光器、半导体激光器、准分子激光器的研发、生产、销售 紫外固体激光器、半导体激光器、准分子激光器 高新技术企业（根据企业介绍推断），具体知识产权数量及资质未披露,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_130,SUB_LA_005,medium,光子 光电子、高端制造、科研、医疗（激光器为通用核心部件，具体下游行业未明确说明） 紫外及深紫外固体激光器、半导体激光器、准分子激光器的研发、生产、销售 紫外固体激光器、半导体激光器、准分子激光器 高新技术企业（根据企业介绍推断），具体知识产权数量及资质未披露,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_141,SUB_FUSION_001,low,料性能分析、等离子体诊断）；行业领域（消防救援、刑侦取证、车载辅助安全驾驶、焊接在线监测、交通监控、地铁障碍物检测、机动车车窗抓拍、透雾成像）。 时间门控成像；单光子探测；皮秒级时间分辨；激光穿透成像 逐光IsCMOS像增强相机；逐光2DSPC单光子相机；手持式/固定式穿透成像仪 科研实验中的超快时间探测与极限灵敏度成像；工,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_141,SUB_FUSION_005,low,料性能分析、等离子体诊断）；行业领域（消防救援、刑侦取证、车载辅助安全驾驶、焊接在线监测、交通监控、地铁障碍物检测、机动车车窗抓拍、透雾成像）。 时间门控成像；单光子探测；皮秒级时间分辨；激光穿透成像 逐光IsCMOS像增强相机；逐光2DSPC单光子相机；手持式/固定式穿透成像仪 科研实验中的超快时间探测与极限灵敏度成像；工业在,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_141,SUB_FUSION_025,low,聚变、发动机燃烧诊断、光电材料性能分析、等离子体诊断）；行业领域（消防救援、刑侦取证、车载辅助安全驾驶、焊接在线监测、交通监控、地铁障碍物检测、机动车车窗抓拍、透雾成像）。 时间门控成像；单光子探测；皮秒级时间分辨；激光穿透成像 逐光IsCMOS像增强相机；逐光2DSPC单光子相机；手持式/固定式穿透成像仪 科研实验中的超快时,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_142,SUB_LA_067,low,光子 切割、手持焊、电池焊接、清洗和熔覆、金属3D打印、除障、通信、医疗、增材制造、电动车材料、航空航天、太阳能、汽车、重工业、运输。 核心光纤与器件集成技术 具备核心光纤与器件的集成能力。产品掺镱光纤、无源光纤/,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_142,SUB_OC_006,low,电动车材料、航空航天、太阳能、汽车、重工业、运输。 核心光纤与器件集成技术 具备核心光纤与器件的集成能力。产品掺镱光纤、无源光纤/传能光纤、保偏光纤/紫外光纤、预制棒、器件（TGG、光栅、QBH/QD光缆、集束跳线、镀膜光纤跳线）、泵浦源（915nm泵浦、976nm泵浦、>1000W泵浦模块）、激光器（300W-30kW连续,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_142,SUB_OC_007,low,信、医疗、增材制造、电动车材料、航空航天、太阳能、汽车、重工业、运输。 核心光纤与器件集成技术 具备核心光纤与器件的集成能力。产品掺镱光纤、无源光纤/传能光纤、保偏光纤/紫外光纤、预制棒、器件（TGG、光栅、QBH/QD光缆、集束跳线、镀膜光纤跳线）、泵浦源（915nm泵浦、976nm泵浦、>1000W泵浦模块）、激光器（30,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_142,SUB_OC_024,low, 核心光纤与器件集成技术 具备核心光纤与器件的集成能力。产品掺镱光纤、无源光纤/传能光纤、保偏光纤/紫外光纤、预制棒、器件（TGG、光栅、QBH/QD光缆、集束跳线、镀膜光纤跳线）、泵浦源（915nm泵浦、976nm泵浦、>1000W泵浦模块）、激光器（300W-30kW连续激光器、光束可调激光器） 2D和3D切割、焊接、,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_149,SUB_LA_089,low,生物医疗 医疗器械行业，具体为骨科植入物（如人工关节、脊柱融合器、骨缺损填充体等） 医用超高分子量聚乙烯(UHMWPE)材料平台 医用超高分子量聚乙烯（UHMWPE）材料平台（高交联超高分子量聚乙烯型,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_15,SUB_LA_020,low,人工智能 智能化桌面数字加工与消费级CNC技术 桌面型3D雕刻机、3D打印机、激光切割机,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_15,SUB_LA_030,low,人工智能 智能化桌面数字加工与消费级CNC技术 桌面型3D雕刻机、3D打印机、激光切割机,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_157,SUB_ROBOT_049,low,人工智能 双足人形机器人、高精度桌面级机械臂、磁悬浮系统技术 双足人形机器人、高精度桌面级机械臂、任意位姿自适应磁悬浮系统、自平衡自动驾驶自行车、大负载智能无人机、视觉两轮机器人、独轮,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_157,SUB_ROBOT_089,low,统、自平衡自动驾驶自行车、大负载智能无人机、视觉两轮机器人、独轮移动机器人、桌面智能陪伴机器人、双臂核酸采样机器人、餐饮机器人、移乘助行机器人、调酒机器人、全身康复机器人、下肢助行机器人、北京冬奥机器人餐厅 餐饮、医疗康复（核酸采样、助行、康复）、服务陪伴、特种作业（如磁悬浮系统）,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_16,SUB_MV_034,low,光子 人工智能算力、数据中心、高性能计算、科研计算、边缘智能 基于微环调制器的硅光芯片与 CMOS 电芯片协同开发 3.2T/6.4T 光引擎原型 AI大模型训练与推理加速、矩阵运算加速、低功耗高带宽计算、数据中心内部光互连与算力优化,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_16,SUB_OC_004,low,光子 人工智能算力、数据中心、高性能计算、科研计算、边缘智能 基于微环调制器的硅光芯片与 CMOS 电芯片协同开发 3.2T/6.4T 光引擎原型 AI大模型训练与推理加速、矩阵运算加速、低功耗高带宽计算、数据中心内部光互连与算力优化,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_170,SUB_MV_083,low,目标处理算法技术（国内领先）、多源异构数据融合技术（国际领先）；[冠军营补充]公司专注低空经济和卫星通讯两大赛道，在低空领域，产品包括雷达、光电雷达等，用于机场异物检测、驱鸟、无人机反控等 低空无人机反制、基地/要地防御、飞行安全监控、边海防监控、重要设施防护、重要活动安保、机场跑道异物探测、周界安防、动态巡防与应急处置。,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_172,SUB_LA_066,low,、硅衬底粗抛液及精抛液、铜钼蚀刻清洗液、去蜡液等 晶圆制造及封装厂中的清洗、刻蚀、抛光（CMP）工艺环节；碳化硅衬底制造中的研磨与清洗；集成电路制造中特定材料的表面处理。 高新技术企业、科技型中小企业。拥有发明专利（博士期间至少1件）。集成电路电子新材料研发资格证（提及）。,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_173,SUB_LA_004,low,联激光器(QCL)芯片设计、中远红外半导体激光技术 量子级联激光器（QCL），高功率FP腔量子级联激光器、低功耗高单模稳定的DFB量子级联激光器。专注于中远红外半导体激光器产品 1. 军工领域：红外光电对抗，为机动平台提供核心激光光源。2. 民用领域：气体检测，为气体检测设备提供核心元器件。 公司新成立不久，创始人团队个人荣誉较多,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_173,SUB_OC_001,low,电对抗）、民用（气体检测）。 量子级联激光器(QCL)芯片设计、中远红外半导体激光技术 量子级联激光器（QCL），高功率FP腔量子级联激光器、低功耗高单模稳定的DFB量子级联激光器。专注于中远红外半导体激光器产品 1. 军工领域：红外光电对抗，为机动平台提供核心激光光源。2. 民用领域：气体检测，为气体检测设备提供核心元器件,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_173,SUB_OC_018,low,电对抗）、民用（气体检测）。 量子级联激光器(QCL)芯片设计、中远红外半导体激光技术 量子级联激光器（QCL），高功率FP腔量子级联激光器、低功耗高单模稳定的DFB量子级联激光器。专注于中远红外半导体激光器产品 1. 军工领域：红外光电对抗，为机动平台提供核心激光光源。2. 民用领域：气体检测，为气体检测设备提供核心元器件,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_175,SUB_COMP_025,low,半导体 半导体、人工智能、算力基础设施。 多模态AI处理器设计技术、Chiplet算力融合技术、AI Chiplet 产品支持云边端多场景的AI芯粒、多芯粒大模型推理加速卡、算力模组、芯片与晶圆 为云边端提供大模型算力支持。 科技型中小企业、创新型中小企业、高新技术企业；朝阳区itech大赛三等奖、第十三届中国创新创业大赛-,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_176,SUB_COMP_014,low,光子 消费市场、医疗诊断、食品检测 片上光电集成芯片技术（片上计量级光谱仪、光谱分析探测芯片、通信光交换芯片，硬件芯片化设计） 微型光谱分析芯片、可穿戴光谱健康监测设备 无创健康监测，覆盖短红外波段,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_178,SUB_MV_030,low,技术 DIS-DR智能数字射线检测系统、DIH-SG智能检测工作台、Xpearl系列智能检测装备 1. 金属焊缝与铸件智能无损检测；2. 新能源汽车动力电池内部缺陷智能检测；3. 外观尺寸与表面缺陷智能检测；4. 高端制造客户数智化转型升级；5. 无损检测实验室智能化建设。 国家高新技术企业；陕西省科技型中小企业；武器装备质量管理,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_178,SUB_MV_057,low,工作台（DIH-SG）；智能检测装备Xpearl系列；智能数字射线无损检测环境规划建设；多模态AI检测平台DMAP；融合跨平台多模态采集、高精度运动控制与自适应模型优化技术 DIS-DR智能数字射线检测系统、DIH-SG智能检测工作台、Xpearl系列智能检测装备 1. 金属焊缝与铸件智能无损检测；2. 新能源汽车动力电池内部,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_179,SUB_SPACE_003,low,发、组装及生产，同时也提供从概念设计到最终交付的卫星全流程解决方案；核心优势： 技术壁垒：首创一箭 18 星堆叠分离技术，柔性太阳翼在轨规模化应用，专利覆盖卫星热控、推进等核心领域；智能制造：长三角首个卫星智能灯塔工厂，脉动生产线 1.5 天 / 颗，年产 300 + 颗，成本为传统方案 60% 卫星ODM整星制造、卫星核,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_182,SUB_FUSION_016,low,光子 科研（高校及科研院所）、工业（半导体、医疗等）。 以及运动控制平台、隔振平台、高低温平台、特种光源、电输运模块等核心模组 覆盖百纳米—微米的光学精密加工及检测类产品，是国内唯一实现加工+检测闭环的光学技术平台。2D/2.5D无,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_182,SUB_LA_019,low,光子 科研（高校及科研院所）、工业（半导体、医疗等）。 以及运动控制平台、隔振平台、高低温平台、特种光源、电输运模块等核心模组 覆盖百纳米—微米的光学精密加工及检测类产品，是国内唯一实现加工+检测闭环的光学技术平台。2D/2.5D无,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_182,SUB_LA_040,low,精密加工及检测类产品，是国内唯一实现加工+检测闭环的光学技术平台。2D/2.5D无掩膜光刻机、3D光刻/打印机、3D先进显微镜系列、光电流光谱仪等整机设备 光学微纳加工、光学微纳检测、功能性检测。具体应用于科研实验、半导体制造、医疗设备等领域的光学精密加工与测量。 高新技术企业证书；2024年环境管理体系认证证书；2024年质,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_182,SUB_LA_086,low,光学精密加工及检测类产品，是国内唯一实现加工+检测闭环的光学技术平台。2D/2.5D无掩膜光刻机、3D光刻/打印机、3D先进显微镜系列、光电流光谱仪等整机设备 光学微纳加工、光学微纳检测、功能性检测。具体应用于科研实验、半导体制造、医疗设备等领域的光学精密加工与测量。 高新技术企业证书；2024年环境管理体系认证证书；2024年质,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_189,SUB_DISP_017,low,四代天车）的设计制作安装和调试、软件控制系统（如iHS晶圆传输系统）的开发 1. 半导体生产线（晶圆制造、封测）的物料自动化搬运与存储。2. Micro LED巨量转移配套的高精度芯片搬运。3. 车载屏模组生产线的耐高低温物流接驳。4. 面板产线（如高世代线）的供应链效率优化。 高新技术企业、江苏省民营科技企业、科技型中小企业,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_189,SUB_DISP_037,low,控制系统（如iHS晶圆传输系统）的开发 1. 半导体生产线（晶圆制造、封测）的物料自动化搬运与存储。2. Micro LED巨量转移配套的高精度芯片搬运。3. 车载屏模组生产线的耐高低温物流接驳。4. 面板产线（如高世代线）的供应链效率优化。 高新技术企业、江苏省民营科技企业、科技型中小企业、专精特新中小企业、企业技术中心、,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_189,SUB_MV_059,low,测）的物料自动化搬运与存储。2. Micro LED巨量转移配套的高精度芯片搬运。3. 车载屏模组生产线的耐高低温物流接驳。4. 面板产线（如高世代线）的供应链效率优化。 高新技术企业、江苏省民营科技企业、科技型中小企业、专精特新中小企业、企业技术中心、潜在独角兽企业。ISO9001:2015质量体系、SEMI S2安全体系。,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_193,SUB_FUSION_013,low,及计算重建型光谱CIS（“调制+解调”），用材料+芯片工艺+算法替代传统分光器件，在CMOS芯片上同时实现成像和光谱功能。产品矩阵芯片、模组、光谱相机（多光谱/高光谱）。光谱范围：现有技术300-1000nm，新技术2800-1700nm 手机辅摄（更准确的颜色、真假人脸检测）、扫地机（地面污渍识别检测、地板材质识别）、智能,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_193,SUB_MV_015,low,机、擦窗机、冰箱等）、安防监控、医疗设备、农业（无人机）、工业（PCB检测）、汽车电子。 成像光谱芯片技术（计算重建型光谱CIS） 成像光谱芯片（下一代CMOS图像传感器），采用自研的“调制/解调”技术体系及计算重建型光谱CIS（“调制+解调”），用材料+芯片工艺+算法替代传统分光器件，在CMOS芯片上同时实现成像和光谱功能。产,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_193,SUB_MV_063,low,光子 消费电子（智能手机）、AIOT（智能家居、智能门锁、智能投影仪、扫地机、擦窗机、冰箱等）、安防监控、医疗设备、农业（无人机）、工业（PCB检测）、汽车电子。 成像光谱芯片技术（计算重建型光谱CIS） 成像光谱芯片（下一代CMOS图像传感器），采用自研的“调制/解调”技术体系及计算重建型光谱CIS（“调,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_2,SUB_COMP_015,low,光子 光子芯片与光电混合计算技术 光子AI加速芯片、光互联模块 全球AI硅光芯片第一股（01879.HK）,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_2,SUB_COMP_024,low,光子 光子芯片与光电混合计算技术 光子AI加速芯片、光互联模块 全球AI硅光芯片第一股（01879.HK）,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_2,SUB_OC_004,low,光子 光子芯片与光电混合计算技术 光子AI加速芯片、光互联模块 全球AI硅光芯片第一股（01879.HK）,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_200,SUB_SPACE_012,medium,体成套设备系统集成；高压高纯气体增压系统与高压检测系统；航天发射配气台、高压仿真测试系统、高压充氮/氧车等定制化设备 液驱式压缩机系统；加氢站核心设备（压缩机、阀门管路、整站系统、站控软件）；高压储氢容器 加氢站（移动式、固定式）整体解决方案；高压气体增压与检测；航天军工领域的高压用气定制化设备及系统（如发射配气、仿真测试,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_201,SUB_ROBOT_013,low,用电子测量仪器行业、精密制造、工业检测、科研等领域。具体应用于需要高精度几何尺寸、形位公差、三维坐标测量的场景。 便携式三坐标（关节臂）测量技术、光学测量技术、编码器技术。核心产品为便携式三坐标（关节臂），其结构与工业用6轴机器人相似，通过6个编码器记录探头姿态，结合臂长与角度变化智能换算坐标值，用于测量几何尺寸、形位公差、,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_210,SUB_ROBOT_005,low,军工 航空航天、航海（海陆空天）等国防军工领域，具体服务于导弹、火箭、无人机、水下潜航器等武器装备。 1. 轻质小型化机电作动器设计技术；2. 高比功率伺服电机设计技术；3. 高比功率伺服控制驱动集成技术；4. 新型智能机构技术；5. 高动态伺服回路控制及结构一体化设计及试验技术。核心产品：中小功率机电伺服（20w-1,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_225,SUB_COMP_004,low,光子 移动终端（智能眼镜）、汽车（新型交互显示系统、AR-HUD、车窗显示）、展览展示 纳米光学相关器件技术、衍射光波导、增强平视显示(AR-HUD) 基于新型纳米材料和尖端纳米加工技术的纳米光学相关器件，衍射光波导、透明投影显示（EPDS）、增强平视显示（AR-HUD）、光场显,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_225,SUB_DISP_022,low,导、透明投影显示（EPDS）、增强平视显示（AR-HUD）、光场显示（裸眼3D）、全透明自发光投影显示、体全息波导、自发光透明纳米膜、浮雕光栅波导器件 智能眼镜显示模组、汽车新型交互显示系统解决方案、AR-HUD、光场裸眼3D、自发光透明纳米膜、车窗显示、展览展示 专利：一种纳米压印模版、其制备方法及纳米压印方法（201910,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_225,SUB_DISP_026,low,光子 移动终端（智能眼镜）、汽车（新型交互显示系统、AR-HUD、车窗显示）、展览展示 纳米光学相关器件技术、衍射光波导、增强平视显示(AR-HUD) 基于新型纳米材料和尖端纳米加工技术的纳米光学相关器件，衍射光波导、透明投,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_225,SUB_DISP_027,low,D、车窗显示）、展览展示 纳米光学相关器件技术、衍射光波导、增强平视显示(AR-HUD) 基于新型纳米材料和尖端纳米加工技术的纳米光学相关器件，衍射光波导、透明投影显示（EPDS）、增强平视显示（AR-HUD）、光场显示（裸眼3D）、全透明自发光投影显示、体全息波导、自发光透明纳米膜、浮雕光栅波导器件 智能眼镜显示模组、汽车新,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_225,SUB_LA_040,low,（智能眼镜）、汽车（新型交互显示系统、AR-HUD、车窗显示）、展览展示 纳米光学相关器件技术、衍射光波导、增强平视显示(AR-HUD) 基于新型纳米材料和尖端纳米加工技术的纳米光学相关器件，衍射光波导、透明投影显示（EPDS）、增强平视显示（AR-HUD）、光场显示（裸眼3D）、全透明自发光投影显示、体全息波导、自发光透明纳,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_225,SUB_MV_072,low,导、透明投影显示（EPDS）、增强平视显示（AR-HUD）、光场显示（裸眼3D）、全透明自发光投影显示、体全息波导、自发光透明纳米膜、浮雕光栅波导器件 智能眼镜显示模组、汽车新型交互显示系统解决方案、AR-HUD、光场裸眼3D、自发光透明纳米膜、车窗显示、展览展示 专利：一种纳米压印模版、其制备方法及纳米压印方法（201910,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_228,SUB_FUSION_015,medium,硅光子集成技术、FMCW（调频连续波）激光雷达芯片技术、光学相控阵（OPA）技术、光电芯片设计与封装测试技术。 硅光集成芯片、固态激光雷达发射/接收光引擎芯片、FMCW激光雷达扫描芯片、光通信硅光芯片。 车载高级辅助驾驶（ADAS）与自动驾驶避障导航、工业机器视觉、数据中心内部高速数据传输。 拥有多项硅光子集成、激光雷达芯片相关的发明,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_228,SUB_OC_004,low,光子 智能汽车/自动驾驶、机器人、光通信/数据中心。 硅光子集成技术、FMCW（调频连续波）激光雷达芯片技术、光学相控阵（OPA）技术、光电芯片设计与封装测试技术。 硅光集成芯片、固态激光雷达发射/接收光引擎芯片、FM,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_235,SUB_COMP_002,medium,TFLN两条基础技术路线；核心技术大范围调谐激光器中美两地专利注册 WTL可调激光器、DFB气体传感激光器、TFLN调制器三大产品；可调谐激光器、DFB激光器、薄膜铌酸锂调制器注册专利十余项 气体传感器（已批量交付），光通信，车载激光雷达,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_235,SUB_OC_001,low,光子 气体传感器、光通信、车载激光雷达 InP和TFLN两条基础技术路线；核心技术大范围调谐激光器中美两地专利注册 WTL可调激光器、DFB气体传感激光器、TFLN调制器三大产品；可调谐激光器、DFB激光器、薄膜铌酸锂调制器注册专利十余项 气体传感器（已批量交付），光通信，车载激光雷达,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_235,SUB_OC_018,low,光子 气体传感器、光通信、车载激光雷达 InP和TFLN两条基础技术路线；核心技术大范围调谐激光器中美两地专利注册 WTL可调激光器、DFB气体传感激光器、TFLN调制器三大产品；可调谐激光器、DFB激光器、薄膜铌酸锂调制器注册专利十余项 气体传感器（已批量交付），光通信，车载激光雷达,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_240,SUB_FUSION_013,medium,光子 生物医疗、工业检测、光谱检测。 单曝光压缩成像技术（AI+计算成像，光学编码+AI算法，压缩采集重建） 单曝光高速视频；单曝光高光谱成像；单曝光3D检测 1. 沥青路面老化程度、病害类型识别；2. 桥梁梁体、桥面、桥墩等所有暴露表面进行大规模、无接触的扫描，识别混凝土表面露筋病害；3. 原料检测,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_247,SUB_SPACE_003,low,0W 散热能力；2020 年成立，高新企业，专注高功率芯片热管理，航空航天散热技术民用化，服务数据中心、汽车电子等领域 高功率服务器散热（最高2000W）、卫星热控系统、数据中心散热、汽车电子散热 国家级科技型中小企业、省级科技型中小企业、市级创新型企业、省级民营科技企业、高新技术企业；拥有原创MLHP技术,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_25,SUB_FUSION_007,low,新一代信息技术 量子计算机整机及核心部件等子系统的研发销售；量子传感器等产业核心部件的研发销售；量子软件、量子算法及混合计算解决方案的研发销售 量子计算机整机、量子传感器,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_252,SUB_COMP_004,low,新一代信息技术 高折射透明陶瓷材料 高折射透明陶瓷 手表盖板材料、电子产品基板/盖板材料、超薄高清透镜组材料、VR/AR光波导基板,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_257,SUB_FUSION_019,low,生物医疗 智能超灵敏结构光超分辨显微镜 智能超灵敏结构光超分辨显微镜 基础研究，对症药物筛选，高通量高内涵药物筛选,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_26,SUB_COMP_003,low,半导体 半导体、集成电路 专注于超越摩尔的原子级芯片制造和异质集成技术；[冠军营补充]二维材料项目团队实力顶尖，技术可实现低成本工艺对标高端芯片性能，在传感器、DRAM 等领域应用前景广阔，获行业权威支持，创业决心强，是下一代,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_26,SUB_SPACE_013,low,可实现低成本工艺对标高端芯片性能，在传感器、DRAM 等领域应用前景广阔，获行业权威支持，创业决心强，是下一代半导体的核心赛道 超低功耗、边缘算力、高灵敏传感及抗辐照芯片等关键应用场景,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_263,SUB_SPACE_024,medium,航天航空航海 商业航天、碳中和监测与治理、政府环境监管、工程建设管理、森林碳汇检测、碳交易数据服务。 卫星测运控软件、航天云立方平台、华山航天大模型 卫星智能操控与故障诊断；激光通信终端 卫星测运控服务；区域及行业CO2排放监测、预测与溯源；裸土扬尘源卫星遥感监测；大型工,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_264,SUB_ROBOT_060,low,航天航空航海 海洋智能高清探查装备研发技术 水下机器人整机、水下声学成像仪、测绘仪器,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_264,SUB_ROBOT_100,low,航天航空航海 海洋智能高清探查装备研发技术 水下机器人整机、水下声学成像仪、测绘仪器,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_268,SUB_MV_030,low,装、化合物半导体、新型显示、光罩制造、晶圆衬底制造、基板制造、半导体、泛半导体、光电及智能制造。 晶圆级集成电路量检测设备设计 晶圆级集成电路量检测设备，掩模版缺陷检测设备、晶圆缺陷检测设备、晶圆量测设备等九大类产品。具体产品如掩模基板缺陷检测产品Halo-100 芯片制造、光罩制造、晶圆衬底制造、基板制造过程中的缺陷检测与量,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_268,SUB_MV_044,low,装、化合物半导体、新型显示、光罩制造、晶圆衬底制造、基板制造、半导体、泛半导体、光电及智能制造。 晶圆级集成电路量检测设备设计 晶圆级集成电路量检测设备，掩模版缺陷检测设备、晶圆缺陷检测设备、晶圆量测设备等九大类产品。具体产品如掩模基板缺陷检测产品Halo-100 芯片制造、光罩制造、晶圆衬底制造、基板制造过程中的缺陷检测与量测。,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_268,SUB_MV_066,low,体、新型显示、光罩制造、晶圆衬底制造、基板制造、半导体、泛半导体、光电及智能制造。 晶圆级集成电路量检测设备设计 晶圆级集成电路量检测设备，掩模版缺陷检测设备、晶圆缺陷检测设备、晶圆量测设备等九大类产品。具体产品如掩模基板缺陷检测产品Halo-100 芯片制造、光罩制造、晶圆衬底制造、基板制造过程中的缺陷检测与量测。 高新技术企业,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_273,SUB_LA_002,low,光子 航空航天、生物医疗、半导体、精密电子 超快激光精密焊接技术（异质材料焊接、特种材料超精密3D成形 精密传感器制造、半导体封装、生物芯片加工领域激光设备 玻璃、蓝宝石、石英等透明材料间以及上述透明材料和金、铜,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_274,SUB_ROBOT_021,low,人工智能 家庭服务机器人行业 智能家庭服务机器人技术、SLAM自主定位技术 研发设计一款拥有机器视觉且可自主移动的智能家庭服务机器人Bingo。核心技术本地加速人形检测与跟踪技术、SLAM机器人自主定位与地图建模技术、声源,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_274,SUB_ROBOT_095,low,人工智能 家庭服务机器人行业 智能家庭服务机器人技术、SLAM自主定位技术 研发设计一款拥有机器视觉且可自主移动的智能家庭服务机器人Bingo。核心技术本地加速人形检测与跟踪技术,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_286,SUB_COMP_004,low,光子 工业维修、安防、文旅以及个人消费电子 全息光波导和光引擎设计制作能力 AR 眼镜、智能近眼显示终端，全息光波导光学元件，结合其自研光引擎开发出用于近眼显示的光学模组,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_289,SUB_OC_021,low,半导体 移动通信、物联网、智能手机 射频高级模块一体化解决方案、射频滤波器芯片IC设计、高级射频声波集成电路和模块 射频滤波器芯片IC、射频高级模块 下一代智能手机和物联网设备中的射频前端模块 高新技术企业(2023)、科技型中小企业,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_294,SUB_FUSION_022,low,调制梯度（TAG）透镜、自主研制的高数值孔径水镜、三维精确高速控制平移台，开发高速、高分辨率、大视场的多色双光子三轴数字扫描光片显微镜 高速高分辨率大视场双光子显微成像系统（基于920nm超快光纤激光器） 为三维尺度上的细胞生物学、发育生物学以及神经科学等提供高分辨率在体荧光成像手段。 高新技术企业(2022)、科技型中小企业,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_294,SUB_LA_001,low,光子 生命科学、生物医学研究，具体服务于细胞生物学、发育生物学、神经科学等领域。 应用自主研制的920nm特种超快光纤激光器作为光源，并利用可调制梯度（TAG）透镜、自主研制的高数值孔径水镜、三维精确高速控制平移台，开发高速、高分辨率、大视场的多色双光子三轴数字扫描光片显微镜 高速高,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_296,SUB_COMP_007,low,注于光纤激光、光纤传感等特种应用领域的光电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件、TO器件、激光器件和传感器、激光器整机、激光器模块、光模块、光电模块等。致力于“传感应用”、“激,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_296,SUB_OC_001,low,光与光纤传感特种光电器件技术 专注于光纤激光、光纤传感等特种应用领域的光电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件、TO器件、激光器件和传感器、激光器整机、激光器模块、光模块、光,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_296,SUB_OC_002,low,传感特种光电器件技术 专注于光纤激光、光纤传感等特种应用领域的光电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件、TO器件、激光器件和传感器、激光器整机、激光器模块、光模块、光电模块等,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_296,SUB_OC_007,low,天、海底探测、高端装备制造、油气资源勘探、科研、工业激光。 光纤激光与光纤传感特种光电器件技术 专注于光纤激光、光纤传感等特种应用领域的光电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_296,SUB_OC_014,low,电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件、TO器件、激光器件和传感器、激光器整机、激光器模块、光模块、光电模块等。致力于“传感应用”、“激光应用”、“卫星应用”及“十四五国家重,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_296,SUB_OC_018,low,光与光纤传感特种光电器件技术 专注于光纤激光、光纤传感等特种应用领域的光电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件、TO器件、激光器件和传感器、激光器整机、激光器模块、光模块、光,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_302,SUB_LA_030,low,光子 工业制造、电子制造、金属加工、装备制造、新能源 激光器研发与制造、激光精密加工技术、激光光学系统集成、控制系统开发 激光器、激光打标设备、激光切割设备、激光焊接设备、定制化激光加工解决方案 金属切割、精密打标、焊接加工、电子器件加工、产线自动化配套 无,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_302,SUB_LA_031,low,光子 工业制造、电子制造、金属加工、装备制造、新能源 激光器研发与制造、激光精密加工技术、激光光学系统集成、控制系统开发 激光器、激光打标设备、激光切割设备、激光焊接设备、定制化激光加工解决方案 金属切割、精密打标、焊接加工、电子器件加工、产线自动化配套 无,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_302,SUB_LA_032,low,光子 工业制造、电子制造、金属加工、装备制造、新能源 激光器研发与制造、激光精密加工技术、激光光学系统集成、控制系统开发 激光器、激光打标设备、激光切割设备、激光焊接设备、定制化激光加工解决方案 金属切割、精密打标、焊接加工、电子器件加工、产线自动化配套 无,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_302,SUB_LA_065,low,光子 工业制造、电子制造、金属加工、装备制造、新能源 激光器研发与制造、激光精密加工技术、激光光学系统集成、控制系统开发 激光器、激光打标设备、激光切割设备、激光焊接设备、定制化激光加工解决方案 金属切割、精密打标、焊接加工、电子器件加工、产线自动化配套 无,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_302,SUB_LA_077,low,新能源 激光器研发与制造、激光精密加工技术、激光光学系统集成、控制系统开发 激光器、激光打标设备、激光切割设备、激光焊接设备、定制化激光加工解决方案 金属切割、精密打标、焊接加工、电子器件加工、产线自动化配套 无,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_305,SUB_SPACE_031,low,发展部预研基金和军工、军队客户的相关项目多项 动中通卫星天线、战场电磁环境仿真软件、复杂电磁环境监测解决方案；[冠军营补充]西安大衡天成获审3000万元建设新型卫星通信终端试验鉴定与产品化项目：1.新型卫星通信终端研制；2.新型卫星通信终端测试与试用；3.新型卫星通信终端改进与定型 军事通信、战场电磁环境仿真与监测、卫星移动通信终,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_306,SUB_FUSION_006,low,、超二代像增强器、三代像增强器、超快像增强器、微通道板光子探测器（MCP - PMT）、硅光电倍增管（SiPM）、日盲紫外像增强器、光三维成像雷达、光测风雷达 低照度夜间成像、激光测风、激光三维成像、新一代光电探测器件应用（如光谱分析、精密测量）。 高新技术企业（天眼查、猎聘信息），形成核心自主知识产权（猎聘信息）。具体专利,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_306,SUB_FUSION_020,low, PMT）、硅光电倍增管（SiPM）、日盲紫外像增强器、光三维成像雷达、光测风雷达 低照度夜间成像、激光测风、激光三维成像、新一代光电探测器件应用（如光谱分析、精密测量）。 高新技术企业（天眼查、猎聘信息），形成核心自主知识产权（猎聘信息）。具体专利数量及资质证书暂无。,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_306,SUB_FUSION_024,low,、超二代像增强器、三代像增强器、超快像增强器、微通道板光子探测器（MCP - PMT）、硅光电倍增管（SiPM）、日盲紫外像增强器、光三维成像雷达、光测风雷达 低照度夜间成像、激光测风、激光三维成像、新一代光电探测器件应用（如光谱分析、精密测量）。 高新技术企业（天眼查、猎聘信息），形成核心自主知识产权（猎聘信息）。具体专利,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_306,SUB_OC_004,low,LD - MCP），光电探测器件及系统解决方案。光成像模块 二代像增强器、超二代像增强器、三代像增强器、超快像增强器、微通道板光子探测器（MCP - PMT）、硅光电倍增管（SiPM）、日盲紫外像增强器、光三维成像雷达、光测风雷达 低照度夜间成像、激光测风、激光三维成像、新一代光电探测器件应用（如光谱分析、精密测量）。 高,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_308,SUB_SPACE_017,low,航天航空航海 航天、卫星通信、物联网、应急通信、互联网接入等。 卫星平台（10~2000公斤系列）、卫星部组件（核心单机及部组件）、卫星通信地面终端（移动通信终端、宽带通信终端）、卫星整星设计与集成测试能力、卫星在轨交付服务；[冠军,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_308,SUB_SPACE_024,low,宽带通信终端）、卫星整星设计与集成测试能力、卫星在轨交付服务；[冠军营补充]北京微纳星空科技股份有限公司成立于2017年，主要从事高端卫星整星研发制造业务，以及测运控、火箭发射、许可申请等在内的“一站式”星地一体化系统交付服务 卫星平台（10-2000kg系列）、卫星部组件、卫星通信地面终端；[冠军营补充]遥感卫星：包括可拍,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_318,SUB_MV_030,low,制造环节。 面结构光3D扫描、3D轮廓重建、深度学习视觉检测 基于面结构光3D扫描、3D轮廓重建以及深度学习技术的定制家具自动化视觉检测设备，尺寸测量设备、封边缺陷检测设备、板材订单分拣系统等 定制家具生产流程中的检测环节，具体包括板材尺寸测量、封边缺陷检测、板材订单分拣等。 暂无。文档提及创始人刘衍以知识产权作价出资24万元,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_318,SUB_MV_034,low,新一代信息技术 定制家具行业，特别是板式定制家具的生产制造环节。 面结构光3D扫描、3D轮廓重建、深度学习视觉检测 基于面结构光3D扫描、3D轮廓重建以及深度学习技术的定制家具自动化视觉检测设备，尺寸测量设备、封边缺陷检测设备、板材订单分拣系统等 定制家具生产流程中的检,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_318,SUB_MV_043,low,板式定制家具的生产制造环节。 面结构光3D扫描、3D轮廓重建、深度学习视觉检测 基于面结构光3D扫描、3D轮廓重建以及深度学习技术的定制家具自动化视觉检测设备，尺寸测量设备、封边缺陷检测设备、板材订单分拣系统等 定制家具生产流程中的检测环节，具体包括板材尺寸测量、封边缺陷检测、板材订单分拣等。 暂无。文档提及创始人刘衍以知识产权作,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_318,SUB_MV_044,low,制造环节。 面结构光3D扫描、3D轮廓重建、深度学习视觉检测 基于面结构光3D扫描、3D轮廓重建以及深度学习技术的定制家具自动化视觉检测设备，尺寸测量设备、封边缺陷检测设备、板材订单分拣系统等 定制家具生产流程中的检测环节，具体包括板材尺寸测量、封边缺陷检测、板材订单分拣等。 暂无。文档提及创始人刘衍以知识产权作价出资24万元，但,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_318,SUB_MV_047,low,新一代信息技术 定制家具行业，特别是板式定制家具的生产制造环节。 面结构光3D扫描、3D轮廓重建、深度学习视觉检测 基于面结构光3D扫描、3D轮廓重建以及深度学习技术的定制家具自动化视觉检测设备，尺寸测量设备、封边缺陷检测设备、板材订单分,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_318,SUB_MV_051,low,新一代信息技术 定制家具行业，特别是板式定制家具的生产制造环节。 面结构光3D扫描、3D轮廓重建、深度学习视觉检测 基于面结构光3D扫描、3D轮廓重建以及深度学习技术的定制家具自动化视觉检测设备，尺寸测量设备、封边缺陷检测设备、板材订单分拣系统等 定制家具,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_323,SUB_FUSION_020,low,光子 国防装备（军工）、智能制造（工业自动化）、安防监测、精密测量。 多维图像信息获取与并行处理技术、机器视觉技术 以多维图像信息及光电传感信息获取、并行处理技术为基础，致力于攻克或提升智能机器视觉发展。具体产品智能装配机器人,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_323,SUB_LA_045,low,人、快速光电扫描预警系统、AOI系统、iGPS（室内GPS）大尺寸三维测量系统 1. 军工光电装备的精确测量、智能识别与精密控制；2. 工业领域的柔性精密装配、在线检测；3. 自动化立体物流仓储分拣搬运；4. 特定场所（如安防）的入侵目标搜索、跟踪与观测；5. 大尺寸工件的高精度三维测量。 高新技术企业。截至2016年已申请专,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_323,SUB_MV_041,low,术 以多维图像信息及光电传感信息获取、并行处理技术为基础，致力于攻克或提升智能机器视觉发展。具体产品智能装配机器人、移动式智能作业机器人、快速光电扫描预警系统、AOI系统、iGPS（室内GPS）大尺寸三维测量系统 1. 军工光电装备的精确测量、智能识别与精密控制；2. 工业领域的柔性精密装配、在线检测；3. 自动化立体物流仓,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_323,SUB_ROBOT_073,low,、精密测量。 多维图像信息获取与并行处理技术、机器视觉技术 以多维图像信息及光电传感信息获取、并行处理技术为基础，致力于攻克或提升智能机器视觉发展。具体产品智能装配机器人、移动式智能作业机器人、快速光电扫描预警系统、AOI系统、iGPS（室内GPS）大尺寸三维测量系统 1. 军工光电装备的精确测量、智能识别与精密控制；2. 工业,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_324,SUB_SPACE_029,low,Mbps，国内最高水平）；卫星通信网管理控制技术（管理万级网络规模，提升卫星运营能力，网络可靠性可达电信级）；全系列卫星通信产品及卫星通信系统组网能力；“蓝鲸”宽带卫星通信系统系列产品；[冠军营补充]主要产品包括卫星通信网管系统、便携式卫星通信终端，车载、船载、机载、物联网终端等，高轨、低轨均可兼容 卫星通信终端（调制解调器）、卫,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_324,SUB_SPACE_030,low,信网管理系统；[冠军营补充]蓝鲸宽带卫星通信系统，FDMA体制，主要面向应急通信应用；虎鲸宽带卫星通信系统，TDMA体制，主要面向卫星互联网、行业专网应用；白鲸卫星物联网系统，TDMA体制，主要面向卫星物联网应用 应急通信、互联网接入、物联网数据传输。 国家级高新技术企业；国家级专精特新“小巨人”企业；省级专精特新企业；省级创新,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_324,SUB_SPACE_031,low,军工 应急通信、互联网接入、物联网数据传输。 以调制解调为核心的卫星通信终端技术（业务速率最高36Mbps，国内最高水平）；卫星通信网管理控制技术（管理万级网络规模，提升卫星运营能力，网络可靠性可达电信级）；全系列卫星通信产品及卫星通信,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_329,SUB_DISP_001,low,半导体 计算机、通信和其他电子设备制造业，芯片半导体，消费电子 半导体激光器外延片、半导体材料、光电子材料、量子通信技术开发 半导体激光器外延片（VCSEL/边发射激光器） 半导体激光器制造，光电子材料研发，量子通信技术开发 高新技术企业，省,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_329,SUB_LA_004,low,半导体 计算机、通信和其他电子设备制造业，芯片半导体，消费电子 半导体激光器外延片、半导体材料、光电子材料、量子通信技术开发 半导体激光器外延片（VCSEL/边发射激光器） 半导体激光器制造，光电子材料研发，量子通信技术开发 高新技术企,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_329,SUB_OC_001,low,半导体 计算机、通信和其他电子设备制造业，芯片半导体，消费电子 半导体激光器外延片、半导体材料、光电子材料、量子通信技术开发 半导体激光器外延片（VCSEL/边发射激光器） 半导体激光器制造，光电子材料研发，量子通信技术开发 高新技术企业，省级创新型企业，省级上市后备企业，A级纳税人，一般纳税人，小微企业，外商投资,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_332,SUB_MV_040,low,光子 航空航天、军工及军工配套单位。 智能相机与机器视觉技术、IC Wafer晶圆测温技术 智能相机与机器视觉产品，CMV系列、SCMOS系列、OV系列、镁光系列、AFOCUS系列、E2V系列及图形处理、光,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_334,SUB_FUSION_020,low,光子 精密光机电设备相关行业 光学精密测量与成像技术（短波红外/紫外/可见光光学系统） 仿人眼镜头、光学变焦镜头；光模拟辅助验证系统（卫星/半导体检测） 高新技术企业、科技型中小企业、A级纳税人、一般纳,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_339,SUB_LA_002,low,生物医疗 医疗器械，具体为泛血管介入、泌尿外科、眼科等激光医疗领域。 以扫频激光OCT（光学相干断层扫描）为基础的手术导航技术和以超快激光消融为基础的治疗技术。拥有行业内最全的冠脉OCT上市产品管线，多模态技术全球领先 冠脉OCT手术导航系统（扫频激光OCT）、多模态光学诊断设备 心血管疾病（如冠,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_340,SUB_MV_027,medium,光子 智能硬件、医疗成像、元宇宙、3D打印、VR/AR、自动化焊接、工业检测、机器人视觉引导 自研微结构光芯片、高精度3D视觉算法 自研微结构光芯片、高精度3D视觉算法、消费级3D扫描仪、工业3D视觉产品与解决方案（如3D焊接产品） 3D打印、模型、手,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_340,SUB_MV_047,low,光子 智能硬件、医疗成像、元宇宙、3D打印、VR/AR、自动化焊接、工业检测、机器人视觉引导 自研微结构光芯片、高精度3D视觉算法 自研微结构光芯片、高精度3D视觉算法、消费级3D扫描仪、工业3D视觉产品与解决方案（如3D焊接产品） 3D打印、模型、手工艺品等爱好者,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_340,SUB_MV_051,medium,光子 智能硬件、医疗成像、元宇宙、3D打印、VR/AR、自动化焊接、工业检测、机器人视觉引导 自研微结构光芯片、高精度3D视觉算法 自研微结构光芯片、高精度3D视觉算法、消费级3D扫描仪、工业3D视觉产品与解决方案（如3D焊接产品） 3D打印、模型、手工艺品等爱好者群体；专业设计师、工,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_340,SUB_ROBOT_019,medium,光子 智能硬件、医疗成像、元宇宙、3D打印、VR/AR、自动化焊接、工业检测、机器人视觉引导 自研微结构光芯片、高精度3D视觉算法 自研微结构光芯片、高精度3D视觉算法、消费级3D扫描仪、工业3D视觉产品与解决方案（如3D焊接产品） 3D打印、模型,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_340,SUB_ROBOT_020,low,光子 智能硬件、医疗成像、元宇宙、3D打印、VR/AR、自动化焊接、工业检测、机器人视觉引导 自研微结构光芯片、高精度3D视觉算法 自研微结构光芯片、高精度3D视觉算法、消费级3D扫描仪、工业3D视觉产品与解决方案（如3D焊接产品） 3D打印、模型、手,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_341,SUB_LA_002,medium,光子 半导体、新能源（光伏、锂电）、消费电子、显示面板、PCB、生物医疗、航空航天、国防军工、科学研究。 超快激光器技术（皮秒、飞秒激光） 超快激光器（皮秒、飞秒激光器）、高能量激光器。高重频、高功率皮秒激光器，商用级百皮秒微片激光器，绿光皮秒超快激光器（输出功率>70W）,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_348,SUB_LA_066,low,微电子制造行业 单晶片湿法清洗设备、检测设备、腐蚀设备、钝化设备等化学清洗和检测设备；半导体清洗产业相关原料零部件 单晶片湿法清洗设备、半导体化学清洗设备 晶圆表面处理、化学清洗、检测等半导体制造环节 高新技术企业(2022)、科技型中小企业(2023)、民营科技企业、瞪羚企业(2022)；无锡市“530”A类项目企业,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_349,SUB_COMP_006,low,光子 光通信、激光、芯片、先进制造 激光器、PLC、C/DWDM、无热/有热AWG等光学器件，提供光学产品设计的定制、样品、小批量生产和量产服务 激光器、PLC/C/DWDM/AWG等光学器件 通讯使用的选择波长激光器、窄线宽激光器、宽带激光,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_349,SUB_OC_019,low,光子 光通信、激光、芯片、先进制造 激光器、PLC、C/DWDM、无热/有热AWG等光学器件，提供光学产品设计的定制、样品、小批量生产和量产服务 激光器、PLC/C/DWDM/AWG等光学器件 通讯使用的选择波,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_349,SUB_OC_022,low,光子 光通信、激光、芯片、先进制造 激光器、PLC、C/DWDM、无热/有热AWG等光学器件，提供光学产品设计的定制、样品、小批量生产和量产服务 激光器、PLC/C/DWDM/AWG等光学器件 通讯使用的选择波长激光器、窄线宽激光器、宽带激光,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_349,SUB_OC_034,low,光子 光通信、激光、芯片、先进制造 激光器、PLC、C/DWDM、无热/有热AWG等光学器件，提供光学产品设计的定制、样品、小批量生产和量产服务 激光器、PLC/C/DWDM/AWG等光学器件 通讯使用的选择波长激光器、窄线,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_36,SUB_ROBOT_015,medium,人工智能 触觉传感器（具体原理涉及传感器结构、三轴力测量机理）；[冠军营补充]触觉传感器(电子皮肤）：单点多维压力传感器尺寸全球最小、成本低、是智能传感器，内置 MCU 直接输出数,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_361,SUB_DISP_022,low,料、纳米孔量子点（NPQD®）Micro-LED技术、量子点Micro-LED（mLED）显示解决方案 NPQD®纳米孔量子点Micro-LED、量子点mLED显示模组 1）R系列量子点直显大屏解决方案，应用于商显及家庭影院；2）T系列AR用mLED微显示屏，应用于AR头显。 高新技术企业、专精特新企业；拥有纳米孔量子点（NP,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_361,SUB_DISP_039,low,术、量子点Micro-LED（mLED）显示解决方案 NPQD®纳米孔量子点Micro-LED、量子点mLED显示模组 1）R系列量子点直显大屏解决方案，应用于商显及家庭影院；2）T系列AR用mLED微显示屏，应用于AR头显。 高新技术企业、专精特新企业；拥有纳米孔量子点（NPQD®）等核心技术专利；曾获《财富》创新中国奖,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_361,SUB_MV_072,low,料、纳米孔量子点（NPQD®）Micro-LED技术、量子点Micro-LED（mLED）显示解决方案 NPQD®纳米孔量子点Micro-LED、量子点mLED显示模组 1）R系列量子点直显大屏解决方案，应用于商显及家庭影院；2）T系列AR用mLED微显示屏，应用于AR头显。 高新技术企业、专精特新企业；拥有纳米孔量子点（NP,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_363,SUB_ROBOT_057,medium,新一代信息技术 智慧政务领域，主要为政府及相关政务部门、科研机构 无人机AI应用平台技术 中研宏科(上海) - 电力/机房/变电站智能巡检机器人；低空经济标杆企业 以政府财政大数据为切入点，为政务部门提供信息化综合服务，包括技术开发、项目实施、数据采集、培训咨询及运维管理等软件技术服务 拥有自主研发的软,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_364,SUB_MV_005,low,器人、AIoT智能家居、工业检测 VCSEL芯片设计、光学透镜设计、光电集成封装、晶圆级测试及全量测试技术（“半导体+光学”全栈技术） VCSEL芯片、ToF/结构光光源模组、激光雷达光源、光电传感模组,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_364,SUB_MV_048,low,汽车、机器人、AIoT智能家居、工业检测 VCSEL芯片设计、光学透镜设计、光电集成封装、晶圆级测试及全量测试技术（“半导体+光学”全栈技术） VCSEL芯片、ToF/结构光光源模组、激光雷达光源、光电传感模组,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_364,SUB_OC_001,low,光子 消费电子、智能汽车、机器人、AIoT智能家居、工业检测 VCSEL芯片设计、光学透镜设计、光电集成封装、晶圆级测试及全量测试技术（“半导体+光学”全栈技术） VCSEL芯片、ToF/结构光光源模组、激光雷达光源、光电传感模组,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_367,SUB_LA_006,low,与高精密光学元件制造 硅酸钇镥（LYSO）、锗酸铋（BGO）、钆镓铝石榴石（GAGG）和碘化钠（NaI:Tl）等闪烁晶体、高精密光学元件、碳化硅衬底、碳化硅单晶反射镜 国家级高新技术企业,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_373,SUB_COMP_010,low,半导体 工业控制、新能源、电动汽车、轨道交通 数字信号处理器(DSP)芯片自主创新架构 数字信号处理器（DSP）芯片及解决方案，采用自主创新架构 面向工业控制、新能源、电动汽车、轨道交通等领域的高性能数字信号处理 高新技术企业、,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_373,SUB_OC_005,low,半导体 工业控制、新能源、电动汽车、轨道交通 数字信号处理器(DSP)芯片自主创新架构 数字信号处理器（DSP）芯片及解决方案，采用自主创新架构 面向工业控制、新能源、电动汽车、轨道交通等领域的高性能数字信号处理 高新技术企业、,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_379,SUB_OC_004,low,芯片、固态扫描、调频连续波（FMCW）相干探测和晶圆级光学等芯片技术的激光雷达。2. 纯固态大视场近场激光雷达D系列（Diversity Series）。3. 硅光FMCW 4D LiDAR（F系列） 1. 无人驾驶（商用车到乘用车的自动驾驶及ADAS）。2. 物流量方、分拣等。3. 工业自动化具体场景：无人矿卡协同卸料口,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_379,SUB_ROBOT_017,low,半导体 自动驾驶及ADAS、智能座舱、智慧交通、智慧物流、机器人/AGV、工业自动化。 纯固态芯片级激光雷达、硅基光电芯片、FMCW相干探测 纯固态芯片级激光雷达硬件、芯片及AI感知算法。1. 基于硅基光电芯片、固态扫描、调频连续波,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_379,SUB_ROBOT_046,low,半导体 自动驾驶及ADAS、智能座舱、智慧交通、智慧物流、机器人/AGV、工业自动化。 纯固态芯片级激光雷达、硅基光电芯片、FMCW相干探测 纯固态芯片级激光雷达硬件、芯片及AI感知算法。1. 基于硅基光电芯片、固态扫描、调频连续波,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_38,SUB_SPACE_012,low,、光电转塔减振、机载仪表减振、火炮火控缓冲、导弹精度控制、舰艇航行安全、飞行器安全、电磁屏蔽密封。民用：高铁减振、风电减振、民用飞机减振、商用发动机减振、核电站管路减振、铁路减振。 国内外论文、专利20余篇；获得中航工业科学技术奖2次，航发集团科学技术奖2次；个人二等功1次，三等功2次。具体资质证书未明确列出。,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_382,SUB_LA_065,low,光子 新能源汽车、3C电子等重点行业 激光焊接质量监测与控制核心单元器件及系统（AIWS智能激光焊接监控系统） AIWS智能激光焊接监控系统 激光智能制造装备中的激光焊接质量监测与控制,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_387,SUB_SPACE_017,low,航天航空航海 航天航空；微小卫星制造与运营。 微小卫星姿态控制电推进器；自主研发多项卫星推进技术，高难度可变频射频电源技术、空心阴极技术、射频离子推进技术 专注于碘工质射频离子和全碘霍尔电推进系统,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_388,SUB_MV_042,low,（如玻璃盖板、显示面板等外观检测）、消费电子、光学显示、半导体封装。 工业外观精密检测技术；仿人光学成像；AI算法平台；机器视觉 工业外观视觉检测装备 工业产品外观缺陷的自动化精密检测，主要针对外观缺陷微弱、精度要求高的场景，如玻璃盖板、显示面板等的外观检测。 国家高新技术企业，国家级专精特新“小巨人”企业，A级纳税人，一般纳,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_391,SUB_COMP_004,low,体应用于3D成像、增强现实（AR）眼镜、光通信等领域。 纳米压印技术、晶圆级光学WLO制造技术；主要产品有3D摄像头用的衍射光学元件DOE、增强现实眼镜的SRG光波导器件、以及阵列光通信器件等 3D摄像头衍射光学元件(DOE)、AR眼镜SRG光波导器件、阵列光通信器件 3D摄像头、增强现实（AR）眼镜、光通信。,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_391,SUB_DISP_035,low,、晶圆级光学WLO制造技术；主要产品有3D摄像头用的衍射光学元件DOE、增强现实眼镜的SRG光波导器件、以及阵列光通信器件等 3D摄像头衍射光学元件(DOE)、AR眼镜SRG光波导器件、阵列光通信器件 3D摄像头、增强现实（AR）眼镜、光通信。,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_397,SUB_SPACE_010,low,军营补充]固体运载火箭研发制造：专注于小型固体运载火箭的设计、开发与生产，致力于为小卫星发射提供高性能、低成本的运载解决方案；火箭发动机研制：自主研发多种型号的固体火箭发动机，涵盖不同直径和推力等级，广泛应用于运载火箭、导弹等领域；航天高端零部组件生产：具备航空航天高端复合材料、金属材料产品生产加工能力，提供发动机壳体、喷管、热防护,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_397,SUB_SPACE_020,low,航天航空航海 商业航天、军民融合领域 固体运载火箭、火箭发动机、航天高端零部组件的研发与制造；[冠军营补充]宁波天擎航天科技有限公司成立于2018年3月，以火箭、反无人与无人装备、动力系统产品的研发及制造为主要,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_4,SUB_SPACE_022,low,"航天航空航海 商业航天、火箭发射 液氧甲烷重复使用火箭发动机技术，10吨级""凌云""和80吨级""龙云""发动机 液氧甲烷火箭发动机（凌云、龙云系列）、超低温高压泵阀产品","domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_400,SUB_SPACE_031,low,航天航空航海 通信设备、卫星通信 卫星通信技术 卫星通信终端及解决方案 国内卫星通信服务 增值电信业务经营许可证（A2.B1-20200406，国内甚小口径终端地球站通信业务，覆盖全国）、高新技术企业、中关村高新技术企业,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_404,SUB_LA_053,low,光子 专用设备制造业，具体应用于需要进行零部件修复、再制造及金属材料表面处理的工业领域 高功率智能化半导体激光表面处理设备、激光熔覆合金粉末、激光特种加工及再制造（零部件修复）技术 高功率半导体激光表面处理设备、激光熔覆合金粉末 激光特种加工、零部件再制造与修复、金属材料表面处理 拥有相关知,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_404,SUB_LA_066,low,光子 专用设备制造业，具体应用于需要进行零部件修复、再制造及金属材料表面处理的工业领域 高功率智能化半导体激光表面处理设备、激光熔覆合金粉末、激光特种加工及再制造（零部件修复）技术 高功率半导体激光表面处理设备、激光熔覆合金粉末 激光特,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_404,SUB_LA_067,low,光子 专用设备制造业，具体应用于需要进行零部件修复、再制造及金属材料表面处理的工业领域 高功率智能化半导体激光表面处理设备、激光熔覆合金粉末、激光特种加工及再制造（零部件修复）技术 高功率半导体激光表面处理设备、激光熔覆合金粉末 激光特种加工、零部件再制造与修复、金属材料表面处理 拥有相关知,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_408,SUB_DISP_028,low,B三色纯激光显示技术、TLMS激光技术 以中科院理化所应用激光中心团队为基础，研发超高清RGB三色纯激光家庭影院、高性能RGB三色真激光光源系统、激光数字影院和特种显示器等新一代激光显示系列产品。关键技术小型化高性能三基色LD激光模组、高效率控制驱动、高精度分时调制、颜色管理、高效能热管理、匀场照明与散斑消除等 家庭影院、工程,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_408,SUB_DISP_040,low,B三色纯激光显示技术、TLMS激光技术 以中科院理化所应用激光中心团队为基础，研发超高清RGB三色纯激光家庭影院、高性能RGB三色真激光光源系统、激光数字影院和特种显示器等新一代激光显示系列产品。关键技术小型化高性能三基色LD激光模组、高效率控制驱动、高精度分时调制、颜色管理、高效能热管理、匀场照明与散斑消除等 家庭影院、工程,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_411,SUB_MV_030,low,高精度机器视觉、微纳精密机构与光学技术；研发复杂机器视觉产品系统及工业机器人AI产品，为工业机器提供“视觉洞察力”和“任务执行力”。主要产品包括：聚芯系列半导体缺陷检测量测设备、半导体制程质量分析与良率管理系统、半导体光伏行业AI解决方案、机器人视觉AI控制与重型机器智能系统等，聚焦于工业AI与精密检测仪器设备领域 工业机器人,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_411,SUB_MV_034,low,为工业机器提供“视觉洞察力”和“任务执行力”。主要产品包括：聚芯系列半导体缺陷检测量测设备、半导体制程质量分析与良率管理系统、半导体光伏行业AI解决方案、机器人视觉AI控制与重型机器智能系统等，聚焦于工业AI与精密检测仪器设备领域 工业机器人AI视觉产品、复杂机器视觉检测系统 聚时科技（上海）有限公司为集成电路、半导体、光伏等,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_411,SUB_MV_036,low,量分析与良率管理系统、半导体光伏行业AI解决方案、机器人视觉AI控制与重型机器智能系统等，聚焦于工业AI与精密检测仪器设备领域 工业机器人AI视觉产品、复杂机器视觉检测系统 聚时科技（上海）有限公司为集成电路、半导体、光伏等高端制造领域提供系列化的智能机器硬件设备产品与AI解决方案，具体应用场景包括：芯片复杂检测、半导体晶圆缺陷检,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_411,SUB_MV_066,low,觉检测系统 聚时科技（上海）有限公司为集成电路、半导体、光伏等高端制造领域提供系列化的智能机器硬件设备产品与AI解决方案，具体应用场景包括：芯片复杂检测、半导体晶圆缺陷检测与量测、半导体制程质量分析与良率管理、光伏行业AI检测、机器人视觉控制、重型机器智能系统，以及拆装集装箱等工业场景。 国家级专精特新小巨人企业；高新技术企业(2,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_411,SUB_ROBOT_019,low,产品，为工业机器提供“视觉洞察力”和“任务执行力”。主要产品包括：聚芯系列半导体缺陷检测量测设备、半导体制程质量分析与良率管理系统、半导体光伏行业AI解决方案、机器人视觉AI控制与重型机器智能系统等，聚焦于工业AI与精密检测仪器设备领域 工业机器人AI视觉产品、复杂机器视觉检测系统 聚时科技（上海）有限公司为集成电路、半导体、光,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_414,SUB_FUSION_017,low,业 电动汽车及智能汽车的分布式驱动控制系统、车辆综合试验平台以及汽车零部件 分布式驱动控制系统 电动汽车及智能汽车分布式驱动控制系统的设计与开发、分布式驱动车辆实验平台的定制开发、面向军用等特种行业的分布式驱动高速移动平台的研发和生产 南京市321企业；已授权6项软件著作权，5项发明专利正在申请中,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_420,SUB_DISP_017,medium,半导体 半导体封装、LED封装、集成电路封装、Mini/MicroLED显示制造。 焊线机/固晶机等半导体封装装备、Mini/MicroLED巨量转移技术 焊线机、固晶机、晶圆级/板级倒装机、扇出封装固晶装备、Mini/MicroLED巨量转移装备、SCARA晶圆机器人。高密度焊线机（ARROW IC）、晶圆,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_420,SUB_ROBOT_038,low,/固晶机等半导体封装装备、Mini/MicroLED巨量转移技术 焊线机、固晶机、晶圆级/板级倒装机、扇出封装固晶装备、Mini/MicroLED巨量转移装备、SCARA晶圆机器人。高密度焊线机（ARROW IC）、晶圆级倒装装备（AFC300WL）、板级贴片设备（AD600PLP）、高精度倒装/固晶机（AFC100P）、Mic,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_420,SUB_ROBOT_081,low,半导体封装装备、Mini/MicroLED巨量转移技术 焊线机、固晶机、晶圆级/板级倒装机、扇出封装固晶装备、Mini/MicroLED巨量转移装备、SCARA晶圆机器人。高密度焊线机（ARROW IC）、晶圆级倒装装备（AFC300WL）、板级贴片设备（AD600PLP）、高精度倒装/固晶机（AFC100P）、MicroLED,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_425,SUB_OC_004,low,半导体 硅光子技术（未查到具体核心技术） 北京摩尔芯光科技（待查，无公开信息）,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_426,SUB_SPACE_020,low,航天航空航海 宇航领域 系列化中大型火箭研制技术、亚轨道科学试验技术 力箭系列运载火箭、力鸿系列亚轨道飞行器、力擎系列发动机 满足中科院自主进入空间的能力，打通前沿基础研究与科学应用的全创新链 国家级高新技术企业,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_429,SUB_COMP_003,low,权且全球唯一可量产的硅基改性材料平台，具有超低损耗、超低偏振敏感性、超高温度稳定性、超高耦合效率、超高均匀一致性和超低制备成本的优势。基于该平台发展出多材料三维异质集成混合材料体系。产品涵盖“光传感、光传输、光计算”三大领域，MUX/DEMUX芯片、BiDi光模块、XG(S) Combo PON光模块、直调式Combo PON,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_429,SUB_OC_043,low,光子 光通信（接入网、城域网、数据中心）、光传感、光计算。 硅基改性材料平台（全球唯一可量产）、超低损耗光纤材料技术 拥有自主知识产权且全球唯一可量产的硅基改性材料平台，具有超低损耗、超低,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_429,SUB_OC_045,medium,光子 光通信（接入网、城域网、数据中心）、光传感、光计算。 硅基改性材料平台（全球唯一可量产）、超低损耗光纤材料技术 拥有自主知识产权且全球唯一可量产的硅基改性材料平台，具有超低损,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_432,SUB_ROBOT_016,low,程技术研发中心，旨在建成产品系列最完整的高端惯性器件技术平台 电子仪器、集成电路测试设备、光学仪器；[冠军营补充]产品系列：形成惯性器件组件系列、惯性测量单元（IMU）系列、惯性器件产线生产与测试设备系列等三大类产品，覆盖激光陀螺仪、半球谐振陀螺仪、加速度计等技术领域；技术创新：突破性完成国内首款激光陀螺驱动系列功能芯片研发,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_433,SUB_FUSION_013,low,航天航空航海 遥感卫星数据及应用服务、通信卫星平台 商业遥感卫星研制与星座运营技术 吉林一号卫星星座、遥感数据服务 提供高时间分辨率、高空间分辨率、高光谱分辨率、快速广域覆盖的卫星遥感数据以及以卫星遥感数据为基础的空间信息综合应用服务 科创属性已在前次申报过程中获得交易所、国家部委（发改委）的一致认可,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_433,SUB_SPACE_017,low,航天航空航海 遥感卫星数据及应用服务、通信卫星平台 商业遥感卫星研制与星座运营技术 吉林一号卫星星座、遥感数据服务 提供高时间分辨率、高空间分辨率、高光谱分辨率、快速广域覆盖的卫星遥感数据以及以卫星遥感数据为基,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_433,SUB_SPACE_026,low,航天航空航海 遥感卫星数据及应用服务、通信卫星平台 商业遥感卫星研制与星座运营技术 吉林一号卫星星座、遥感数据服务 提供高时间分辨率、高空间分辨率、高光谱分辨率、快速广域覆盖的卫星遥感数据以及以卫星遥感数据为基础的空间信息综合应用服务 科,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_434,SUB_SPACE_006,low,钢铁产量、大豆产量监测）等传统行业。 以海量遥感卫星数据分析为核心技术，具备遥感影像0-7级的处理能力，擅长根据场景落地不同的遥感数据产品。行业内首家推出光学+SAR融合遥感数据产品的公司。自主研发并成功发射SAR、光学、红外卫星，具备同轨多手段遥感卫星星座 遥感数据产品（光学+SAR融合遥感） 1. 对重点地区的建筑工程、,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_435,SUB_OC_001,medium,合物半导体晶圆代工业务，光子陀螺 HBT异质结双极型晶体管，HEMT 高电子迁移率晶体管，高亮度LED、蓝绿光半导体激光管、垂直腔面发射(VCSEL)光子芯片、DFB光子芯片、EML光子芯片以及高亮度半导体激光芯片 5G及未来无线通信，射频集成电路,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_435,SUB_OC_018,medium,工业务，光子陀螺 HBT异质结双极型晶体管，HEMT 高电子迁移率晶体管，高亮度LED、蓝绿光半导体激光管、垂直腔面发射(VCSEL)光子芯片、DFB光子芯片、EML光子芯片以及高亮度半导体激光芯片 5G及未来无线通信，射频集成电路,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_442,SUB_SPACE_027,low,新一代信息技术 能源行业（国家电网、石油管网、南方电网等），交通运输行业，水利水电，军工集团（项目对接） 遥感数据处理及加工、遥感监测分析业务应用、遥感数据平台服务；遥感影像智能识别算法、环境变化监测算法、地质灾害预警模型、三维建模及平台可视化 遥感数据分析及加工、能源安全环保综合解决方案、遥感业务平台、智能硬件装置（,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_444,SUB_OC_001,low,光子 光电领域、光子、高端半导体激光芯片、光传输 大功率连续波（CW）激光器芯片 大功率连续波（CW）激光器芯片,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_446,SUB_LA_032,low,光子 工业制造、精密加工、电子制造、新能源、装备制造 激光器设计与制造、激光精密加工、激光光学系统集成、激光控制与应用技术 工业激光器、激光加工设备、激光打标/切割/焊接相关系统、定制化激光应用解决方案 金属切割、激光焊接、打标雕刻、精密微加工、工业生产线集成应用,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_446,SUB_LA_040,low,密加工、激光光学系统集成、激光控制与应用技术 工业激光器、激光加工设备、激光打标/切割/焊接相关系统、定制化激光应用解决方案 金属切割、激光焊接、打标雕刻、精密微加工、工业生产线集成应用,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_446,SUB_LA_065,low,激光器设计与制造、激光精密加工、激光光学系统集成、激光控制与应用技术 工业激光器、激光加工设备、激光打标/切割/焊接相关系统、定制化激光应用解决方案 金属切割、激光焊接、打标雕刻、精密微加工、工业生产线集成应用,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_45,SUB_ROBOT_051,low,新材料 形状记忆合金SMA微丝驱动材料技术；[冠军营补充]未来2-3年布局：具身/人形、灵巧手+面部仿真模拟（原理方案已完成，对比传统方案优势明显，Q2能看到样机）十五五规划布局新材料有体现，对项目是个利好 SMA驱动丝材、弹簧、微型马达、阀件、执行器；,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_459,SUB_MV_035,low,事智能科技、集成电路科技、计算机科技领域内的技术开发、技术咨询、技术服务、技术转让，集成电路芯片设计服务，计算机软件开发，数据处理服务，新兴软件及服务。拥有多项图像处理、双目立体匹配、人脸识别、智能锁等相关专利。 AI视觉芯片、3D人脸识别模组 图像处理、人脸识别、智能锁、视频流处理、相机成像补光等。 高新技术企业（证书编号：,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_463,SUB_OC_004,low,半导体 科学研究和技术服务业 硅光晶圆测试技术与设备 与杰普特战略合作，共拓全球硅光晶圆测试,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_465,SUB_MV_018,low,新一代信息技术 军工、工业探测 制冷型锑化铟探测器、红外相机技术 制冷型锑化铟探测器、锑化铟和二类超晶格机芯以及制冷型红外相机,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_466,SUB_SPACE_025,low,空航天光通信 空间激光通信技术，高带宽、高可靠、高安全、轻小型化的激光通信终端，星载激光通信终端产品 星载激光通信终端（空间激光通信终端） 低轨卫星、星间通信、星地通信、临近空间通信 暂无（网络信息未提及具体资质、认证或知识产权情况）,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_469,SUB_FUSION_007,low,新一代信息技术 科研机构、企业研发部门、工业生产、国防军工、教育科普 量子传感器及其核心器件、中性原子量子计算、冷原子绝对重力仪等量子技术产品 量子传感器、冷原子绝对重力仪 量子精密测量、量子计算硬件研发、重力测量 高新技术企业,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_469,SUB_FUSION_020,low,研机构、企业研发部门、工业生产、国防军工、教育科普 量子传感器及其核心器件、中性原子量子计算、冷原子绝对重力仪等量子技术产品 量子传感器、冷原子绝对重力仪 量子精密测量、量子计算硬件研发、重力测量 高新技术企业,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_470,SUB_DISP_002,low,先进制造 显示面板（AMOLED）、显示终端、VR/AR显示。 AMOLED显示行业有机发光材料蒸镀专用精密金属掩模版FMM（Fine Metal Mask）的生产和研发，AMOLED用Divide Open Mask、Divide Fine Metal ,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_470,SUB_DISP_006,medium,MM（Fine Metal Mask）的生产和研发，AMOLED用Divide Open Mask、Divide Fine Metal Mask、硅基OLED用Micro OLED Open Mask、显示终端用金属支撑片等高端超精细加工类产品 精密金属掩模版FMM（OLED蒸镀用） OLED显示面板制造过程中的有机发光材料蒸镀环节。 2,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_473,SUB_DISP_003,low,新一代信息技术 光电子、微电子、新型显示、传感器、材料科学 半导体量子点发光材料；新型量子点显示工艺；半导体薄膜工艺设备 量子点扩散板、无阻隔膜PET量子点膜、量子点墨水、量子点光刻胶、量子点Micro-LED显示解决方案 量子点显示、半导体薄膜工艺 国家,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_48,SUB_ROBOT_036,low,人工智能 具身智能控制架构，分层架构（大脑、小脑）和端到端架构 具体技术核心空间感知——低成本三维语义地图建模，模型结构——大模型辅助的Search策略，模型结构——具身任务指令,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_51,SUB_ROBOT_036,low,人工智能 人工智能技术（未查到具体核心技术） 北京基点起源 - 具身智能机器人（2025年新成立，创新工场领投天使轮）,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_63,SUB_COMP_003,low,"器（FAU）；晶圆级异构集成技术（激光器晶圆、硅光晶圆、电控制晶圆的晶圆级键合）；兼容8/12英寸CMOS工艺的光接口解决方案；SWIR短波红外相机技术（InP异质集成及衬底回收） 光通信接口模块(Optical I/O) 芯片内、芯片间、模组间的光互连；可直接与xPU集成或通过中介层集成；兼容PCIe, UCIe, NVLi","domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_63,SUB_COMP_016,low,光子 人工智能/高性能计算（GPU光互连）、数据中心、光通信、激光雷达、短波红外成像（消费类、安防类、自动驾驶）。 高度集成的光通信接口模块（Optical I/O module），包含高速激光器（Tx）、光子集成电路（PIC）、电子控制单元（EIC）和光互连接器（FAU）；晶圆级异构集成技术（激光器晶圆、硅光晶圆、电控制,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_63,SUB_MV_018,low,"（EIC）和光互连接器（FAU）；晶圆级异构集成技术（激光器晶圆、硅光晶圆、电控制晶圆的晶圆级键合）；兼容8/12英寸CMOS工艺的光接口解决方案；SWIR短波红外相机技术（InP异质集成及衬底回收） 光通信接口模块(Optical I/O) 芯片内、芯片间、模组间的光互连；可直接与xPU集成或通过中介层集成；兼容PCIe, ","domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_63,SUB_OC_004,medium,ical I/O module），包含高速激光器（Tx）、光子集成电路（PIC）、电子控制单元（EIC）和光互连接器（FAU）；晶圆级异构集成技术（激光器晶圆、硅光晶圆、电控制晶圆的晶圆级键合）；兼容8/12英寸CMOS工艺的光接口解决方案；SWIR短波红外相机技术（InP异质集成及衬底回收） 光通信接口模块(Optica,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_63,SUB_OC_032,low,光子 人工智能/高性能计算（GPU光互连）、数据中心、光通信、激光雷达、短波红外成像（消费类、安防类、自动驾驶）。 高度集成的光通信接口模块（Optical I/O module），包含高速激光器（Tx）、光子集成电路（PIC）、电子控制单元（EIC）和光互连接器（FAU）；晶圆级异构集成技术（激光器晶圆、硅光晶圆、电控制,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_64,SUB_COMP_026,low,I仿真系统、ORCA高保真引擎 为智能制造、数字工厂、仓储物流、家庭服务等领域打造物理级精准数字仿真平台；在具身智能、自动驾驶、低空经济等核心场景中构建专业物理AI训练道场，用于高精度数字环境搭建、深度物理仿真、设计与运行参数优化 自主研发国内首个物理AI仿真系统ORCA，拥有相关知识产权（根据网络信息，有3项专利、6项行政许,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_64,SUB_ROBOT_036,low,人工智能 智能制造、数字工厂、仓储物流、家庭服务、具身智能、自动驾驶、低空经济 物理AI仿真系统ORCA（国内首个）、物理AI仿真系统一体机、ORCA高保真引擎、软件协同技术 ORCA物理AI仿真系统、ORCA高保真引,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_64,SUB_ROBOT_095,low,人工智能 智能制造、数字工厂、仓储物流、家庭服务、具身智能、自动驾驶、低空经济 物理AI仿真系统ORCA（国内首个）、物理AI仿真系统一体机、ORCA高保真引擎、软件协同技术 ORCA物理AI仿真系统、ORC,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_71,SUB_MV_034,low, 集成电路芯片设计；计算机软件开发；图像处理、双目立体匹配、人脸识别、智能锁专利 NexRL大模型强化学习训练框架、NexAU智能体开发框架、NexWeave大模型训练服务平台、MM-Doc-R1多智能体长文档分析系统（AI软件/平台，未商业化命名）,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_71,SUB_MV_035,low,人工智能 集成电路芯片设计；计算机软件开发；图像处理、双目立体匹配、人脸识别、智能锁专利 NexRL大模型强化学习训练框架、NexAU智能体开发框架、NexWeave大模型训练服务平台、MM-Doc-R1多智能体,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_74,SUB_ROBOT_051,low,人工智能 全球科研市场；未来拓展至垂直场景客户。 高自由度触觉灵巧手技术、触觉感知系统 以灵巧手为切入点，构建灵巧操作核心能力。核心技术高自由度触觉灵巧手（TRX-Hand5）、触觉感知系统、灵巧操作模型算法 提供触觉灵巧手硬件,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_83,SUB_MV_034,low, RRAM（阻变存储器）存储芯片，具备高速、高密度、低功耗、存算一体的性能优势。产品聚焦面向AI大模型场景的混合异构存算系统、嵌入式IP和独立式存储芯片 AI大模型训练与推理（解决内存墙瓶颈）、自动驾驶和车联网的实时决策（车规级存算芯片）、高性能SoC芯片中的嵌入式非易失存储。 拥有来源于中科院刘明团队的200+项RRAM相关,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_84,SUB_ROBOT_013,medium,磁编码器 传感器/机器人核心零部件 磁编码器技术、中空编码器、绝对值编码器、多圈编码器、超薄编码器 磁环编码器、中空编码器、环形编码器、绝对值编码器、伺服编码器、多圈编,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_85,SUB_SPACE_012,low,航天航空航海 航空航天管路系统 航空高低压管路系统研发设计技术 航空高低压管路、隔热降噪产品、航空标准件,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_95,SUB_LA_040,low,光子 半导体、集成电路、光子技术融合产业 相变直写光刻设备（100nm/50nm超分辨纳米光刻）；光互连与半导体微纳加工 集成电路芯片（推测） 半导体产业链技术支持与服务，光子芯片相关产业,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
-ENT_PG_95,SUB_LA_086,medium,光子 半导体、集成电路、光子技术融合产业 相变直写光刻设备（100nm/50nm超分辨纳米光刻）；光互连与半导体微纳加工 集成电路芯片（推测） 半导体产业链技术支持与服务，光子芯片相关产业,"domain,industry,core_tech,products,scenario,cert_ip,homepage_html",postgresql,true
+ENT_PG_100,SUB_LA_040,low,高功率激光工业清洗、激光生物医疗、精细微加工和科研,"scenario,industry",postgresql,true
+ENT_PG_101,SUB_LA_057,low,光刻机光学系统（曝光系统、照明系统）、卫星激光通讯（高精度离轴非球面）、高精度检测系统、成像系统、激光照明系统、显微物镜系统。,scenario,postgresql,true
+ENT_PG_109,SUB_FUSION_020,low,光通信（相干光通信）、激光雷达、生物医疗（光学相干层析成像、无创连续血糖监测）、科研领域（量子计算、量子精密测量）、长距离传感、精密仪器,industry,postgresql,true
+ENT_PG_114,SUB_LA_001,medium,高性能光纤激光器技术,"core_tech,products",postgresql,true
+ENT_PG_116,SUB_COMP_025,low,大模型推理。具体包括：1. 垂直行业的小模型推理（如使用7B~13B参数模型的应用）；2. 通用大模型的推理服务。,"scenario,industry",postgresql,true
+ENT_PG_121,SUB_DISP_015,medium,高端PET光学膜（如偏光片支撑膜、低取向角离型膜）的研发、生产及产业化,products,postgresql,true
+ENT_PG_123,SUB_LA_067,medium,重大装备高性能金属增材制造（3D打印）、重大装备关键机械运动零部件表面工程、重大装备高性能金属结构新材料,"core_tech,products",postgresql,true
+ENT_PG_123,SUB_SPACE_020,low,大飞机、舰载机、战斗机、重型运载火箭等重大装备,industry,postgresql,true
+ENT_PG_124,SUB_SPACE_020,medium,强度试验技术：静力与疲劳、动力学、静力-热、振动-热复合试验等；环境可靠性试验技术；加速贮存试验及寿命评估技术等；[冠军营补充]中国运载火箭技术研究院背景，创始人是国内多个航天型号的试验技术负责人,core_tech,postgresql,true
+ENT_PG_130,SUB_LA_003,medium,紫外及深紫外固体激光器、半导体激光器、准分子激光器的研发、生产、销售,"core_tech,products",postgresql,true
+ENT_PG_130,SUB_LA_004,medium,紫外及深紫外固体激光器、半导体激光器、准分子激光器的研发、生产、销售,"core_tech,products",postgresql,true
+ENT_PG_130,SUB_LA_005,medium,紫外及深紫外固体激光器、半导体激光器、准分子激光器的研发、生产、销售,"core_tech,products",postgresql,true
+ENT_PG_141,SUB_FUSION_001,medium,时间门控成像；单光子探测；皮秒级时间分辨；激光穿透成像,"core_tech,products",postgresql,true
+ENT_PG_141,SUB_FUSION_005,medium,时间门控成像；单光子探测；皮秒级时间分辨；激光穿透成像,core_tech,postgresql,true
+ENT_PG_141,SUB_FUSION_025,low,聚变、发动机燃烧诊断、光电材料性能分析、等离子体诊断）；行业领域（消防救援、刑侦取证、车载辅助安全驾驶、焊接在线监测、交通监控、地铁障碍物检测、机动车车窗抓拍、透雾成像）。,industry,postgresql,true
+ENT_PG_142,SUB_LA_067,low,切割、手持焊、电池焊接、清洗和熔覆、金属3D打印、除障、通信、医疗、增材制造、电动车材料、航空航天、太阳能、汽车、重工业、运输。,industry,postgresql,true
+ENT_PG_142,SUB_OC_006,medium,具备核心光纤与器件的集成能力。产品掺镱光纤、无源光纤/传能光纤、保偏光纤/紫外光纤、预制棒、器件（TGG、光栅、QBH/QD光缆、集束跳线、镀膜光纤跳线）、泵浦源（915nm泵浦、976nm泵浦、>1000W泵浦模块）、激光器（300W-30kW连续,products,postgresql,true
+ENT_PG_142,SUB_OC_007,medium,具备核心光纤与器件的集成能力。产品掺镱光纤、无源光纤/传能光纤、保偏光纤/紫外光纤、预制棒、器件（TGG、光栅、QBH/QD光缆、集束跳线、镀膜光纤跳线）、泵浦源（915nm泵浦、976nm泵浦、>1000W泵浦模块）、激光器（30,products,postgresql,true
+ENT_PG_142,SUB_OC_024,medium,具备核心光纤与器件的集成能力。产品掺镱光纤、无源光纤/传能光纤、保偏光纤/紫外光纤、预制棒、器件（TGG、光栅、QBH/QD光缆、集束跳线、镀膜光纤跳线）、泵浦源（915nm泵浦、976nm泵浦、>1000W泵浦模块）、激光器（300W-30kW连续激光器、光束可调激光器）,products,postgresql,true
+ENT_PG_149,SUB_LA_089,low,医疗器械行业，具体为骨科植入物（如人工关节、脊柱融合器、骨缺损填充体等）,industry,postgresql,true
+ENT_PG_15,SUB_LA_020,medium,智能化桌面数字加工与消费级CNC技术,core_tech,postgresql,true
+ENT_PG_15,SUB_LA_030,medium,桌面型3D雕刻机、3D打印机、激光切割机,products,postgresql,true
+ENT_PG_157,SUB_ROBOT_049,medium,双足人形机器人、高精度桌面级机械臂、磁悬浮系统技术,"core_tech,products",postgresql,true
+ENT_PG_157,SUB_ROBOT_089,medium,统、自平衡自动驾驶自行车、大负载智能无人机、视觉两轮机器人、独轮移动机器人、桌面智能陪伴机器人、双臂核酸采样机器人、餐饮机器人、移乘助行机器人、调酒机器人、全身康复机器人、下肢助行机器人、北京冬奥机器人餐厅,products,postgresql,true
+ENT_PG_16,SUB_MV_034,low,AI大模型训练与推理加速、矩阵运算加速、低功耗高带宽计算、数据中心内部光互连与算力优化,scenario,postgresql,true
+ENT_PG_16,SUB_OC_004,medium,基于微环调制器的硅光芯片与 CMOS 电芯片协同开发,core_tech,postgresql,true
+ENT_PG_170,SUB_MV_083,medium,目标处理算法技术（国内领先）、多源异构数据融合技术（国际领先）；[冠军营补充]公司专注低空经济和卫星通讯两大赛道，在低空领域，产品包括雷达、光电雷达等，用于机场异物检测、驱鸟、无人机反控等,products,postgresql,true
+ENT_PG_172,SUB_LA_066,low,晶圆制造及封装厂中的清洗、刻蚀、抛光（CMP）工艺环节；碳化硅衬底制造中的研磨与清洗；集成电路制造中特定材料的表面处理。,scenario,postgresql,true
+ENT_PG_173,SUB_LA_004,medium,量子级联激光器（QCL），高功率FP腔量子级联激光器、低功耗高单模稳定的DFB量子级联激光器。专注于中远红外半导体激光器产品,products,postgresql,true
+ENT_PG_173,SUB_OC_001,medium,量子级联激光器（QCL），高功率FP腔量子级联激光器、低功耗高单模稳定的DFB量子级联激光器。专注于中远红外半导体激光器产品,products,postgresql,true
+ENT_PG_173,SUB_OC_018,medium,量子级联激光器（QCL），高功率FP腔量子级联激光器、低功耗高单模稳定的DFB量子级联激光器。专注于中远红外半导体激光器产品,products,postgresql,true
+ENT_PG_175,SUB_COMP_025,medium,产品支持云边端多场景的AI芯粒、多芯粒大模型推理加速卡、算力模组、芯片与晶圆,products,postgresql,true
+ENT_PG_176,SUB_COMP_014,medium,片上光电集成芯片技术（片上计量级光谱仪、光谱分析探测芯片、通信光交换芯片，硬件芯片化设计）,core_tech,postgresql,true
+ENT_PG_178,SUB_MV_030,low,1. 金属焊缝与铸件智能无损检测；2. 新能源汽车动力电池内部缺陷智能检测；3. 外观尺寸与表面缺陷智能检测；4. 高端制造客户数智化转型升级；5. 无损检测实验室智能化建设。,scenario,postgresql,true
+ENT_PG_178,SUB_MV_057,medium,工作台（DIH-SG）；智能检测装备Xpearl系列；智能数字射线无损检测环境规划建设；多模态AI检测平台DMAP；融合跨平台多模态采集、高精度运动控制与自适应模型优化技术,core_tech,postgresql,true
+ENT_PG_179,SUB_SPACE_003,medium,发、组装及生产，同时也提供从概念设计到最终交付的卫星全流程解决方案；核心优势： 技术壁垒：首创一箭 18 星堆叠分离技术，柔性太阳翼在轨规模化应用，专利覆盖卫星热控、推进等核心领域；智能制造：长三角首个卫星智能灯塔工厂，脉动生产线 1.5 天 / 颗，年产 300 + 颗，成本为传统方案 60%,core_tech,postgresql,true
+ENT_PG_182,SUB_FUSION_016,medium,以及运动控制平台、隔振平台、高低温平台、特种光源、电输运模块等核心模组,core_tech,postgresql,true
+ENT_PG_182,SUB_LA_019,medium,以及运动控制平台、隔振平台、高低温平台、特种光源、电输运模块等核心模组,core_tech,postgresql,true
+ENT_PG_182,SUB_LA_040,low,光学微纳加工、光学微纳检测、功能性检测。具体应用于科研实验、半导体制造、医疗设备等领域的光学精密加工与测量。,scenario,postgresql,true
+ENT_PG_182,SUB_LA_086,low,光学微纳加工、光学微纳检测、功能性检测。具体应用于科研实验、半导体制造、医疗设备等领域的光学精密加工与测量。,scenario,postgresql,true
+ENT_PG_189,SUB_DISP_017,low,1. 半导体生产线（晶圆制造、封测）的物料自动化搬运与存储。2. Micro LED巨量转移配套的高精度芯片搬运。3. 车载屏模组生产线的耐高低温物流接驳。4. 面板产线（如高世代线）的供应链效率优化。,scenario,postgresql,true
+ENT_PG_189,SUB_DISP_037,low,1. 半导体生产线（晶圆制造、封测）的物料自动化搬运与存储。2. Micro LED巨量转移配套的高精度芯片搬运。3. 车载屏模组生产线的耐高低温物流接驳。4. 面板产线（如高世代线）的供应链效率优化。,scenario,postgresql,true
+ENT_PG_189,SUB_MV_059,low,测）的物料自动化搬运与存储。2. Micro LED巨量转移配套的高精度芯片搬运。3. 车载屏模组生产线的耐高低温物流接驳。4. 面板产线（如高世代线）的供应链效率优化。,scenario,postgresql,true
+ENT_PG_193,SUB_FUSION_013,medium,及计算重建型光谱CIS（“调制+解调”），用材料+芯片工艺+算法替代传统分光器件，在CMOS芯片上同时实现成像和光谱功能。产品矩阵芯片、模组、光谱相机（多光谱/高光谱）。光谱范围：现有技术300-1000nm，新技术2800-1700nm,products,postgresql,true
+ENT_PG_193,SUB_MV_015,medium,成像光谱芯片（下一代CMOS图像传感器），采用自研的“调制/解调”技术体系及计算重建型光谱CIS（“调制+解调”），用材料+芯片工艺+算法替代传统分光器件，在CMOS芯片上同时实现成像和光谱功能。产,products,postgresql,true
+ENT_PG_193,SUB_MV_063,low,消费电子（智能手机）、AIOT（智能家居、智能门锁、智能投影仪、扫地机、擦窗机、冰箱等）、安防监控、医疗设备、农业（无人机）、工业（PCB检测）、汽车电子。,industry,postgresql,true
+ENT_PG_2,SUB_COMP_015,medium,光子AI加速芯片、光互联模块,products,postgresql,true
+ENT_PG_2,SUB_COMP_024,medium,光子芯片与光电混合计算技术,core_tech,postgresql,true
+ENT_PG_200,SUB_SPACE_012,medium,液驱式压缩机系统；加氢站核心设备（压缩机、阀门管路、整站系统、站控软件）；高压储氢容器,products,postgresql,true
+ENT_PG_201,SUB_ROBOT_013,medium,便携式三坐标（关节臂）测量技术、光学测量技术、编码器技术。核心产品为便携式三坐标（关节臂），其结构与工业用6轴机器人相似，通过6个编码器记录探头姿态，结合臂长与角度变化智能换算坐标值，用于测量几何尺寸、形位公差、,core_tech,postgresql,true
+ENT_PG_210,SUB_ROBOT_005,medium,1. 轻质小型化机电作动器设计技术；2. 高比功率伺服电机设计技术；3. 高比功率伺服控制驱动集成技术；4. 新型智能机构技术；5. 高动态伺服回路控制及结构一体化设计及试验技术。核心产品：中小功率机电伺服（20w-1,"core_tech,products",postgresql,true
+ENT_PG_225,SUB_COMP_004,medium,纳米光学相关器件技术、衍射光波导、增强平视显示(AR-HUD),"core_tech,products",postgresql,true
+ENT_PG_225,SUB_DISP_022,low,智能眼镜显示模组、汽车新型交互显示系统解决方案、AR-HUD、光场裸眼3D、自发光透明纳米膜、车窗显示、展览展示,scenario,postgresql,true
+ENT_PG_225,SUB_DISP_026,medium,纳米光学相关器件技术、衍射光波导、增强平视显示(AR-HUD),"core_tech,products,scenario,industry",postgresql,true
+ENT_PG_225,SUB_DISP_027,medium,基于新型纳米材料和尖端纳米加工技术的纳米光学相关器件，衍射光波导、透明投影显示（EPDS）、增强平视显示（AR-HUD）、光场显示（裸眼3D）、全透明自发光投影显示、体全息波导、自发光透明纳米膜、浮雕光栅波导器件,products,postgresql,true
+ENT_PG_225,SUB_LA_040,medium,基于新型纳米材料和尖端纳米加工技术的纳米光学相关器件，衍射光波导、透明投影显示（EPDS）、增强平视显示（AR-HUD）、光场显示（裸眼3D）、全透明自发光投影显示、体全息波导、自发光透明纳,products,postgresql,true
+ENT_PG_225,SUB_MV_072,low,智能眼镜显示模组、汽车新型交互显示系统解决方案、AR-HUD、光场裸眼3D、自发光透明纳米膜、车窗显示、展览展示,scenario,postgresql,true
+ENT_PG_228,SUB_FUSION_015,medium,硅光子集成技术、FMCW（调频连续波）激光雷达芯片技术、光学相控阵（OPA）技术、光电芯片设计与封装测试技术。,"core_tech,products",postgresql,true
+ENT_PG_228,SUB_OC_004,medium,硅光子集成技术、FMCW（调频连续波）激光雷达芯片技术、光学相控阵（OPA）技术、光电芯片设计与封装测试技术。,"core_tech,products",postgresql,true
+ENT_PG_235,SUB_COMP_002,medium,InP和TFLN两条基础技术路线；核心技术大范围调谐激光器中美两地专利注册,"core_tech,products",postgresql,true
+ENT_PG_235,SUB_OC_001,medium,WTL可调激光器、DFB气体传感激光器、TFLN调制器三大产品；可调谐激光器、DFB激光器、薄膜铌酸锂调制器注册专利十余项,products,postgresql,true
+ENT_PG_235,SUB_OC_018,medium,WTL可调激光器、DFB气体传感激光器、TFLN调制器三大产品；可调谐激光器、DFB激光器、薄膜铌酸锂调制器注册专利十余项,products,postgresql,true
+ENT_PG_240,SUB_FUSION_013,medium,单曝光高速视频；单曝光高光谱成像；单曝光3D检测,products,postgresql,true
+ENT_PG_247,SUB_SPACE_003,low,高功率服务器散热（最高2000W）、卫星热控系统、数据中心散热、汽车电子散热,scenario,postgresql,true
+ENT_PG_25,SUB_FUSION_007,medium,量子计算机整机及核心部件等子系统的研发销售；量子传感器等产业核心部件的研发销售；量子软件、量子算法及混合计算解决方案的研发销售,"core_tech,products",postgresql,true
+ENT_PG_252,SUB_COMP_004,low,手表盖板材料、电子产品基板/盖板材料、超薄高清透镜组材料、VR/AR光波导基板,scenario,postgresql,true
+ENT_PG_257,SUB_FUSION_019,medium,智能超灵敏结构光超分辨显微镜,"core_tech,products",postgresql,true
+ENT_PG_26,SUB_COMP_003,medium,专注于超越摩尔的原子级芯片制造和异质集成技术；[冠军营补充]二维材料项目团队实力顶尖，技术可实现低成本工艺对标高端芯片性能，在传感器、DRAM 等领域应用前景广阔，获行业权威支持，创业决心强，是下一代,"core_tech,products",postgresql,true
+ENT_PG_26,SUB_SPACE_013,low,超低功耗、边缘算力、高灵敏传感及抗辐照芯片等关键应用场景,scenario,postgresql,true
+ENT_PG_263,SUB_SPACE_024,medium,卫星测运控软件、航天云立方平台、华山航天大模型,"core_tech,scenario",postgresql,true
+ENT_PG_264,SUB_ROBOT_060,medium,水下机器人整机、水下声学成像仪、测绘仪器,products,postgresql,true
+ENT_PG_264,SUB_ROBOT_100,medium,水下机器人整机、水下声学成像仪、测绘仪器,products,postgresql,true
+ENT_PG_268,SUB_MV_030,medium,晶圆级集成电路量检测设备，掩模版缺陷检测设备、晶圆缺陷检测设备、晶圆量测设备等九大类产品。具体产品如掩模基板缺陷检测产品Halo-100,"products,scenario",postgresql,true
+ENT_PG_268,SUB_MV_044,medium,晶圆级集成电路量检测设备，掩模版缺陷检测设备、晶圆缺陷检测设备、晶圆量测设备等九大类产品。具体产品如掩模基板缺陷检测产品Halo-100,products,postgresql,true
+ENT_PG_268,SUB_MV_066,medium,晶圆级集成电路量检测设备，掩模版缺陷检测设备、晶圆缺陷检测设备、晶圆量测设备等九大类产品。具体产品如掩模基板缺陷检测产品Halo-100,products,postgresql,true
+ENT_PG_273,SUB_LA_002,medium,超快激光精密焊接技术（异质材料焊接、特种材料超精密3D成形,core_tech,postgresql,true
+ENT_PG_274,SUB_ROBOT_021,medium,智能家庭服务机器人技术、SLAM自主定位技术,"core_tech,products",postgresql,true
+ENT_PG_274,SUB_ROBOT_095,medium,智能家庭服务机器人技术、SLAM自主定位技术,"core_tech,products,industry",postgresql,true
+ENT_PG_286,SUB_COMP_004,medium,全息光波导和光引擎设计制作能力,"core_tech,products",postgresql,true
+ENT_PG_289,SUB_OC_021,medium,射频高级模块一体化解决方案、射频滤波器芯片IC设计、高级射频声波集成电路和模块,"core_tech,products",postgresql,true
+ENT_PG_294,SUB_FUSION_022,medium,高速高分辨率大视场双光子显微成像系统（基于920nm超快光纤激光器）,products,postgresql,true
+ENT_PG_294,SUB_LA_001,medium,应用自主研制的920nm特种超快光纤激光器作为光源，并利用可调制梯度（TAG）透镜、自主研制的高数值孔径水镜、三维精确高速控制平移台，开发高速、高分辨率、大视场的多色双光子三轴数字扫描光片显微镜,"core_tech,products",postgresql,true
+ENT_PG_296,SUB_COMP_007,medium,注于光纤激光、光纤传感等特种应用领域的光电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件、TO器件、激光器件和传感器、激光器整机、激光器模块、光模块、光电模块等。致力于“传感应用”、“激,products,postgresql,true
+ENT_PG_296,SUB_OC_001,medium,专注于光纤激光、光纤传感等特种应用领域的光电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件、TO器件、激光器件和传感器、激光器整机、激光器模块、光模块、光,products,postgresql,true
+ENT_PG_296,SUB_OC_002,medium,专注于光纤激光、光纤传感等特种应用领域的光电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件、TO器件、激光器件和传感器、激光器整机、激光器模块、光模块、光电模块等,products,postgresql,true
+ENT_PG_296,SUB_OC_007,medium,专注于光纤激光、光纤传感等特种应用领域的光电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件,products,postgresql,true
+ENT_PG_296,SUB_OC_014,medium,电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件、TO器件、激光器件和传感器、激光器整机、激光器模块、光模块、光电模块等。致力于“传感应用”、“激光应用”、“卫星应用”及“十四五国家重,products,postgresql,true
+ENT_PG_296,SUB_OC_018,medium,专注于光纤激光、光纤传感等特种应用领域的光电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件、TO器件、激光器件和传感器、激光器整机、激光器模块、光模块、光,products,postgresql,true
+ENT_PG_302,SUB_LA_030,medium,激光器、激光打标设备、激光切割设备、激光焊接设备、定制化激光加工解决方案,products,postgresql,true
+ENT_PG_302,SUB_LA_031,medium,激光器、激光打标设备、激光切割设备、激光焊接设备、定制化激光加工解决方案,products,postgresql,true
+ENT_PG_302,SUB_LA_032,medium,激光器、激光打标设备、激光切割设备、激光焊接设备、定制化激光加工解决方案,products,postgresql,true
+ENT_PG_302,SUB_LA_065,medium,激光器、激光打标设备、激光切割设备、激光焊接设备、定制化激光加工解决方案,products,postgresql,true
+ENT_PG_302,SUB_LA_077,low,金属切割、精密打标、焊接加工、电子器件加工、产线自动化配套,scenario,postgresql,true
+ENT_PG_305,SUB_SPACE_031,medium,动中通卫星天线、战场电磁环境仿真软件、复杂电磁环境监测解决方案；[冠军营补充]西安大衡天成获审3000万元建设新型卫星通信终端试验鉴定与产品化项目：1.新型卫星通信终端研制；2.新型卫星通信终端测试与试用；3.新型卫星通信终端改进与定型,products,postgresql,true
+ENT_PG_306,SUB_FUSION_006,low,低照度夜间成像、激光测风、激光三维成像、新一代光电探测器件应用（如光谱分析、精密测量）。,scenario,postgresql,true
+ENT_PG_306,SUB_FUSION_020,low,低照度夜间成像、激光测风、激光三维成像、新一代光电探测器件应用（如光谱分析、精密测量）。,scenario,postgresql,true
+ENT_PG_306,SUB_FUSION_024,low,低照度夜间成像、激光测风、激光三维成像、新一代光电探测器件应用（如光谱分析、精密测量）。,scenario,postgresql,true
+ENT_PG_306,SUB_OC_004,medium,二代像增强器、超二代像增强器、三代像增强器、超快像增强器、微通道板光子探测器（MCP - PMT）、硅光电倍增管（SiPM）、日盲紫外像增强器、光三维成像雷达、光测风雷达,products,postgresql,true
+ENT_PG_308,SUB_SPACE_017,medium,卫星平台（10~2000公斤系列）、卫星部组件（核心单机及部组件）、卫星通信地面终端（移动通信终端、宽带通信终端）、卫星整星设计与集成测试能力、卫星在轨交付服务；[冠军,"core_tech,products",postgresql,true
+ENT_PG_308,SUB_SPACE_024,medium,宽带通信终端）、卫星整星设计与集成测试能力、卫星在轨交付服务；[冠军营补充]北京微纳星空科技股份有限公司成立于2017年，主要从事高端卫星整星研发制造业务，以及测运控、火箭发射、许可申请等在内的“一站式”星地一体化系统交付服务,core_tech,postgresql,true
+ENT_PG_318,SUB_MV_030,medium,基于面结构光3D扫描、3D轮廓重建以及深度学习技术的定制家具自动化视觉检测设备，尺寸测量设备、封边缺陷检测设备、板材订单分拣系统等,"products,scenario",postgresql,true
+ENT_PG_318,SUB_MV_034,medium,面结构光3D扫描、3D轮廓重建、深度学习视觉检测,core_tech,postgresql,true
+ENT_PG_318,SUB_MV_043,medium,基于面结构光3D扫描、3D轮廓重建以及深度学习技术的定制家具自动化视觉检测设备，尺寸测量设备、封边缺陷检测设备、板材订单分拣系统等,products,postgresql,true
+ENT_PG_318,SUB_MV_044,medium,基于面结构光3D扫描、3D轮廓重建以及深度学习技术的定制家具自动化视觉检测设备，尺寸测量设备、封边缺陷检测设备、板材订单分拣系统等,products,postgresql,true
+ENT_PG_318,SUB_MV_047,medium,面结构光3D扫描、3D轮廓重建、深度学习视觉检测,"core_tech,products",postgresql,true
+ENT_PG_318,SUB_MV_051,medium,面结构光3D扫描、3D轮廓重建、深度学习视觉检测,"core_tech,products",postgresql,true
+ENT_PG_323,SUB_FUSION_020,low,国防装备（军工）、智能制造（工业自动化）、安防监测、精密测量。,industry,postgresql,true
+ENT_PG_323,SUB_LA_045,low,1. 军工光电装备的精确测量、智能识别与精密控制；2. 工业领域的柔性精密装配、在线检测；3. 自动化立体物流仓储分拣搬运；4. 特定场所（如安防）的入侵目标搜索、跟踪与观测；5. 大尺寸工件的高精度三维测量。,scenario,postgresql,true
+ENT_PG_323,SUB_MV_041,medium,以多维图像信息及光电传感信息获取、并行处理技术为基础，致力于攻克或提升智能机器视觉发展。具体产品智能装配机器人、移动式智能作业机器人、快速光电扫描预警系统、AOI系统、iGPS（室内GPS）大尺寸三维测量系统,products,postgresql,true
+ENT_PG_323,SUB_ROBOT_073,medium,以多维图像信息及光电传感信息获取、并行处理技术为基础，致力于攻克或提升智能机器视觉发展。具体产品智能装配机器人、移动式智能作业机器人、快速光电扫描预警系统、AOI系统、iGPS（室内GPS）大尺寸三维测量系统,products,postgresql,true
+ENT_PG_324,SUB_SPACE_029,medium,Mbps，国内最高水平）；卫星通信网管理控制技术（管理万级网络规模，提升卫星运营能力，网络可靠性可达电信级）；全系列卫星通信产品及卫星通信系统组网能力；“蓝鲸”宽带卫星通信系统系列产品；[冠军营补充]主要产品包括卫星通信网管系统、便携式卫星通信终端，车载、船载、机载、物联网终端等，高轨、低轨均可兼容,"core_tech,products",postgresql,true
+ENT_PG_324,SUB_SPACE_030,medium,信网管理系统；[冠军营补充]蓝鲸宽带卫星通信系统，FDMA体制，主要面向应急通信应用；虎鲸宽带卫星通信系统，TDMA体制，主要面向卫星互联网、行业专网应用；白鲸卫星物联网系统，TDMA体制，主要面向卫星物联网应用,products,postgresql,true
+ENT_PG_324,SUB_SPACE_031,medium,以调制解调为核心的卫星通信终端技术（业务速率最高36Mbps，国内最高水平）；卫星通信网管理控制技术（管理万级网络规模，提升卫星运营能力，网络可靠性可达电信级）；全系列卫星通信产品及卫星通信,"core_tech,products",postgresql,true
+ENT_PG_329,SUB_DISP_001,medium,半导体激光器外延片、半导体材料、光电子材料、量子通信技术开发,"core_tech,products",postgresql,true
+ENT_PG_329,SUB_LA_004,medium,半导体激光器外延片、半导体材料、光电子材料、量子通信技术开发,"core_tech,products,scenario",postgresql,true
+ENT_PG_329,SUB_OC_001,medium,半导体激光器外延片（VCSEL/边发射激光器）,products,postgresql,true
+ENT_PG_332,SUB_MV_040,medium,智能相机与机器视觉技术、IC Wafer晶圆测温技术,"core_tech,products,scenario",postgresql,true
+ENT_PG_334,SUB_FUSION_020,medium,光学精密测量与成像技术（短波红外/紫外/可见光光学系统）,core_tech,postgresql,true
+ENT_PG_339,SUB_LA_002,medium,以扫频激光OCT（光学相干断层扫描）为基础的手术导航技术和以超快激光消融为基础的治疗技术。拥有行业内最全的冠脉OCT上市产品管线，多模态技术全球领先,core_tech,postgresql,true
+ENT_PG_340,SUB_MV_027,medium,、模型、手工艺品等爱好者群体；专业设计师、工程师级爱好者；小尺寸、复杂结构、高精度建模和设计人群；大物体、VR/AR设计、人体扫描与建模；自动化焊接、工业检测、机器人视觉引导。,"scenario,industry",postgresql,true
+ENT_PG_340,SUB_MV_047,medium,自研微结构光芯片、高精度3D视觉算法,"core_tech,products",postgresql,true
+ENT_PG_340,SUB_MV_051,medium,自研微结构光芯片、高精度3D视觉算法,"core_tech,products",postgresql,true
+ENT_PG_340,SUB_ROBOT_019,medium,、模型、手工艺品等爱好者群体；专业设计师、工程师级爱好者；小尺寸、复杂结构、高精度建模和设计人群；大物体、VR/AR设计、人体扫描与建模；自动化焊接、工业检测、机器人视觉引导。,"scenario,industry",postgresql,true
+ENT_PG_340,SUB_ROBOT_020,low,、模型、手工艺品等爱好者群体；专业设计师、工程师级爱好者；小尺寸、复杂结构、高精度建模和设计人群；大物体、VR/AR设计、人体扫描与建模；自动化焊接、工业检测、机器人视觉引导。,"scenario,industry",postgresql,true
+ENT_PG_341,SUB_LA_002,medium,超快激光器技术（皮秒、飞秒激光）,"core_tech,products",postgresql,true
+ENT_PG_348,SUB_LA_066,low,晶圆表面处理、化学清洗、检测等半导体制造环节,scenario,postgresql,true
+ENT_PG_349,SUB_COMP_006,medium,激光器、PLC、C/DWDM、无热/有热AWG等光学器件，提供光学产品设计的定制、样品、小批量生产和量产服务,"core_tech,products",postgresql,true
+ENT_PG_349,SUB_OC_019,medium,激光器、PLC、C/DWDM、无热/有热AWG等光学器件，提供光学产品设计的定制、样品、小批量生产和量产服务,"core_tech,products",postgresql,true
+ENT_PG_349,SUB_OC_022,medium,激光器、PLC、C/DWDM、无热/有热AWG等光学器件，提供光学产品设计的定制、样品、小批量生产和量产服务,"core_tech,products",postgresql,true
+ENT_PG_349,SUB_OC_034,medium,激光器、PLC、C/DWDM、无热/有热AWG等光学器件，提供光学产品设计的定制、样品、小批量生产和量产服务,"core_tech,products",postgresql,true
+ENT_PG_36,SUB_ROBOT_015,medium,触觉传感器（具体原理涉及传感器结构、三轴力测量机理）；[冠军营补充]触觉传感器(电子皮肤）：单点多维压力传感器尺寸全球最小、成本低、是智能传感器，内置 MCU 直接输出数,"core_tech,products",postgresql,true
+ENT_PG_361,SUB_DISP_022,medium,NPQD®纳米孔量子点Micro-LED、量子点mLED显示模组,products,postgresql,true
+ENT_PG_361,SUB_DISP_039,low,1）R系列量子点直显大屏解决方案，应用于商显及家庭影院；2）T系列AR用mLED微显示屏，应用于AR头显。,scenario,postgresql,true
+ENT_PG_361,SUB_MV_072,medium,NPQD®纳米孔量子点Micro-LED、量子点mLED显示模组,products,postgresql,true
+ENT_PG_363,SUB_ROBOT_057,medium,中研宏科(上海) - 电力/机房/变电站智能巡检机器人；低空经济标杆企业,products,postgresql,true
+ENT_PG_364,SUB_MV_005,medium,VCSEL芯片、ToF/结构光光源模组、激光雷达光源、光电传感模组,products,postgresql,true
+ENT_PG_364,SUB_MV_048,medium,VCSEL芯片、ToF/结构光光源模组、激光雷达光源、光电传感模组,products,postgresql,true
+ENT_PG_364,SUB_OC_001,medium,VCSEL芯片设计、光学透镜设计、光电集成封装、晶圆级测试及全量测试技术（“半导体+光学”全栈技术）,"core_tech,products",postgresql,true
+ENT_PG_367,SUB_LA_006,medium,硅酸钇镥（LYSO）、锗酸铋（BGO）、钆镓铝石榴石（GAGG）和碘化钠（NaI:Tl）等闪烁晶体、高精密光学元件、碳化硅衬底、碳化硅单晶反射镜,products,postgresql,true
+ENT_PG_373,SUB_COMP_010,medium,数字信号处理器(DSP)芯片自主创新架构,"core_tech,products",postgresql,true
+ENT_PG_373,SUB_OC_005,medium,数字信号处理器(DSP)芯片自主创新架构,"core_tech,products",postgresql,true
+ENT_PG_379,SUB_OC_004,medium,芯片、固态扫描、调频连续波（FMCW）相干探测和晶圆级光学等芯片技术的激光雷达。2. 纯固态大视场近场激光雷达D系列（Diversity Series）。3. 硅光FMCW 4D LiDAR（F系列）,products,postgresql,true
+ENT_PG_379,SUB_ROBOT_017,low,自动驾驶及ADAS、智能座舱、智慧交通、智慧物流、机器人/AGV、工业自动化。,industry,postgresql,true
+ENT_PG_379,SUB_ROBOT_046,low,自动驾驶及ADAS、智能座舱、智慧交通、智慧物流、机器人/AGV、工业自动化。,industry,postgresql,true
+ENT_PG_38,SUB_SPACE_012,low,、光电转塔减振、机载仪表减振、火炮火控缓冲、导弹精度控制、舰艇航行安全、飞行器安全、电磁屏蔽密封。民用：高铁减振、风电减振、民用飞机减振、商用发动机减振、核电站管路减振、铁路减振。,scenario,postgresql,true
+ENT_PG_382,SUB_LA_065,medium,激光焊接质量监测与控制核心单元器件及系统（AIWS智能激光焊接监控系统）,"core_tech,products,scenario",postgresql,true
+ENT_PG_387,SUB_SPACE_017,low,航天航空；微小卫星制造与运营。,industry,postgresql,true
+ENT_PG_388,SUB_MV_042,low,工业产品外观缺陷的自动化精密检测，主要针对外观缺陷微弱、精度要求高的场景，如玻璃盖板、显示面板等的外观检测。,scenario,postgresql,true
+ENT_PG_391,SUB_COMP_004,medium,纳米压印技术、晶圆级光学WLO制造技术；主要产品有3D摄像头用的衍射光学元件DOE、增强现实眼镜的SRG光波导器件、以及阵列光通信器件等,"core_tech,products",postgresql,true
+ENT_PG_391,SUB_DISP_035,medium,3D摄像头衍射光学元件(DOE)、AR眼镜SRG光波导器件、阵列光通信器件,products,postgresql,true
+ENT_PG_397,SUB_SPACE_010,medium,军营补充]固体运载火箭研发制造：专注于小型固体运载火箭的设计、开发与生产，致力于为小卫星发射提供高性能、低成本的运载解决方案；火箭发动机研制：自主研发多种型号的固体火箭发动机，涵盖不同直径和推力等级，广泛应用于运载火箭、导弹等领域；航天高端零部组件生产：具备航空航天高端复合材料、金属材料产品生产加工能力，提供发动机壳体、喷管、热防护,products,postgresql,true
+ENT_PG_397,SUB_SPACE_020,medium,固体运载火箭、火箭发动机、航天高端零部组件的研发与制造；[冠军营补充]宁波天擎航天科技有限公司成立于2018年3月，以火箭、反无人与无人装备、动力系统产品的研发及制造为主要,"core_tech,products",postgresql,true
+ENT_PG_4,SUB_SPACE_022,medium,"液氧甲烷重复使用火箭发动机技术，10吨级""凌云""和80吨级""龙云""发动机",core_tech,postgresql,true
+ENT_PG_400,SUB_SPACE_031,medium,卫星通信终端及解决方案,products,postgresql,true
+ENT_PG_404,SUB_LA_053,medium,高功率智能化半导体激光表面处理设备、激光熔覆合金粉末、激光特种加工及再制造（零部件修复）技术,"core_tech,products",postgresql,true
+ENT_PG_404,SUB_LA_066,medium,高功率智能化半导体激光表面处理设备、激光熔覆合金粉末、激光特种加工及再制造（零部件修复）技术,"core_tech,products,scenario,industry",postgresql,true
+ENT_PG_404,SUB_LA_067,medium,高功率智能化半导体激光表面处理设备、激光熔覆合金粉末、激光特种加工及再制造（零部件修复）技术,"core_tech,products",postgresql,true
+ENT_PG_408,SUB_DISP_028,medium,以中科院理化所应用激光中心团队为基础，研发超高清RGB三色纯激光家庭影院、高性能RGB三色真激光光源系统、激光数字影院和特种显示器等新一代激光显示系列产品。关键技术小型化高性能三基色LD激光模组、高效率控制驱动、高精度分时调制、颜色管理、高效能热管理、匀场照明与散斑消除等,products,postgresql,true
+ENT_PG_408,SUB_DISP_040,medium,以中科院理化所应用激光中心团队为基础，研发超高清RGB三色纯激光家庭影院、高性能RGB三色真激光光源系统、激光数字影院和特种显示器等新一代激光显示系列产品。关键技术小型化高性能三基色LD激光模组、高效率控制驱动、高精度分时调制、颜色管理、高效能热管理、匀场照明与散斑消除等,products,postgresql,true
+ENT_PG_411,SUB_MV_030,medium,高精度机器视觉、微纳精密机构与光学技术；研发复杂机器视觉产品系统及工业机器人AI产品，为工业机器提供“视觉洞察力”和“任务执行力”。主要产品包括：聚芯系列半导体缺陷检测量测设备、半导体制程质量分析与良率管理系统、半导体光伏行业AI解决方案、机器人视觉AI控制与重型机器智能系统等，聚焦于工业AI与精密检测仪器设备领域,"core_tech,scenario",postgresql,true
+ENT_PG_411,SUB_MV_034,medium,为工业机器提供“视觉洞察力”和“任务执行力”。主要产品包括：聚芯系列半导体缺陷检测量测设备、半导体制程质量分析与良率管理系统、半导体光伏行业AI解决方案、机器人视觉AI控制与重型机器智能系统等，聚焦于工业AI与精密检测仪器设备领域,core_tech,postgresql,true
+ENT_PG_411,SUB_MV_036,medium,工业机器人AI视觉产品、复杂机器视觉检测系统,products,postgresql,true
+ENT_PG_411,SUB_MV_066,low,聚时科技（上海）有限公司为集成电路、半导体、光伏等高端制造领域提供系列化的智能机器硬件设备产品与AI解决方案，具体应用场景包括：芯片复杂检测、半导体晶圆缺陷检测与量测、半导体制程质量分析与良率管理、光伏行业AI检测、机器人视觉控制、重型机器智能系统，以及拆装集装箱等工业场景。,scenario,postgresql,true
+ENT_PG_411,SUB_ROBOT_019,medium,产品，为工业机器提供“视觉洞察力”和“任务执行力”。主要产品包括：聚芯系列半导体缺陷检测量测设备、半导体制程质量分析与良率管理系统、半导体光伏行业AI解决方案、机器人视觉AI控制与重型机器智能系统等，聚焦于工业AI与精密检测仪器设备领域,"core_tech,scenario",postgresql,true
+ENT_PG_414,SUB_FUSION_017,low,电动汽车及智能汽车分布式驱动控制系统的设计与开发、分布式驱动车辆实验平台的定制开发、面向军用等特种行业的分布式驱动高速移动平台的研发和生产,scenario,postgresql,true
+ENT_PG_420,SUB_DISP_017,medium,焊线机/固晶机等半导体封装装备、Mini/MicroLED巨量转移技术,"core_tech,products,scenario",postgresql,true
+ENT_PG_420,SUB_ROBOT_038,medium,焊线机、固晶机、晶圆级/板级倒装机、扇出封装固晶装备、Mini/MicroLED巨量转移装备、SCARA晶圆机器人。高密度焊线机（ARROW IC）、晶圆级倒装装备（AFC300WL）、板级贴片设备（AD600PLP）、高精度倒装/固晶机（AFC100P）、Mic,products,postgresql,true
+ENT_PG_420,SUB_ROBOT_081,medium,焊线机、固晶机、晶圆级/板级倒装机、扇出封装固晶装备、Mini/MicroLED巨量转移装备、SCARA晶圆机器人。高密度焊线机（ARROW IC）、晶圆级倒装装备（AFC300WL）、板级贴片设备（AD600PLP）、高精度倒装/固晶机（AFC100P）、MicroLED,products,postgresql,true
+ENT_PG_425,SUB_OC_004,medium,硅光子技术（未查到具体核心技术）,core_tech,postgresql,true
+ENT_PG_426,SUB_SPACE_020,medium,力箭系列运载火箭、力鸿系列亚轨道飞行器、力擎系列发动机,products,postgresql,true
+ENT_PG_429,SUB_COMP_003,medium,权且全球唯一可量产的硅基改性材料平台，具有超低损耗、超低偏振敏感性、超高温度稳定性、超高耦合效率、超高均匀一致性和超低制备成本的优势。基于该平台发展出多材料三维异质集成混合材料体系。产品涵盖“光传感、光传输、光计算”三大领域，MUX/DEMUX芯片、BiDi光模块、XG(S) Combo PON光模块、直调式Combo PON,products,postgresql,true
+ENT_PG_429,SUB_OC_043,low,5G高速通信、光纤到户（接入网）、数据中心互连、城域网传输、云计算、大数据产业的光传输系统。,"scenario,industry",postgresql,true
+ENT_PG_429,SUB_OC_045,medium,势。基于该平台发展出多材料三维异质集成混合材料体系。产品涵盖“光传感、光传输、光计算”三大领域，MUX/DEMUX芯片、BiDi光模块、XG(S) Combo PON光模块、直调式Combo PON OLT光模块、同波长单纤双向光模块、大型光开关等,"products,scenario,industry",postgresql,true
+ENT_PG_432,SUB_ROBOT_016,medium,电子仪器、集成电路测试设备、光学仪器；[冠军营补充]产品系列：形成惯性器件组件系列、惯性测量单元（IMU）系列、惯性器件产线生产与测试设备系列等三大类产品，覆盖激光陀螺仪、半球谐振陀螺仪、加速度计等技术领域；技术创新：突破性完成国内首款激光陀螺驱动系列功能芯片研发,products,postgresql,true
+ENT_PG_433,SUB_FUSION_013,low,提供高时间分辨率、高空间分辨率、高光谱分辨率、快速广域覆盖的卫星遥感数据以及以卫星遥感数据为基础的空间信息综合应用服务,scenario,postgresql,true
+ENT_PG_433,SUB_SPACE_017,low,遥感卫星数据及应用服务、通信卫星平台,industry,postgresql,true
+ENT_PG_433,SUB_SPACE_026,medium,商业遥感卫星研制与星座运营技术,core_tech,postgresql,true
+ENT_PG_434,SUB_SPACE_006,medium,以海量遥感卫星数据分析为核心技术，具备遥感影像0-7级的处理能力，擅长根据场景落地不同的遥感数据产品。行业内首家推出光学+SAR融合遥感数据产品的公司。自主研发并成功发射SAR、光学、红外卫星，具备同轨多手段遥感卫星星座,"core_tech,products",postgresql,true
+ENT_PG_435,SUB_OC_001,medium,HBT异质结双极型晶体管，HEMT 高电子迁移率晶体管，高亮度LED、蓝绿光半导体激光管、垂直腔面发射(VCSEL)光子芯片、DFB光子芯片、EML光子芯片以及高亮度半导体激光芯片,products,postgresql,true
+ENT_PG_435,SUB_OC_018,medium,HBT异质结双极型晶体管，HEMT 高电子迁移率晶体管，高亮度LED、蓝绿光半导体激光管、垂直腔面发射(VCSEL)光子芯片、DFB光子芯片、EML光子芯片以及高亮度半导体激光芯片,products,postgresql,true
+ENT_PG_442,SUB_SPACE_027,medium,遥感数据处理及加工、遥感监测分析业务应用、遥感数据平台服务；遥感影像智能识别算法、环境变化监测算法、地质灾害预警模型、三维建模及平台可视化,core_tech,postgresql,true
+ENT_PG_444,SUB_OC_001,medium,大功率连续波（CW）激光器芯片,"core_tech,products",postgresql,true
+ENT_PG_446,SUB_LA_032,medium,工业激光器、激光加工设备、激光打标/切割/焊接相关系统、定制化激光应用解决方案,products,postgresql,true
+ENT_PG_446,SUB_LA_040,low,金属切割、激光焊接、打标雕刻、精密微加工、工业生产线集成应用,scenario,postgresql,true
+ENT_PG_446,SUB_LA_065,low,金属切割、激光焊接、打标雕刻、精密微加工、工业生产线集成应用,scenario,postgresql,true
+ENT_PG_45,SUB_ROBOT_051,medium,形状记忆合金SMA微丝驱动材料技术；[冠军营补充]未来2-3年布局：具身/人形、灵巧手+面部仿真模拟（原理方案已完成，对比传统方案优势明显，Q2能看到样机）十五五规划布局新材料有体现，对项目是个利好,"core_tech,products",postgresql,true
+ENT_PG_459,SUB_MV_035,medium,事智能科技、集成电路科技、计算机科技领域内的技术开发、技术咨询、技术服务、技术转让，集成电路芯片设计服务，计算机软件开发，数据处理服务，新兴软件及服务。拥有多项图像处理、双目立体匹配、人脸识别、智能锁等相关专利。,"core_tech,scenario",postgresql,true
+ENT_PG_463,SUB_OC_004,medium,硅光晶圆测试技术与设备,"core_tech,products",postgresql,true
+ENT_PG_465,SUB_MV_018,medium,制冷型锑化铟探测器、红外相机技术,"core_tech,products",postgresql,true
+ENT_PG_466,SUB_SPACE_025,low,低轨卫星、星间通信、星地通信、临近空间通信,scenario,postgresql,true
+ENT_PG_469,SUB_FUSION_007,medium,量子传感器及其核心器件、中性原子量子计算、冷原子绝对重力仪等量子技术产品,"core_tech,products",postgresql,true
+ENT_PG_469,SUB_FUSION_020,low,量子精密测量、量子计算硬件研发、重力测量,scenario,postgresql,true
+ENT_PG_470,SUB_DISP_002,medium,AMOLED显示行业有机发光材料蒸镀专用精密金属掩模版FMM（Fine Metal Mask）的生产和研发，AMOLED用Divide Open Mask、Divide Fine Metal ,"core_tech,scenario",postgresql,true
+ENT_PG_470,SUB_DISP_006,medium,MM（Fine Metal Mask）的生产和研发，AMOLED用Divide Open Mask、Divide Fine Metal Mask、硅基OLED用Micro OLED Open Mask、显示终端用金属支撑片等高端超精细加工类产品,core_tech,postgresql,true
+ENT_PG_473,SUB_DISP_003,medium,半导体量子点发光材料；新型量子点显示工艺；半导体薄膜工艺设备,"core_tech,scenario",postgresql,true
+ENT_PG_48,SUB_ROBOT_036,medium,具身智能控制架构，分层架构（大脑、小脑）和端到端架构,core_tech,postgresql,true
+ENT_PG_51,SUB_ROBOT_036,medium,北京基点起源 - 具身智能机器人（2025年新成立，创新工场领投天使轮）,products,postgresql,true
+ENT_PG_63,SUB_COMP_003,medium,器（FAU）；晶圆级异构集成技术（激光器晶圆、硅光晶圆、电控制晶圆的晶圆级键合）；兼容8/12英寸CMOS工艺的光接口解决方案；SWIR短波红外相机技术（InP异质集成及衬底回收）,core_tech,postgresql,true
+ENT_PG_63,SUB_COMP_016,medium,高度集成的光通信接口模块（Optical I/O module），包含高速激光器（Tx）、光子集成电路（PIC）、电子控制单元（EIC）和光互连接器（FAU）；晶圆级异构集成技术（激光器晶圆、硅光晶圆、电控制,"core_tech,products",postgresql,true
+ENT_PG_63,SUB_MV_018,medium,（EIC）和光互连接器（FAU）；晶圆级异构集成技术（激光器晶圆、硅光晶圆、电控制晶圆的晶圆级键合）；兼容8/12英寸CMOS工艺的光接口解决方案；SWIR短波红外相机技术（InP异质集成及衬底回收）,core_tech,postgresql,true
+ENT_PG_63,SUB_OC_004,medium,ical I/O module），包含高速激光器（Tx）、光子集成电路（PIC）、电子控制单元（EIC）和光互连接器（FAU）；晶圆级异构集成技术（激光器晶圆、硅光晶圆、电控制晶圆的晶圆级键合）；兼容8/12英寸CMOS工艺的光接口解决方案；SWIR短波红外相机技术（InP异质集成及衬底回收）,core_tech,postgresql,true
+ENT_PG_63,SUB_OC_032,medium,高度集成的光通信接口模块（Optical I/O module），包含高速激光器（Tx）、光子集成电路（PIC）、电子控制单元（EIC）和光互连接器（FAU）；晶圆级异构集成技术（激光器晶圆、硅光晶圆、电控制,"core_tech,products",postgresql,true
+ENT_PG_64,SUB_COMP_026,low,为智能制造、数字工厂、仓储物流、家庭服务等领域打造物理级精准数字仿真平台；在具身智能、自动驾驶、低空经济等核心场景中构建专业物理AI训练道场，用于高精度数字环境搭建、深度物理仿真、设计与运行参数优化,scenario,postgresql,true
+ENT_PG_64,SUB_ROBOT_036,low,为智能制造、数字工厂、仓储物流、家庭服务等领域打造物理级精准数字仿真平台；在具身智能、自动驾驶、低空经济等核心场景中构建专业物理AI训练道场，用于高精度数字环境搭建、深度物理仿真、设计与运行参数优化,"scenario,industry",postgresql,true
+ENT_PG_64,SUB_ROBOT_095,low,为智能制造、数字工厂、仓储物流、家庭服务等领域打造物理级精准数字仿真平台；在具身智能、自动驾驶、低空经济等核心场景中构建专业物理AI训练道场，用于高精度数字环境搭建、深度物理仿真、设计与运行参数优化,"scenario,industry",postgresql,true
+ENT_PG_71,SUB_MV_034,medium,NexRL大模型强化学习训练框架、NexAU智能体开发框架、NexWeave大模型训练服务平台、MM-Doc-R1多智能体长文档分析系统（AI软件/平台，未商业化命名）,products,postgresql,true
+ENT_PG_71,SUB_MV_035,medium,集成电路芯片设计；计算机软件开发；图像处理、双目立体匹配、人脸识别、智能锁专利,core_tech,postgresql,true
+ENT_PG_74,SUB_ROBOT_051,medium,高自由度触觉灵巧手技术、触觉感知系统,"core_tech,products,scenario",postgresql,true
+ENT_PG_83,SUB_MV_034,low,AI大模型训练与推理（解决内存墙瓶颈）、自动驾驶和车联网的实时决策（车规级存算芯片）、高性能SoC芯片中的嵌入式非易失存储。,scenario,postgresql,true
+ENT_PG_84,SUB_ROBOT_013,medium,磁编码器技术、中空编码器、绝对值编码器、多圈编码器、超薄编码器,"core_tech,products,domain",postgresql,true
+ENT_PG_85,SUB_SPACE_012,medium,航空高低压管路系统研发设计技术,"core_tech,products,industry",postgresql,true
+ENT_PG_95,SUB_LA_040,medium,相变直写光刻设备（100nm/50nm超分辨纳米光刻）；光互连与半导体微纳加工,core_tech,postgresql,true
+ENT_PG_95,SUB_LA_086,medium,相变直写光刻设备（100nm/50nm超分辨纳米光刻）；光互连与半导体微纳加工,core_tech,postgresql,true
