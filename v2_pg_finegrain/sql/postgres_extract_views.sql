@@ -33,14 +33,11 @@ SELECT
     c.industry,
     c.core_tech,
     c.products,
-    c.customers,
-    c.suppliers,
     c.scenario,
     c.cert_ip,
-    c.competitors,
     c.homepage_html
   ) AS evidence_text,
-  'domain,industry,core_tech,products,customers,suppliers,scenario,cert_ip,competitors,homepage_html' AS source_field,
+  'domain,industry,core_tech,products,scenario,cert_ip,homepage_html' AS source_field,
   'postgresql' AS source_system,
   now() AS extracted_at
 FROM companies c;
