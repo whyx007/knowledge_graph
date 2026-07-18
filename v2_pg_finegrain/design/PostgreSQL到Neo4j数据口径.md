@@ -83,6 +83,12 @@ PostgreSQL 是新版企业与业务事实的数据源，Neo4j 是图谱查询和
 - `source_field`
 - `needs_review`
 
+可选审计字段：
+
+- `source`
+- `source_pk`
+- `updated_at`
+
 ## 3. PostgreSQL 抽取建议
 
 优先抽取以下字段：

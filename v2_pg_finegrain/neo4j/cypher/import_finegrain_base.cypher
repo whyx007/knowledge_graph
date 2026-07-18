@@ -75,4 +75,7 @@ SET r.confidence = row.confidence,
     r.evidence = row.evidence,
     r.source_field = row.source_field,
     r.source_system = row.source_system,
-    r.needs_review = row.needs_review = 'true';
+    r.needs_review = row.needs_review = 'true',
+    r.source = nullIf(row.source, ''),
+    r.source_pk = nullIf(row.source_pk, ''),
+    r.updated_at = nullIf(row.updated_at, '');

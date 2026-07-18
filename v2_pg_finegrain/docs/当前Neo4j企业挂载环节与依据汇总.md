@@ -1,0 +1,331 @@
+# 当前 Neo4j 企业挂载环节与依据汇总
+
+> 数据来源：v2 Neo4j 当前图谱 `neo4j-kg-v2-finegrain`。
+> 本文件由 `scripts/sync_project_from_neo4j.py` 从运行中的数据库生成。
+
+## 汇总
+
+- Enterprise 节点数：480
+- 已挂载企业数：147
+- 企业-二级环节挂载关系数：290
+- 待复核关系：184
+- 已确认关系：106
+
+### 按产业链统计
+
+| 产业链 | 企业数 | 挂载关系数 |
+|---|---:|---:|
+| 光刻与湿法工艺配套 | 4 | 8 |
+| 光学检测/机器视觉 | 33 | 59 |
+| 光显示 | 15 | 23 |
+| 光融合（量子光学新原理） | 17 | 20 |
+| 光计算 | 20 | 31 |
+| 光通信/光模块 | 23 | 47 |
+| 商业航天 | 25 | 31 |
+| 机器人 | 29 | 39 |
+| 激光加工/光学装备 | 22 | 32 |
+
+### 按置信度统计
+
+| 置信度 | 挂载关系数 |
+|---|---:|
+| high | 3 |
+| low | 40 |
+| manual_confirmed | 52 |
+| medium | 193 |
+| medium_high | 2 |
+
+## 明细
+
+| 企业ID | 企业名称 | 产业链 | 分段 | 一级环节 | 二级环节ID | 二级环节 | 置信度 | 待复核 | 来源字段 | 来源系统 | 依据 |
+|---|---|---|---|---|---|---|---|---|---|---|---|
+| ENT_PG_150 | 西安朗威科技有限公司 | 光刻与湿法工艺配套 | 上游 | 光刻核心部组件 | SUB_SEMI_001 | 精密光束指向/快反镜 | medium | false | manual_lithography_space_review | manual_review | 压电快反镜、激光通信用精指向机构及控制器；用于光刻或星间激光通信场景的光束高精度跟踪瞄准 |
+| ENT_PG_150 | 西安朗威科技有限公司 | 光刻与湿法工艺配套 | 上游 | 光刻核心部组件 | SUB_SEMI_002 | 压电精密驱动与微振动控制 | medium | false | manual_lithography_space_review | manual_review | 压电新材料技术、精密驱动技术、空间微振动控制技术；压电旋转电机和空间微振动控制系统 |
+| ENT_PG_172 | 张家港安储科技有限公司 | 光刻与湿法工艺配套 | 中游 | 半导体湿法工艺化学品 | SUB_SEMI_003 | 半导体湿法清洗液 | medium | false | manual_lithography_wet_review | manual_review | 半导体清洗液、CMP后清洗液、去蜡液等配方类电子材料；用于晶圆制造及封装清洗工艺 |
+| ENT_PG_172 | 张家港安储科技有限公司 | 光刻与湿法工艺配套 | 中游 | 半导体湿法工艺化学品 | SUB_SEMI_004 | 研磨抛光与蚀刻液 | medium | false | manual_lithography_wet_review | manual_review | 研磨液、氧化铈抛光液、硅衬底粗抛液及精抛液、铜钼蚀刻清洗液、剥离液等 |
+| ENT_PG_172 | 张家港安储科技有限公司 | 光刻与湿法工艺配套 | 下游 | 光刻与晶圆制程配套 | SUB_SEMI_006 | 光刻后清洗/刻蚀配套 | medium | false | manual_lithography_wet_review | manual_review | 晶圆制造及封装厂中的清洗、刻蚀、抛光CMP工艺环节；碳化硅衬底研磨与清洗 |
+| ENT_PG_348 | 无锡华瑛微电子技术有限公司 | 光刻与湿法工艺配套 | 中游 | 半导体湿法清洗与刻蚀设备 | SUB_SEMI_005 | 单晶片湿法清洗设备 | medium | false | manual_lithography_wet_review | manual_review | 单晶片湿法清洗设备、腐蚀设备、钝化设备、半导体化学清洗设备 |
+| ENT_PG_348 | 无锡华瑛微电子技术有限公司 | 光刻与湿法工艺配套 | 下游 | 光刻与晶圆制程配套 | SUB_SEMI_006 | 光刻后清洗/刻蚀配套 | medium | false | manual_lithography_wet_review | manual_review | 晶圆表面处理、化学清洗、检测等半导体制造环节 |
+| ENT_PG_395 | 苏州原位芯片科技有限责任公司 | 光刻与湿法工艺配套 | 中游 | 半导体湿法清洗与刻蚀设备 | SUB_SEMI_005 | 单晶片湿法清洗设备 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：MEMS液体流量传感器技术；产品：MEMS液体流量传感器，MEMS悬臂梁器件，叉指电极，高精度硅基掩膜版 |
+| ENT_PG_16 | 北京灵熹光子科技有限公司 | 光学检测/机器视觉 | 中游 | 视觉算法平台 | SUB_MV_034 | 深度学习视觉平台 | low | true | scenario | postgresql | AI大模型训练与推理加速、矩阵运算加速、低功耗高带宽计算、数据中心内部光互连与算力优化 |
+| ENT_PG_46 | 广州光达创新科技有限公司 | 光学检测/机器视觉 | 中游 | 3D视觉与空间感知系统 | SUB_MV_048 | ToF视觉 | low | true | postgresql_leak_review | manual_review | PostgreSQL漏挂核查：光电传感器、激光测距/探测模组和智能感知设备与ToF/3D视觉相邻，低置信待复核 |
+| ENT_PG_63 | 英伟芯（西安）科技有限公司 | 光学检测/机器视觉 | 上游 | 工业相机与图像传感器 | SUB_MV_018 | 红外/多光谱相机 | medium | true | core_tech | postgresql | （EIC）和光互连接器（FAU）；晶圆级异构集成技术（激光器晶圆、硅光晶圆、电控制晶圆的晶圆级键合）；兼容8/12英寸CMOS工艺的光接口解决方案；SWIR短波红外相机技术（InP异质集成及衬底回收） |
+| ENT_PG_71 | 上海奇绩智峰智能科技有限公司 | 光学检测/机器视觉 | 中游 | 视觉算法平台 | SUB_MV_034 | 深度学习视觉平台 | medium | true | products | postgresql | NexRL大模型强化学习训练框架、NexAU智能体开发框架、NexWeave大模型训练服务平台、MM-Doc-R1多智能体长文档分析系统（AI软件/平台，未商业化命名） |
+| ENT_PG_71 | 上海奇绩智峰智能科技有限公司 | 光学检测/机器视觉 | 中游 | 视觉算法平台 | SUB_MV_035 | 图像处理软件 | medium | true | core_tech | postgresql | 集成电路芯片设计；计算机软件开发；图像处理、双目立体匹配、人脸识别、智能锁专利 |
+| ENT_PG_83 | 北京铭芯启睿科技有限公司 | 光学检测/机器视觉 | 中游 | 视觉算法平台 | SUB_MV_034 | 深度学习视觉平台 | low | true | scenario | postgresql | AI大模型训练与推理（解决内存墙瓶颈）、自动驾驶和车联网的实时决策（车规级存算芯片）、高性能SoC芯片中的嵌入式非易失存储。 |
+| ENT_PG_101 | 致微（苏州）光学技术有限公司 | 光学检测/机器视觉 | 上游 | 镜头与光学成像部件 | SUB_MV_012 | 工业光学组件 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：高精度光学系统与镜片制造；高精度车削技术；高精度自由曲面加工和检测；高损伤阈值紫外镀膜技术；光学系统全流程设计能力；球面、非球面、自由面、平面棱镜及复杂光学结构元件制造；高精度精密光学研发与制造；致微光学掌握高端光学底层核心技术；国内首个掌握卫星激光通讯领域高精度离轴非球面加工、检测及镀膜全流程制造的团队；产品：高精度光学镜片、光学系统（全流程设计产品）；具备光学系统全流程设计能力；致微光学元器件产品；定制化的高精度光学系统… |
+| ENT_PG_170 | 珠海中科慧智科技有限公司 | 光学检测/机器视觉 | 下游 | 医药/食品/物流视觉应用 | SUB_MV_083 | 异物检测 | medium | true | products | postgresql | 目标处理算法技术（国内领先）、多源异构数据融合技术（国际领先）；[冠军营补充]公司专注低空经济和卫星通讯两大赛道，在低空领域，产品包括雷达、光电雷达等，用于机场异物检测、驱鸟、无人机反控等 |
+| ENT_PG_178 | 西安数合信息科技有限公司 | 光学检测/机器视觉 | 中游 | 视觉算法平台 | SUB_MV_030 | 缺陷检测算法 | low | true | scenario | postgresql | 1. 金属焊缝与铸件智能无损检测；2. 新能源汽车动力电池内部缺陷智能检测；3. 外观尺寸与表面缺陷智能检测；4. 高端制造客户数智化转型升级；5. 无损检测实验室智能化建设。 |
+| ENT_PG_178 | 西安数合信息科技有限公司 | 光学检测/机器视觉 | 中游 | 运维调优与持续优化 | SUB_MV_057 | 模型迭代服务 | medium | true | core_tech | postgresql | 工作台（DIH-SG）；智能检测装备Xpearl系列；智能数字射线无损检测环境规划建设；多模态AI检测平台DMAP；融合跨平台多模态采集、高精度运动控制与自适应模型优化技术 |
+| ENT_PG_189 | 成川科技（苏州）有限公司 | 光学检测/机器视觉 | 中游 | 运维调优与持续优化 | SUB_MV_059 | 节拍优化服务 | low | true | scenario | postgresql | 测）的物料自动化搬运与存储。2. Micro LED巨量转移配套的高精度芯片搬运。3. 车载屏模组生产线的耐高低温物流接驳。4. 面板产线（如高世代线）的供应链效率优化。 |
+| ENT_PG_193 | 吉林求是光谱数据科技有限公司 | 光学检测/机器视觉 | 上游 | 工业相机与图像传感器 | SUB_MV_015 | CMOS图像传感器 | medium | true | products | postgresql | 成像光谱芯片（下一代CMOS图像传感器），采用自研的“调制/解调”技术体系及计算重建型光谱CIS（“调制+解调”），用材料+芯片工艺+算法替代传统分光器件，在CMOS芯片上同时实现成像和光谱功能。产 |
+| ENT_PG_193 | 吉林求是光谱数据科技有限公司 | 光学检测/机器视觉 | 下游 | 消费电子检测 | SUB_MV_063 | PCB/FPC检测 | low | true | industry | postgresql | 消费电子（智能手机）、AIOT（智能家居、智能门锁、智能投影仪、扫地机、擦窗机、冰箱等）、安防监控、医疗设备、农业（无人机）、工业（PCB检测）、汽车电子。 |
+| ENT_PG_201 | 派姆特科技（苏州）有限公司 | 光学检测/机器视觉 | 中游 | 专用检测设备 | SUB_MV_043 | 尺寸测量设备 | medium | true | - | - | - |
+| ENT_PG_204 | 深圳锐视智芯科技有限公司 | 光学检测/机器视觉 | 上游 | 工业相机与图像传感器 | SUB_MV_015 | CMOS图像传感器 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：Hybrid Vision融合视觉传感芯片/ALPIX融合视觉芯片，匹配CMOS图像传感器 |
+| ENT_PG_225 | 广纳四维（广东）光电科技有限公司 | 光学检测/机器视觉 | 下游 | 面板与显示检测 | SUB_MV_072 | 模组检测 | low | true | scenario | postgresql | 智能眼镜显示模组、汽车新型交互显示系统解决方案、AR-HUD、光场裸眼3D、自发光透明纳米膜、车窗显示、展览展示 |
+| ENT_PG_268 | 合肥御微半导体技术股份有限公司 | 光学检测/机器视觉 | 中游 | 视觉算法平台 | SUB_MV_030 | 缺陷检测算法 | medium | true | products,scenario | postgresql | 晶圆级集成电路量检测设备，掩模版缺陷检测设备、晶圆缺陷检测设备、晶圆量测设备等九大类产品。具体产品如掩模基板缺陷检测产品Halo-100 |
+| ENT_PG_268 | 合肥御微半导体技术股份有限公司 | 光学检测/机器视觉 | 中游 | 专用检测设备 | SUB_MV_044 | 缺陷检测设备 | medium | true | products | postgresql | 晶圆级集成电路量检测设备，掩模版缺陷检测设备、晶圆缺陷检测设备、晶圆量测设备等九大类产品。具体产品如掩模基板缺陷检测产品Halo-100 |
+| ENT_PG_268 | 合肥御微半导体技术股份有限公司 | 光学检测/机器视觉 | 下游 | 半导体检测 | SUB_MV_066 | 晶圆缺陷检测 | medium | true | products | postgresql | 晶圆级集成电路量检测设备，掩模版缺陷检测设备、晶圆缺陷检测设备、晶圆量测设备等九大类产品。具体产品如掩模基板缺陷检测产品Halo-100 |
+| ENT_PG_290 | 中科视拓（北京）科技有限公司 | 光学检测/机器视觉 | 中游 | 视觉算法平台 | SUB_MV_034 | 深度学习视觉平台 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：AI视觉感知计算、SeetaFace人脸识别和视觉AI解决方案，匹配深度学习视觉平台 |
+| ENT_PG_314 | 中科驭数（北京）科技有限公司 | 光学检测/机器视觉 | 上游 | 图像采集与边缘计算硬件 | SUB_MV_022 | 边缘计算盒子 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：DPU芯片、专用数据处理架构；产品：DPU芯片、核心处理器芯片、专用数据处理架构 |
+| ENT_PG_318 | 中科元象（常州）智能装备有限公司 | 光学检测/机器视觉 | 中游 | 视觉算法平台 | SUB_MV_030 | 缺陷检测算法 | medium | true | products,scenario | postgresql | 基于面结构光3D扫描、3D轮廓重建以及深度学习技术的定制家具自动化视觉检测设备，尺寸测量设备、封边缺陷检测设备、板材订单分拣系统等 |
+| ENT_PG_318 | 中科元象（常州）智能装备有限公司 | 光学检测/机器视觉 | 中游 | 视觉算法平台 | SUB_MV_034 | 深度学习视觉平台 | medium | true | core_tech | postgresql | 面结构光3D扫描、3D轮廓重建、深度学习视觉检测 |
+| ENT_PG_318 | 中科元象（常州）智能装备有限公司 | 光学检测/机器视觉 | 中游 | 专用检测设备 | SUB_MV_043 | 尺寸测量设备 | medium | true | products | postgresql | 基于面结构光3D扫描、3D轮廓重建以及深度学习技术的定制家具自动化视觉检测设备，尺寸测量设备、封边缺陷检测设备、板材订单分拣系统等 |
+| ENT_PG_318 | 中科元象（常州）智能装备有限公司 | 光学检测/机器视觉 | 中游 | 专用检测设备 | SUB_MV_044 | 缺陷检测设备 | medium | true | products | postgresql | 基于面结构光3D扫描、3D轮廓重建以及深度学习技术的定制家具自动化视觉检测设备，尺寸测量设备、封边缺陷检测设备、板材订单分拣系统等 |
+| ENT_PG_318 | 中科元象（常州）智能装备有限公司 | 光学检测/机器视觉 | 中游 | 3D视觉与空间感知系统 | SUB_MV_047 | 结构光3D视觉 | medium | true | core_tech,products | postgresql | 面结构光3D扫描、3D轮廓重建、深度学习视觉检测 |
+| ENT_PG_318 | 中科元象（常州）智能装备有限公司 | 光学检测/机器视觉 | 中游 | 3D视觉与空间感知系统 | SUB_MV_051 | 三维重建与测量 | medium | true | core_tech,products | postgresql | 面结构光3D扫描、3D轮廓重建、深度学习视觉检测 |
+| ENT_PG_323 | 西安中科光电精密工程有限公司 | 光学检测/机器视觉 | 上游 | 运动控制与执行配套 | SUB_MV_027 | 机器人视觉引导配套 | medium | true | - | - | - |
+| ENT_PG_323 | 西安中科光电精密工程有限公司 | 光学检测/机器视觉 | 中游 | 专用检测设备 | SUB_MV_041 | AOI检测设备 | medium | true | products | postgresql | 以多维图像信息及光电传感信息获取、并行处理技术为基础，致力于攻克或提升智能机器视觉发展。具体产品智能装配机器人、移动式智能作业机器人、快速光电扫描预警系统、AOI系统、iGPS（室内GPS）大尺寸三维测量系统 |
+| ENT_PG_326 | 宁波时识科技有限公司 | 光学检测/机器视觉 | 上游 | 工业相机与图像传感器 | SUB_MV_016 | 高速相机 | low | true | - | - | - |
+| ENT_PG_332 | 西安瑞峰光电技术有限公司 | 光学检测/机器视觉 | 中游 | 标准视觉系统方案 | SUB_MV_040 | 智能相机系统 | medium | true | core_tech,products,scenario | postgresql | 智能相机与机器视觉技术、IC Wafer晶圆测温技术 |
+| ENT_PG_340 | 西安知象光电科技有限公司 | 光学检测/机器视觉 | 上游 | 运动控制与执行配套 | SUB_MV_027 | 机器人视觉引导配套 | medium | true | scenario,industry | postgresql | 、模型、手工艺品等爱好者群体；专业设计师、工程师级爱好者；小尺寸、复杂结构、高精度建模和设计人群；大物体、VR/AR设计、人体扫描与建模；自动化焊接、工业检测、机器人视觉引导。 |
+| ENT_PG_340 | 西安知象光电科技有限公司 | 光学检测/机器视觉 | 中游 | 3D视觉与空间感知系统 | SUB_MV_047 | 结构光3D视觉 | medium | true | core_tech,products | postgresql | 自研微结构光芯片、高精度3D视觉算法 |
+| ENT_PG_340 | 西安知象光电科技有限公司 | 光学检测/机器视觉 | 中游 | 3D视觉与空间感知系统 | SUB_MV_051 | 三维重建与测量 | medium | true | core_tech,products | postgresql | 自研微结构光芯片、高精度3D视觉算法 |
+| ENT_PG_343 | 安徽爱观视觉科技有限公司 | 光学检测/机器视觉 | 上游 | 工业相机与图像传感器 | SUB_MV_017 | 3D相机 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：仿生眼（电子仿生眼）、3D摄像系统、产品检测系统、3D显微镜及3D内窥镜、泛用型仿生眼；产品：仿生眼(电子仿生眼)、3D摄像系统 |
+| ENT_PG_343 | 安徽爱观视觉科技有限公司 | 光学检测/机器视觉 | 中游 | 标准视觉系统方案 | SUB_MV_036 | 成像检测系统 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：仿生眼（电子仿生眼）、3D摄像系统、产品检测系统、3D显微镜及3D内窥镜、泛用型仿生眼；产品：仿生眼(电子仿生眼)、3D摄像系统 |
+| ENT_PG_343 | 安徽爱观视觉科技有限公司 | 光学检测/机器视觉 | 中游 | 3D视觉与空间感知系统 | SUB_MV_049 | 双目视觉 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：仿生眼（电子仿生眼）、3D摄像系统、产品检测系统、3D显微镜及3D内窥镜、泛用型仿生眼；产品：仿生眼(电子仿生眼)、3D摄像系统 |
+| ENT_PG_343 | 安徽爱观视觉科技有限公司 | 光学检测/机器视觉 | 中游 | 3D视觉与空间感知系统 | SUB_MV_051 | 三维重建与测量 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：仿生眼（电子仿生眼）、3D摄像系统、产品检测系统、3D显微镜及3D内窥镜、泛用型仿生眼；产品：仿生眼(电子仿生眼)、3D摄像系统 |
+| ENT_PG_346 | 上海拜安传感技术有限公司 | 光学检测/机器视觉 | 中游 | 专用检测设备 | SUB_MV_045 | 在线检测设备 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：MEMS光学传感核心技术（光谱干涉仪MEMS芯片化制造，异质巨集成体硅工艺）；转化自中国科学院上海微系统所国家重大专项，定位为全球原创和持续引领的超高精度 MEMS 光学传感器 IDM 厂商。围绕高精度光学传感器填补风电、轨交等领域的工业监测空白，实现国产超越；高精度传感器产业化：航空和核电；MEMS光纤传感器；产品：光纤传感器，全光谱光纤传感分析仪 |
+| ENT_PG_350 | 西安睿控创合电子科技有限公司 | 光学检测/机器视觉 | 上游 | 图像采集与边缘计算硬件 | SUB_MV_022 | 边缘计算盒子 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：嵌入式计算机软、硬件产品设计、开发；专业从事嵌入式计算机硬件产品设计、开发和咨询服务的高科技企业；AI边缘计算机；公司研发人员占比超过70%，建立了一支深入掌握X86、PowerPC、ARM、FPGA和国产化飞腾、龙芯处理器等各CPU架构的；产品：基于飞腾、龙芯等国产自主可控芯片的系列化硬件产品和解决方案；标准和定制化嵌入式计算机模块；专业化核心硬件产品和系统级解决方案。板卡，工控机，AI边缘计算。 |
+| ENT_PG_350 | 西安睿控创合电子科技有限公司 | 光学检测/机器视觉 | 上游 | 图像采集与边缘计算硬件 | SUB_MV_023 | 工控机 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：嵌入式计算机软、硬件产品设计、开发；专业从事嵌入式计算机硬件产品设计、开发和咨询服务的高科技企业；AI边缘计算机；公司研发人员占比超过70%，建立了一支深入掌握X86、PowerPC、ARM、FPGA和国产化飞腾、龙芯处理器等各CPU架构的；产品：基于飞腾、龙芯等国产自主可控芯片的系列化硬件产品和解决方案；标准和定制化嵌入式计算机模块；专业化核心硬件产品和系统级解决方案。板卡，工控机，AI边缘计算。 |
+| ENT_PG_350 | 西安睿控创合电子科技有限公司 | 光学检测/机器视觉 | 上游 | 图像采集与边缘计算硬件 | SUB_MV_024 | 视觉控制器 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：嵌入式计算机软、硬件产品设计、开发；专业从事嵌入式计算机硬件产品设计、开发和咨询服务的高科技企业；AI边缘计算机；公司研发人员占比超过70%，建立了一支深入掌握X86、PowerPC、ARM、FPGA和国产化飞腾、龙芯处理器等各CPU架构的；产品：基于飞腾、龙芯等国产自主可控芯片的系列化硬件产品和解决方案；标准和定制化嵌入式计算机模块；专业化核心硬件产品和系统级解决方案。板卡，工控机，AI边缘计算。 |
+| ENT_PG_355 | 湖南诠视传感技术有限公司 | 光学检测/机器视觉 | 上游 | 镜头与光学成像部件 | SUB_MV_011 | 成像模组 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：高速低延迟 VSLAM 算法：公司起家的核心底层技术。可在本地实现高精度的实时 6DoF（六自由度）位置追踪、空间定位与建图，摆脱了对外部大算力主机的绝对依赖。多传感器融合与系统标定：掌握针对多相机、IMU（惯性测量单元）、ToF 等多种传感器的内外参精密标定技术，是实现高精度空间计算的基石。SlimEdge XR® 引擎：自研的软硬件边缘计算架构，能够将视觉感知、边缘 AI 推理以及视频编码在模组端本地化处理，降低了XR终… |
+| ENT_PG_355 | 湖南诠视传感技术有限公司 | 光学检测/机器视觉 | 上游 | 运动控制与执行配套 | SUB_MV_029 | 标定与校准工具 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：高速低延迟 VSLAM 算法：公司起家的核心底层技术。可在本地实现高精度的实时 6DoF（六自由度）位置追踪、空间定位与建图，摆脱了对外部大算力主机的绝对依赖。多传感器融合与系统标定：掌握针对多相机、IMU（惯性测量单元）、ToF 等多种传感器的内外参精密标定技术，是实现高精度空间计算的基石。SlimEdge XR® 引擎：自研的软硬件边缘计算架构，能够将视觉感知、边缘 AI 推理以及视频编码在模组端本地化处理，降低了XR终… |
+| ENT_PG_364 | 深圳瑞识科技股份有限公司 | 光学检测/机器视觉 | 上游 | 工业光源与照明控制 | SUB_MV_005 | 结构光光源 | medium | true | products | postgresql | VCSEL芯片、ToF/结构光光源模组、激光雷达光源、光电传感模组 |
+| ENT_PG_364 | 深圳瑞识科技股份有限公司 | 光学检测/机器视觉 | 中游 | 3D视觉与空间感知系统 | SUB_MV_048 | ToF视觉 | medium | true | products | postgresql | VCSEL芯片、ToF/结构光光源模组、激光雷达光源、光电传感模组 |
+| ENT_PG_372 | 北京智机科技有限公司 | 光学检测/机器视觉 | 中游 | 视觉算法平台 | SUB_MV_030 | 缺陷检测算法 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：三维定位与立体视觉重建，AI 缺陷检测与识别，机器人引导控制系统；产品：IMlight 汽车总装涂胶 3D 视觉检测系统，智能钢结构焊接，智能鞋底打磨与涂胶 |
+| ENT_PG_372 | 北京智机科技有限公司 | 光学检测/机器视觉 | 中游 | 3D视觉与空间感知系统 | SUB_MV_051 | 三维重建与测量 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：三维定位与立体视觉重建，AI 缺陷检测与识别，机器人引导控制系统；产品：IMlight 汽车总装涂胶 3D 视觉检测系统，智能钢结构焊接，智能鞋底打磨与涂胶 |
+| ENT_PG_372 | 北京智机科技有限公司 | 光学检测/机器视觉 | 中游 | 整线集成与行业解决方案 | SUB_MV_055 | 汽车零部件视觉方案 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：三维定位与立体视觉重建，AI 缺陷检测与识别，机器人引导控制系统；产品：IMlight 汽车总装涂胶 3D 视觉检测系统，智能钢结构焊接，智能鞋底打磨与涂胶 |
+| ENT_PG_372 | 北京智机科技有限公司 | 光学检测/机器视觉 | 下游 | 机器人视觉引导与智能制造 | SUB_MV_087 | 机器人焊接视觉引导 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：三维定位与立体视觉重建，AI 缺陷检测与识别，机器人引导控制系统；产品：IMlight 汽车总装涂胶 3D 视觉检测系统，智能钢结构焊接，智能鞋底打磨与涂胶 |
+| ENT_PG_388 | 中科慧远视觉技术（洛阳）股份有限公司 | 光学检测/机器视觉 | 中游 | 专用检测设备 | SUB_MV_042 | 外观检测设备 | low | true | scenario | postgresql | 工业产品外观缺陷的自动化精密检测，主要针对外观缺陷微弱、精度要求高的场景，如玻璃盖板、显示面板等的外观检测。 |
+| ENT_PG_411 | 聚时科技（上海）有限公司 | 光学检测/机器视觉 | 中游 | 视觉算法平台 | SUB_MV_030 | 缺陷检测算法 | medium | true | core_tech,scenario | postgresql | 高精度机器视觉、微纳精密机构与光学技术；研发复杂机器视觉产品系统及工业机器人AI产品，为工业机器提供“视觉洞察力”和“任务执行力”。主要产品包括：聚芯系列半导体缺陷检测量测设备、半导体制程质量分析与良率管理系统、半导体光伏行业AI解决方案、机器人视觉AI控制与重型机器智能系统等，聚焦于工业AI与精密检测仪器设备领域 |
+| ENT_PG_411 | 聚时科技（上海）有限公司 | 光学检测/机器视觉 | 中游 | 视觉算法平台 | SUB_MV_034 | 深度学习视觉平台 | medium | true | core_tech | postgresql | 为工业机器提供“视觉洞察力”和“任务执行力”。主要产品包括：聚芯系列半导体缺陷检测量测设备、半导体制程质量分析与良率管理系统、半导体光伏行业AI解决方案、机器人视觉AI控制与重型机器智能系统等，聚焦于工业AI与精密检测仪器设备领域 |
+| ENT_PG_411 | 聚时科技（上海）有限公司 | 光学检测/机器视觉 | 中游 | 标准视觉系统方案 | SUB_MV_036 | 成像检测系统 | medium | true | products | postgresql | 工业机器人AI视觉产品、复杂机器视觉检测系统 |
+| ENT_PG_411 | 聚时科技（上海）有限公司 | 光学检测/机器视觉 | 下游 | 半导体检测 | SUB_MV_066 | 晶圆缺陷检测 | low | true | scenario | postgresql | 聚时科技（上海）有限公司为集成电路、半导体、光伏等高端制造领域提供系列化的智能机器硬件设备产品与AI解决方案，具体应用场景包括：芯片复杂检测、半导体晶圆缺陷检测与量测、半导体制程质量分析与良率管理、光伏行业AI检测、机器人视觉控制、重型机器智能系统，以及拆装集装箱等工业场景。 |
+| ENT_PG_438 | 北京大禹智芯科技有限公司 | 光学检测/机器视觉 | 上游 | 工业相机与图像传感器 | SUB_MV_015 | CMOS图像传感器 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：ALPIX融合视觉传感器芯片同一芯片输出图像数据和事件流，匹配CMOS图像传感器 |
+| ENT_PG_459 | 绍兴埃瓦科技有限公司 | 光学检测/机器视觉 | 中游 | 视觉算法平台 | SUB_MV_035 | 图像处理软件 | medium | true | core_tech,scenario | postgresql | 事智能科技、集成电路科技、计算机科技领域内的技术开发、技术咨询、技术服务、技术转让，集成电路芯片设计服务，计算机软件开发，数据处理服务，新兴软件及服务。拥有多项图像处理、双目立体匹配、人脸识别、智能锁等相关专利。 |
+| ENT_PG_463 | 雨树光科（深圳）有限公司 | 光学检测/机器视觉 | 下游 | 半导体检测 | SUB_MV_066 | 晶圆缺陷检测 | medium | true | - | - | - |
+| ENT_PG_465 | 北京龙知远科技发展有限公司 | 光学检测/机器视觉 | 上游 | 工业相机与图像传感器 | SUB_MV_018 | 红外/多光谱相机 | medium | true | core_tech,products | postgresql | 制冷型锑化铟探测器、红外相机技术 |
+| ENT_PG_43 | 深圳市薇光点亮科技有限公司 | 光显示 | 上游 | 显示芯片与发光器件 | SUB_DISP_005 | Micro LED芯片 | low | true | postgresql_leak_review | manual_review | PostgreSQL漏挂核查：字段仅标注Micro LED技术且具体核心技术不足，低置信挂到Micro LED芯片待复核 |
+| ENT_PG_121 | 合肥中科优材科技有限公司 | 光显示 | 上游 | 光学结构件与配套部件 | SUB_DISP_015 | 偏光片/光学膜片 | medium | true | products | postgresql | 高端PET光学膜（如偏光片支撑膜、低取向角离型膜）的研发、生产及产业化 |
+| ENT_PG_148 | 成都屿西半导体科技有限公司 | 光显示 | 上游 | 显示芯片与发光器件 | SUB_DISP_005 | Micro LED芯片 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：Nano LED技术和SAG单片三色集成RGB，匹配Micro LED芯片 |
+| ENT_PG_189 | 成川科技（苏州）有限公司 | 光显示 | 中游 | 封装键合与巨量转移工艺 | SUB_DISP_017 | 巨量转移装备与工艺 | low | true | scenario | postgresql | 1. 半导体生产线（晶圆制造、封测）的物料自动化搬运与存储。2. Micro LED巨量转移配套的高精度芯片搬运。3. 车载屏模组生产线的耐高低温物流接驳。4. 面板产线（如高世代线）的供应链效率优化。 |
+| ENT_PG_189 | 成川科技（苏州）有限公司 | 光显示 | 下游 | 车载与工业显示 | SUB_DISP_037 | 车载座舱显示 | low | true | scenario | postgresql | 1. 半导体生产线（晶圆制造、封测）的物料自动化搬运与存储。2. Micro LED巨量转移配套的高精度芯片搬运。3. 车载屏模组生产线的耐高低温物流接驳。4. 面板产线（如高世代线）的供应链效率优化。 |
+| ENT_PG_225 | 广纳四维（广东）光电科技有限公司 | 光显示 | 中游 | 显示模组集成与校准 | SUB_DISP_022 | 面板模组 | low | true | scenario | postgresql | 智能眼镜显示模组、汽车新型交互显示系统解决方案、AR-HUD、光场裸眼3D、自发光透明纳米膜、车窗显示、展览展示 |
+| ENT_PG_225 | 广纳四维（广东）光电科技有限公司 | 光显示 | 中游 | 显示整机与系统方案 | SUB_DISP_026 | 车载HUD系统 | medium | true | core_tech,products,scenario,industry | postgresql | 纳米光学相关器件技术、衍射光波导、增强平视显示(AR-HUD) |
+| ENT_PG_225 | 广纳四维（广东）光电科技有限公司 | 光显示 | 中游 | 显示整机与系统方案 | SUB_DISP_027 | 投影显示系统 | medium | true | products | postgresql | 基于新型纳米材料和尖端纳米加工技术的纳米光学相关器件，衍射光波导、透明投影显示（EPDS）、增强平视显示（AR-HUD）、光场显示（裸眼3D）、全透明自发光投影显示、体全息波导、自发光透明纳米膜、浮雕光栅波导器件 |
+| ENT_PG_241 | 光宇元芯（杭州）光电有限责任公司 | 光显示 | 上游 | 显示芯片与发光器件 | SUB_DISP_005 | Micro LED芯片 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：Nano LED、RGB单片整体集成和AR/VR微型显示芯片，匹配Micro LED芯片 |
+| ENT_PG_329 | 西安唐晶量子科技有限公司 | 光显示 | 上游 | 显示材料与外延衬底 | SUB_DISP_001 | Micro LED外延片 | medium | true | core_tech,products | postgresql | 半导体激光器外延片、半导体材料、光电子材料、量子通信技术开发 |
+| ENT_PG_355 | 湖南诠视传感技术有限公司 | 光显示 | 下游 | AR/VR与近眼显示 | SUB_DISP_035 | AR近眼显示 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：高速低延迟 VSLAM 算法：公司起家的核心底层技术。可在本地实现高精度的实时 6DoF（六自由度）位置追踪、空间定位与建图，摆脱了对外部大算力主机的绝对依赖。多传感器融合与系统标定：掌握针对多相机、IMU（惯性测量单元）、ToF 等多种传感器的内外参精密标定技术，是实现高精度空间计算的基石。SlimEdge XR® 引擎：自研的软硬件边缘计算架构，能够将视觉感知、边缘 AI 推理以及视频编码在模组端本地化处理，降低了XR终… |
+| ENT_PG_361 | 西安赛富乐斯半导体科技有限公司 | 光显示 | 上游 | 显示材料与外延衬底 | SUB_DISP_001 | Micro LED外延片 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：半极性氮化镓（Semi-polar GaN）材料、纳米孔量子点（NPQD®）Micro-LED技术、量子点Micro-LED（mLED）显示解决方案；半极性GaN材料 & 纳米孔量子点Micro-LED芯片集成研发商；量子点Micro-LED显示技术；产品：NPQD®纳米孔量子点Micro-LED、量子点mLED显示模组；现有产品；R系列量子点直显大屏解决方案 |
+| ENT_PG_361 | 西安赛富乐斯半导体科技有限公司 | 光显示 | 上游 | 显示材料与外延衬底 | SUB_DISP_003 | 量子点材料 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：半极性氮化镓（Semi-polar GaN）材料、纳米孔量子点（NPQD®）Micro-LED技术、量子点Micro-LED（mLED）显示解决方案；半极性GaN材料 & 纳米孔量子点Micro-LED芯片集成研发商；量子点Micro-LED显示技术；产品：NPQD®纳米孔量子点Micro-LED、量子点mLED显示模组；现有产品；R系列量子点直显大屏解决方案 |
+| ENT_PG_361 | 西安赛富乐斯半导体科技有限公司 | 光显示 | 上游 | 显示芯片与发光器件 | SUB_DISP_005 | Micro LED芯片 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：半极性氮化镓（Semi-polar GaN）材料、纳米孔量子点（NPQD®）Micro-LED技术、量子点Micro-LED（mLED）显示解决方案；半极性GaN材料 & 纳米孔量子点Micro-LED芯片集成研发商；量子点Micro-LED显示技术；产品：NPQD®纳米孔量子点Micro-LED、量子点mLED显示模组；现有产品；R系列量子点直显大屏解决方案 |
+| ENT_PG_380 | 深圳惠牛科技有限公司 | 光显示 | 上游 | 光学结构件与配套部件 | SUB_DISP_016 | AR波导与光机光学件 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：增强现实（AR）眼镜的光学方案设计与显示模组供应。；产品：基于Birdbath的AR光学模组(CA系列），基于超短焦Pancake的VR光学模组，基于树脂/玻璃材料的衍射光波导模组 |
+| ENT_PG_380 | 深圳惠牛科技有限公司 | 光显示 | 中游 | 显示模组集成与校准 | SUB_DISP_023 | 光机模组 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：增强现实（AR）眼镜的光学方案设计与显示模组供应。；产品：基于Birdbath的AR光学模组(CA系列），基于超短焦Pancake的VR光学模组，基于树脂/玻璃材料的衍射光波导模组 |
+| ENT_PG_380 | 深圳惠牛科技有限公司 | 光显示 | 中游 | 显示整机与系统方案 | SUB_DISP_025 | AR显示光机 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：增强现实（AR）眼镜的光学方案设计与显示模组供应。；产品：基于Birdbath的AR光学模组(CA系列），基于超短焦Pancake的VR光学模组，基于树脂/玻璃材料的衍射光波导模组 |
+| ENT_PG_391 | 上海鲲游光电科技有限公司 | 光显示 | 下游 | AR/VR与近眼显示 | SUB_DISP_035 | AR近眼显示 | medium | true | products | postgresql | 3D摄像头衍射光学元件(DOE)、AR眼镜SRG光波导器件、阵列光通信器件 |
+| ENT_PG_408 | 杭州中科极光科技有限公司 | 光显示 | 中游 | 显示整机与系统方案 | SUB_DISP_028 | 专用显示系统 | medium | true | products | postgresql | 以中科院理化所应用激光中心团队为基础，研发超高清RGB三色纯激光家庭影院、高性能RGB三色真激光光源系统、激光数字影院和特种显示器等新一代激光显示系列产品。关键技术小型化高性能三基色LD激光模组、高效率控制驱动、高精度分时调制、颜色管理、高效能热管理、匀场照明与散斑消除等 |
+| ENT_PG_408 | 杭州中科极光科技有限公司 | 光显示 | 下游 | 商显照明与特种显示 | SUB_DISP_040 | 透明/户外特种显示 | medium | true | products | postgresql | 以中科院理化所应用激光中心团队为基础，研发超高清RGB三色纯激光家庭影院、高性能RGB三色真激光光源系统、激光数字影院和特种显示器等新一代激光显示系列产品。关键技术小型化高性能三基色LD激光模组、高效率控制驱动、高精度分时调制、颜色管理、高效能热管理、匀场照明与散斑消除等 |
+| ENT_PG_420 | 广东阿达半导体设备股份有限公司 | 光显示 | 中游 | 封装键合与巨量转移工艺 | SUB_DISP_017 | 巨量转移装备与工艺 | medium | true | core_tech,products,scenario | postgresql | 焊线机/固晶机等半导体封装装备、Mini/MicroLED巨量转移技术 |
+| ENT_PG_470 | 浙江众凌科技有限公司 | 光显示 | 上游 | 显示材料与外延衬底 | SUB_DISP_002 | OLED发光材料 | medium | true | core_tech,scenario | postgresql | AMOLED显示行业有机发光材料蒸镀专用精密金属掩模版FMM（Fine Metal Mask）的生产和研发，AMOLED用Divide Open Mask、Divide Fine Metal  |
+| ENT_PG_473 | 深圳扑浪量子半导体有限公司 | 光显示 | 上游 | 显示材料与外延衬底 | SUB_DISP_003 | 量子点材料 | medium | true | core_tech,scenario | postgresql | 半导体量子点发光材料；新型量子点显示工艺；半导体薄膜工艺设备 |
+| ENT_PG_25 | 上海中器无量量子科技有限公司 | 光融合（量子光学新原理） | 上游 | 超灵敏光学感知器件 | SUB_FUSION_007 | 量子传感器 | medium | true | core_tech,products | postgresql | 量子计算机整机及核心部件等子系统的研发销售；量子传感器等产业核心部件的研发销售；量子软件、量子算法及混合计算解决方案的研发销售 |
+| ENT_PG_109 | 启明光子（北京）科技有限公司 | 光融合（量子光学新原理） | 下游 | 科研与高端测量 | SUB_FUSION_020 | 实验室精密测量 | low | true | industry | postgresql | 光通信（相干光通信）、激光雷达、生物医疗（光学相干层析成像、无创连续血糖监测）、科研领域（量子计算、量子精密测量）、长距离传感、精密仪器 |
+| ENT_PG_120 | 北京未磁科技有限公司 | 光融合（量子光学新原理） | 上游 | 超灵敏光学感知器件 | SUB_FUSION_007 | 量子传感器 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：原子磁力计、心磁图仪、脑磁图仪属于量子测量/量子传感器方向 |
+| ENT_PG_141 | 中智科仪（北京）科技有限公司 | 光融合（量子光学新原理） | 上游 | 量子光学材料与器件基础 | SUB_FUSION_001 | 单光子源 | medium | true | core_tech,products | postgresql | 时间门控成像；单光子探测；皮秒级时间分辨；激光穿透成像 |
+| ENT_PG_141 | 中智科仪（北京）科技有限公司 | 光融合（量子光学新原理） | 上游 | 超灵敏光学感知器件 | SUB_FUSION_005 | 单光子探测模块 | medium | true | core_tech | postgresql | 时间门控成像；单光子探测；皮秒级时间分辨；激光穿透成像 |
+| ENT_PG_182 | 苏州博格科技有限公司 | 光融合（量子光学新原理） | 中游 | 融合感知与控制平台 | SUB_FUSION_016 | 感知控制平台 | medium | true | core_tech | postgresql | 以及运动控制平台、隔振平台、高低温平台、特种光源、电输运模块等核心模组 |
+| ENT_PG_193 | 吉林求是光谱数据科技有限公司 | 光融合（量子光学新原理） | 中游 | 新原理成像与探测系统 | SUB_FUSION_013 | 光谱成像系统 | medium | true | products | postgresql | 及计算重建型光谱CIS（“调制+解调”），用材料+芯片工艺+算法替代传统分光器件，在CMOS芯片上同时实现成像和光谱功能。产品矩阵芯片、模组、光谱相机（多光谱/高光谱）。光谱范围：现有技术300-1000nm，新技术2800-1700nm |
+| ENT_PG_240 | 西湖智能视觉科技（杭州）有限公司 | 光融合（量子光学新原理） | 中游 | 新原理成像与探测系统 | SUB_FUSION_013 | 光谱成像系统 | medium | true | products | postgresql | 单曝光高速视频；单曝光高光谱成像；单曝光3D检测 |
+| ENT_PG_257 | 广州超视计生物科技有限公司 | 光融合（量子光学新原理） | 中游 | 科研仪器与前沿实验装备 | SUB_FUSION_019 | 高端显微系统 | medium | true | core_tech,products | postgresql | 智能超灵敏结构光超分辨显微镜 |
+| ENT_PG_294 | 北京超维景生物科技有限公司 | 光融合（量子光学新原理） | 下游 | 生物医学与生命科学成像 | SUB_FUSION_022 | 生命科学显微成像 | medium | true | products | postgresql | 高速高分辨率大视场双光子显微成像系统（基于920nm超快光纤激光器） |
+| ENT_PG_306 | 东莞市中科原子精密制造科技有限公司 | 光融合（量子光学新原理） | 上游 | 超灵敏光学感知器件 | SUB_FUSION_006 | 弱光成像器件 | low | true | scenario | postgresql | 低照度夜间成像、激光测风、激光三维成像、新一代光电探测器件应用（如光谱分析、精密测量）。 |
+| ENT_PG_306 | 东莞市中科原子精密制造科技有限公司 | 光融合（量子光学新原理） | 下游 | 科研与高端测量 | SUB_FUSION_020 | 实验室精密测量 | low | true | scenario | postgresql | 低照度夜间成像、激光测风、激光三维成像、新一代光电探测器件应用（如光谱分析、精密测量）。 |
+| ENT_PG_323 | 西安中科光电精密工程有限公司 | 光融合（量子光学新原理） | 下游 | 科研与高端测量 | SUB_FUSION_020 | 实验室精密测量 | low | true | industry | postgresql | 国防装备（军工）、智能制造（工业自动化）、安防监测、精密测量。 |
+| ENT_PG_334 | 西安中科飞图光电科技有限公司 | 光融合（量子光学新原理） | 下游 | 科研与高端测量 | SUB_FUSION_020 | 实验室精密测量 | medium | true | core_tech | postgresql | 光学精密测量与成像技术（短波红外/紫外/可见光光学系统） |
+| ENT_PG_339 | 深圳市中科微光医疗器械技术有限公司 | 光融合（量子光学新原理） | 下游 | 生物医学与生命科学成像 | SUB_FUSION_023 | 医学弱光检测 | medium | true | comprehensive_rationality_review | manual_review | 冠脉OCT手术导航系统（扫频激光OCT）和多模态光学诊断设备直接匹配医学影像；企业为医疗成像设备商而非超快激光器制造商 |
+| ENT_PG_346 | 上海拜安传感技术有限公司 | 光融合（量子光学新原理） | 中游 | 新原理成像与探测系统 | SUB_FUSION_013 | 光谱成像系统 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：MEMS光学传感核心技术（光谱干涉仪MEMS芯片化制造，异质巨集成体硅工艺）；转化自中国科学院上海微系统所国家重大专项，定位为全球原创和持续引领的超高精度 MEMS 光学传感器 IDM 厂商。围绕高精度光学传感器填补风电、轨交等领域的工业监测空白，实现国产超越；高精度传感器产业化：航空和核电；MEMS光纤传感器；产品：光纤传感器，全光谱光纤传感分析仪 |
+| ENT_PG_414 | 南京荣骏科技发展有限公司 | 光融合（量子光学新原理） | 中游 | 科研仪器与前沿实验装备 | SUB_FUSION_017 | 量子光学实验平台 | low | true | scenario | postgresql | 电动汽车及智能汽车分布式驱动控制系统的设计与开发、分布式驱动车辆实验平台的定制开发、面向军用等特种行业的分布式驱动高速移动平台的研发和生产 |
+| ENT_PG_433 | 长光卫星技术股份有限公司 | 光融合（量子光学新原理） | 中游 | 新原理成像与探测系统 | SUB_FUSION_013 | 光谱成像系统 | low | true | scenario | postgresql | 提供高时间分辨率、高空间分辨率、高光谱分辨率、快速广域覆盖的卫星遥感数据以及以卫星遥感数据为基础的空间信息综合应用服务 |
+| ENT_PG_469 | 中科酷原科技（武汉）有限公司 | 光融合（量子光学新原理） | 上游 | 超灵敏光学感知器件 | SUB_FUSION_007 | 量子传感器 | medium | true | core_tech,products | postgresql | 量子传感器及其核心器件、中性原子量子计算、冷原子绝对重力仪等量子技术产品 |
+| ENT_PG_469 | 中科酷原科技（武汉）有限公司 | 光融合（量子光学新原理） | 下游 | 科研与高端测量 | SUB_FUSION_020 | 实验室精密测量 | low | true | scenario | postgresql | 量子精密测量、量子计算硬件研发、重力测量 |
+| ENT_PG_2 | 上海曦智科技股份有限公司 | 光计算 | 中游 | 光计算/光交换芯片 | SUB_COMP_013 | 光矩阵计算芯片 | medium | false | official_website | manual_review | 官网披露核心芯片技术包括光子矩阵计算oMAC 可支撑光矩阵计算芯片挂接 |
+| ENT_PG_2 | 上海曦智科技股份有限公司 | 光计算 | 中游 | 光计算/光交换芯片 | SUB_COMP_014 | 光交换芯片 | medium | false | official_website | manual_review | 官网披露核心芯片技术包括片上光子网络oNOC和片间光子网络oNET 可支撑光交换芯片挂接 |
+| ENT_PG_2 | 上海曦智科技股份有限公司 | 光计算 | 中游 | 光计算/光交换芯片 | SUB_COMP_015 | 光子AI加速芯片 | medium | false | official_website | manual_review | 官网披露光子矩阵计算oMAC及光子网络技术 面向更高效算力解决方案 |
+| ENT_PG_2 | 上海曦智科技股份有限公司 | 光计算 | 中游 | 光互连与封装模块 | SUB_COMP_016 | 光I/O模块 | medium | false | official_website | manual_review | 官网披露片上光子网络oNOC和片间光子网络oNET 涉及芯片级光输入输出和光互连 |
+| ENT_PG_2 | 上海曦智科技股份有限公司 | 光计算 | 中游 | 光互连与封装模块 | SUB_COMP_018 | 板级光互连模块 | medium | false | official_website | manual_review | 官网披露片间光子网络oNET 涉及芯片间和板级高速光互连能力 |
+| ENT_PG_2 | 上海曦智科技股份有限公司 | 光计算 | 中游 | 光电混合计算平台 | SUB_COMP_024 | 数据中心光计算方案 | medium | false | official_website | manual_review | 官网披露以oMAC oNOC oNET提供高效且具成本效益的算力解决方案 破解内存墙和功耗墙 |
+| ENT_PG_26 | 原集微科技（上海）有限公司 | 光计算 | 上游 | 光计算材料与工艺平台 | SUB_COMP_003 | III-V材料与异质集成 | medium | true | core_tech,products | postgresql | 专注于超越摩尔的原子级芯片制造和异质集成技术；[冠军营补充]二维材料项目团队实力顶尖，技术可实现低成本工艺对标高端芯片性能，在传感器、DRAM 等领域应用前景广阔，获行业权威支持，创业决心强，是下一代 |
+| ENT_PG_63 | 英伟芯（西安）科技有限公司 | 光计算 | 上游 | 光计算材料与工艺平台 | SUB_COMP_003 | III-V材料与异质集成 | medium | false | homepage_official | manual_review | 主页披露异质集成硅光技术和晶圆级混合集成工艺 包括化合物器件 硅基光电子 CMOS驱动芯片 |
+| ENT_PG_63 | 英伟芯（西安）科技有限公司 | 光计算 | 中游 | 光互连与封装模块 | SUB_COMP_016 | 光I/O模块 | medium | false | homepage_official | manual_review | 主页披露Optical I/O和NPO Optical Engine 面向GPU与Switch近距高速光接口 |
+| ENT_PG_63 | 英伟芯（西安）科技有限公司 | 光计算 | 中游 | 光互连与封装模块 | SUB_COMP_017 | CPO光引擎 | medium | false | homepage_official | manual_review | 主页披露3.2T 3D-Packaged CPO和External Laser Source 可支撑CPO光引擎挂接 |
+| ENT_PG_63 | 英伟芯（西安）科技有限公司 | 光计算 | 中游 | 光互连与封装模块 | SUB_COMP_018 | 板级光互连模块 | medium | false | homepage_official | manual_review | 主页披露机柜内和机柜间GPU-GPU及GPU-Switch高带宽长距离互连 |
+| ENT_PG_63 | 英伟芯（西安）科技有限公司 | 光计算 | 下游 | AI算力与大模型推理 | SUB_COMP_026 | AI训练互连 | medium | false | homepage_official | manual_review | 主页披露面向scale-up和scale-out AI集群 支持更大规模计算集群互连 |
+| ENT_PG_63 | 英伟芯（西安）科技有限公司 | 光计算 | 下游 | 数据中心高速互连 | SUB_COMP_027 | 交换机光互连 | medium | false | homepage_official | manual_review | 主页披露数据中心GPU与Switch之间高带宽低延时互连 满足Ethernet等主流接口需求 |
+| ENT_PG_63 | 英伟芯（西安）科技有限公司 | 光计算 | 下游 | 数据中心高速互连 | SUB_COMP_028 | 服务器间光互连 | medium | false | homepage_official | manual_review | 主页披露数据中心机柜内和机柜间高带宽长距离互连 用于GPU-GPU互连 |
+| ENT_PG_64 | 上海松应科技有限公司 | 光计算 | 下游 | AI算力与大模型推理 | SUB_COMP_026 | AI训练互连 | low | true | scenario | postgresql | 为智能制造、数字工厂、仓储物流、家庭服务等领域打造物理级精准数字仿真平台；在具身智能、自动驾驶、低空经济等核心场景中构建专业物理AI训练道场，用于高精度数字环境搭建、深度物理仿真、设计与运行参数优化 |
+| ENT_PG_116 | 北京行云集成电路有限公司 | 光计算 | 下游 | AI算力与大模型推理 | SUB_COMP_025 | 大模型推理加速 | low | true | scenario,industry | postgresql | 大模型推理。具体包括：1. 垂直行业的小模型推理（如使用7B~13B参数模型的应用）；2. 通用大模型的推理服务。 |
+| ENT_PG_175 | 原粒（北京）半导体技术有限公司 | 光计算 | 下游 | AI算力与大模型推理 | SUB_COMP_025 | 大模型推理加速 | medium | true | products | postgresql | 产品支持云边端多场景的AI芯粒、多芯粒大模型推理加速卡、算力模组、芯片与晶圆 |
+| ENT_PG_176 | 徐州光引科技发展有限公司 | 光计算 | 中游 | 光计算/光交换芯片 | SUB_COMP_014 | 光交换芯片 | medium | true | core_tech | postgresql | 片上光电集成芯片技术（片上计量级光谱仪、光谱分析探测芯片、通信光交换芯片，硬件芯片化设计） |
+| ENT_PG_177 | 九章（济南）量子科技有限公司 | 光计算 | 中游 | 光电混合计算平台 | SUB_COMP_033 | 光量子计算平台 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查修正：九章和九章二号为光量子计算原型机 匹配新建光量子计算平台环节 非数据中心光计算方案 |
+| ENT_PG_225 | 广纳四维（广东）光电科技有限公司 | 光计算 | 上游 | 光计算无源器件 | SUB_COMP_004 | 片上光波导 | medium | true | core_tech,products | postgresql | 纳米光学相关器件技术、衍射光波导、增强平视显示(AR-HUD) |
+| ENT_PG_235 | 宁波元芯光电子科技有限公司 | 光计算 | 上游 | 光计算材料与工艺平台 | SUB_COMP_002 | 薄膜铌酸锂平台 | medium | true | core_tech,products | postgresql | InP和TFLN两条基础技术路线；核心技术大范围调谐激光器中美两地专利注册 |
+| ENT_PG_252 | 中科皓烨（东莞）材料科技有限责任公司 | 光计算 | 上游 | 光计算无源器件 | SUB_COMP_004 | 片上光波导 | low | true | scenario | postgresql | 手表盖板材料、电子产品基板/盖板材料、超薄高清透镜组材料、VR/AR光波导基板 |
+| ENT_PG_286 | 深圳市光舟半导体技术有限公司 | 光计算 | 上游 | 光计算无源器件 | SUB_COMP_004 | 片上光波导 | medium | true | core_tech,products | postgresql | 全息光波导和光引擎设计制作能力 |
+| ENT_PG_296 | 武汉中科锐择光电科技有限公司 | 光计算 | 上游 | 光计算有源器件 | SUB_COMP_007 | 高速光调制器 | medium | true | products | postgresql | 注于光纤激光、光纤传感等特种应用领域的光电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件、TO器件、激光器件和传感器、激光器整机、激光器模块、光模块、光电模块等。致力于“传感应用”、“激 |
+| ENT_PG_321 | 北京国科天迅科技股份有限公司 | 光计算 | 上游 | 高速电芯片与封装基板 | SUB_COMP_010 | DSP/SerDes芯片 | medium | true | - | - | - |
+| ENT_PG_349 | 浙江澳威激光器件有限公司 | 光计算 | 上游 | 光计算无源器件 | SUB_COMP_006 | AWG/光路矩阵 | medium | true | core_tech,products | postgresql | 激光器、PLC、C/DWDM、无热/有热AWG等光学器件，提供光学产品设计的定制、样品、小批量生产和量产服务 |
+| ENT_PG_371 | 上海橙科微电子科技有限公司 | 光计算 | 上游 | 高速电芯片与封装基板 | SUB_COMP_010 | DSP/SerDes芯片 | medium | true | - | - | - |
+| ENT_PG_373 | 青岛本原微电子有限公司 | 光计算 | 上游 | 高速电芯片与封装基板 | SUB_COMP_010 | DSP/SerDes芯片 | medium | true | core_tech,products | postgresql | 数字信号处理器(DSP)芯片自主创新架构 |
+| ENT_PG_391 | 上海鲲游光电科技有限公司 | 光计算 | 上游 | 光计算无源器件 | SUB_COMP_004 | 片上光波导 | medium | true | core_tech,products | postgresql | 纳米压印技术、晶圆级光学WLO制造技术；主要产品有3D摄像头用的衍射光学元件DOE、增强现实眼镜的SRG光波导器件、以及阵列光通信器件等 |
+| ENT_PG_429 | 西安奇芯光电科技有限公司 | 光计算 | 上游 | 光计算材料与工艺平台 | SUB_COMP_003 | III-V材料与异质集成 | medium | true | products | postgresql | 权且全球唯一可量产的硅基改性材料平台，具有超低损耗、超低偏振敏感性、超高温度稳定性、超高耦合效率、超高均匀一致性和超低制备成本的优势。基于该平台发展出多材料三维异质集成混合材料体系。产品涵盖“光传感、光传输、光计算”三大领域，MUX/DEMUX芯片、BiDi光模块、XG(S) Combo PON光模块、直调式Combo PON |
+| ENT_PG_439 | 苏州山河光电科技有限公司 | 光计算 | 中游 | 光电混合计算平台 | SUB_COMP_022 | 光AI加速平台 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：核心技术包含超表面光AI计算，产品为超表面光AI系统，匹配光AI加速平台 |
+| ENT_PG_16 | 北京灵熹光子科技有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_004 | 硅光芯片 | medium | true | core_tech | postgresql | 基于微环调制器的硅光芯片与 CMOS 电芯片协同开发 |
+| ENT_PG_27 | 亿能智光（深圳）科技有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_001 | 激光器芯片 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：产品为光子晶体表面发射激光器PCSEL的芯片级器件，匹配激光器芯片 |
+| ENT_PG_63 | 英伟芯（西安）科技有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_004 | 硅光芯片 | medium | false | homepage_official | manual_review | PG及官网补充披露异质集成硅光技术 光子集成电路PIC 硅光晶圆和硅基光电子 支撑硅光芯片挂载 |
+| ENT_PG_63 | 英伟芯（西安）科技有限公司 | 光通信/光模块 | 中游 | CPO/光电共封装 | SUB_OC_031 | CPO引擎 | medium | false | homepage_official | manual_review | 主页披露3.2T 3D-Packaged CPO和1.6T/3.2T Ethernet NPO Optical Engine |
+| ENT_PG_63 | 英伟芯（西安）科技有限公司 | 光通信/光模块 | 中游 | CPO/光电共封装 | SUB_OC_032 | 光I/O | medium | false | homepage_official | manual_review | 主页披露Optical I/O和Ethernet NPO光引擎 用于芯片和板级光输入输出方案 |
+| ENT_PG_142 | 长飞光坊（武汉）科技有限公司 | 光通信/光模块 | 上游 | 光纤与预制材料 | SUB_OC_006 | 光纤预制棒 | medium | true | products | postgresql | 具备核心光纤与器件的集成能力。产品掺镱光纤、无源光纤/传能光纤、保偏光纤/紫外光纤、预制棒、器件（TGG、光栅、QBH/QD光缆、集束跳线、镀膜光纤跳线）、泵浦源（915nm泵浦、976nm泵浦、>1000W泵浦模块）、激光器（300W-30kW连续 |
+| ENT_PG_142 | 长飞光坊（武汉）科技有限公司 | 光通信/光模块 | 上游 | 光纤与预制材料 | SUB_OC_007 | 特种光纤 | medium | true | products | postgresql | 具备核心光纤与器件的集成能力。产品掺镱光纤、无源光纤/传能光纤、保偏光纤/紫外光纤、预制棒、器件（TGG、光栅、QBH/QD光缆、集束跳线、镀膜光纤跳线）、泵浦源（915nm泵浦、976nm泵浦、>1000W泵浦模块）、激光器（30 |
+| ENT_PG_142 | 长飞光坊（武汉）科技有限公司 | 光通信/光模块 | 中游 | 光连接器与互连 | SUB_OC_024 | 光跳线 | medium | true | products | postgresql | 具备核心光纤与器件的集成能力。产品掺镱光纤、无源光纤/传能光纤、保偏光纤/紫外光纤、预制棒、器件（TGG、光栅、QBH/QD光缆、集束跳线、镀膜光纤跳线）、泵浦源（915nm泵浦、976nm泵浦、>1000W泵浦模块）、激光器（300W-30kW连续激光器、光束可调激光器） |
+| ENT_PG_173 | 苏州芯晟半导体科技有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_001 | 激光器芯片 | medium | false | rationality_review | manual_review | 合理性分析确认：QCL芯片设计和中远红外半导体激光技术可保留在激光器芯片环节 |
+| ENT_PG_173 | 苏州芯晟半导体科技有限公司 | 光通信/光模块 | 中游 | 有源光器件 | SUB_OC_018 | EML/DFB器件 | medium | true | products | postgresql | 量子级联激光器（QCL），高功率FP腔量子级联激光器、低功耗高单模稳定的DFB量子级联激光器。专注于中远红外半导体激光器产品 |
+| ENT_PG_228 | 希烽光电科技（南京）有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_002 | 探测器芯片 | high | false | - | postgresql_2026-07-15 | Ge/Si PIN光电探测器、Ge/Si APD雪崩光电探测器、APD BOX ROSA产品明确 |
+| ENT_PG_228 | 希烽光电科技（南京）有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_004 | 硅光芯片 | medium_high | false | core_tech,products | postgresql | 400G/800G硅光集成发射芯片、400G DR4/DR4+硅光引擎产品明确 |
+| ENT_PG_228 | 希烽光电科技（南京）有限公司 | 光通信/光模块 | 中游 | 有源光器件 | SUB_OC_016 | ROSA | high | false | - | postgresql_2026-07-15 | APD BOX ROSA产品直接对应ROSA环节 |
+| ENT_PG_228 | 希烽光电科技（南京）有限公司 | 光通信/光模块 | 中游 | 光模块 | SUB_OC_029 | 硅光模块 | medium_high | false | - | postgresql_2026-07-15 | 400G DR4/DR4+硅光引擎产品明确，硅光模块整机级 |
+| ENT_PG_228 | 希烽光电科技（南京）有限公司 | 光通信/光模块 | 中游 | 光模块 | SUB_OC_030 | 相干光模块 | high | false | - | postgresql_2026-07-15 | 硅光相干接收PIC (ICR)、硅光IC-TROSA产品明确 |
+| ENT_PG_235 | 宁波元芯光电子科技有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_001 | 激光器芯片 | medium | false | rationality_review | manual_review | 合理性分析确认：WTL可调激光器和DFB气体传感激光器支撑激光器芯片挂载 |
+| ENT_PG_235 | 宁波元芯光电子科技有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_003 | 调制器芯片 | medium | false | rationality_review | manual_review | 合理性分析新增：产品包含TFLN薄膜铌酸锂调制器，应与EML/DFB器件区分并挂载调制器芯片 |
+| ENT_PG_235 | 宁波元芯光电子科技有限公司 | 光通信/光模块 | 中游 | 有源光器件 | SUB_OC_018 | EML/DFB器件 | medium | false | rationality_review | manual_review | 合理性分析确认：DFB气体传感激光器可保留在DFB器件挂载，TFLN调制器另行细分 |
+| ENT_PG_267 | 湖南汇思光电科技有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_004 | 硅光芯片 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：核心技术为硅基光电子技术，产品为硅基光电子芯片，面向数据中心和芯片间通信 |
+| ENT_PG_289 | 成都频岢微电子有限公司 | 光通信/光模块 | 中游 | 无源光器件 | SUB_OC_021 | 滤波器 | medium | true | core_tech,products | postgresql | 射频高级模块一体化解决方案、射频滤波器芯片IC设计、高级射频声波集成电路和模块 |
+| ENT_PG_296 | 武汉中科锐择光电科技有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_001 | 激光器芯片 | medium | true | products | postgresql | 专注于光纤激光、光纤传感等特种应用领域的光电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件、TO器件、激光器件和传感器、激光器整机、激光器模块、光模块、光 |
+| ENT_PG_296 | 武汉中科锐择光电科技有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_002 | 探测器芯片 | medium | true | products | postgresql | 专注于光纤激光、光纤传感等特种应用领域的光电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件、TO器件、激光器件和传感器、激光器整机、激光器模块、光模块、光电模块等 |
+| ENT_PG_296 | 武汉中科锐择光电科技有限公司 | 光通信/光模块 | 上游 | 光纤与预制材料 | SUB_OC_007 | 特种光纤 | medium | true | products | postgresql | 专注于光纤激光、光纤传感等特种应用领域的光电器件及模块。核心产品保偏光纤、SESAM、PM隔离器、准直器、波分复用器、窄线宽激光器DFB、APD前置放大器模块、声光调制器、射频驱动器、光纤环、空间器件、微光学器件、拉锥器件、蝶形器件 |
+| ENT_PG_296 | 武汉中科锐择光电科技有限公司 | 光通信/光模块 | 上游 | 光电元器件 | SUB_OC_014 | 微光学组件 | medium | false | rationality_review | manual_review | 合理性分析确认：微光学器件、空间器件、拉锥器件等与微光学组件直接匹配 |
+| ENT_PG_296 | 武汉中科锐择光电科技有限公司 | 光通信/光模块 | 中游 | 有源光器件 | SUB_OC_018 | EML/DFB器件 | medium | false | rationality_review | manual_review | 合理性分析确认：产品线包含DFB相关封装器件，匹配有源光器件中的EML/DFB器件 |
+| ENT_PG_306 | 东莞市中科原子精密制造科技有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_004 | 硅光芯片 | medium | true | products | postgresql | 二代像增强器、超二代像增强器、三代像增强器、超快像增强器、微通道板光子探测器（MCP - PMT）、硅光电倍增管（SiPM）、日盲紫外像增强器、光三维成像雷达、光测风雷达 |
+| ENT_PG_314 | 中科驭数（北京）科技有限公司 | 光通信/光模块 | 下游 | 数据中心光互联设备 | SUB_OC_042 | AI集群互联 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：DPU芯片、专用数据处理架构；产品：DPU芯片、核心处理器芯片、专用数据处理架构 |
+| ENT_PG_329 | 西安唐晶量子科技有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_001 | 激光器芯片 | medium | true | products | postgresql | 半导体激光器外延片（VCSEL/边发射激光器） |
+| ENT_PG_335 | 西安中科微精光子科技股份有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_004 | 硅光芯片 | low | true | postgresql_leak_review | manual_review | PostgreSQL漏挂核查：产品包含光子芯片、光子器件和光子模块，但未明确硅光路线，低置信挂到硅光芯片待复核 |
+| ENT_PG_349 | 浙江澳威激光器件有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_001 | 激光器芯片 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：激光器、PLC、C/DWDM、无热/有热AWG等光学器件，提供光学产品设计的定制、样品、小批量生产和量产服务；产品：Telecom Lasers光纤通讯激光器；Lidar Sensing Lasers光纤传感激光雷达激光器；Transceivers，AOC/DAC & CoB 光模块、AOC/DAC和CoB；PM/High Power WDM/Free-Space/In-Line Isolator粗/密集波分复用器、保偏/高… |
+| ENT_PG_349 | 浙江澳威激光器件有限公司 | 光通信/光模块 | 上游 | 光电元器件 | SUB_OC_012 | 透镜/隔离器/准直器 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：激光器、PLC、C/DWDM、无热/有热AWG等光学器件，提供光学产品设计的定制、样品、小批量生产和量产服务；产品：Telecom Lasers光纤通讯激光器；Lidar Sensing Lasers光纤传感激光雷达激光器；Transceivers，AOC/DAC & CoB 光模块、AOC/DAC和CoB；PM/High Power WDM/Free-Space/In-Line Isolator粗/密集波分复用器、保偏/高… |
+| ENT_PG_349 | 浙江澳威激光器件有限公司 | 光通信/光模块 | 中游 | 无源光器件 | SUB_OC_019 | 光分路器 | medium | true | core_tech,products | postgresql | 激光器、PLC、C/DWDM、无热/有热AWG等光学器件，提供光学产品设计的定制、样品、小批量生产和量产服务 |
+| ENT_PG_349 | 浙江澳威激光器件有限公司 | 光通信/光模块 | 中游 | 无源光器件 | SUB_OC_022 | AWG | medium | true | core_tech,products | postgresql | 激光器、PLC、C/DWDM、无热/有热AWG等光学器件，提供光学产品设计的定制、样品、小批量生产和量产服务 |
+| ENT_PG_349 | 浙江澳威激光器件有限公司 | 光通信/光模块 | 中游 | WDM/OTN器件 | SUB_OC_034 | WDM复用器件 | medium | true | core_tech,products | postgresql | 激光器、PLC、C/DWDM、无热/有热AWG等光学器件，提供光学产品设计的定制、样品、小批量生产和量产服务 |
+| ENT_PG_364 | 深圳瑞识科技股份有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_001 | 激光器芯片 | medium | true | core_tech,products | postgresql | VCSEL芯片设计、光学透镜设计、光电集成封装、晶圆级测试及全量测试技术（“半导体+光学”全栈技术） |
+| ENT_PG_371 | 上海橙科微电子科技有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_005 | 驱动/TIA芯片 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：基于CMOS工艺的高速数据传输芯片、高速网络通讯芯片及IP核；是国内唯一一家成功研发50G速率CDR/DSP高速网络传输电芯片的公司，并且成功批量流片，打破国外垄断。成为全球第三家、国内唯一一家拥有该技术的公司；产品：高速数据传输芯片、高速网络通讯芯片及IP核 |
+| ENT_PG_371 | 上海橙科微电子科技有限公司 | 光通信/光模块 | 中游 | 光模块 | SUB_OC_027 | 100G/400G光模块 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：基于CMOS工艺的高速数据传输芯片、高速网络通讯芯片及IP核；是国内唯一一家成功研发50G速率CDR/DSP高速网络传输电芯片的公司，并且成功批量流片，打破国外垄断。成为全球第三家、国内唯一一家拥有该技术的公司；产品：高速数据传输芯片、高速网络通讯芯片及IP核 |
+| ENT_PG_373 | 青岛本原微电子有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_005 | 驱动/TIA芯片 | medium | true | core_tech,products | postgresql | 数字信号处理器(DSP)芯片自主创新架构 |
+| ENT_PG_375 | 比科奇微电子（杭州）有限公司 | 光通信/光模块 | 下游 | 5G/6G基站光设备 | SUB_OC_037 | 前传设备 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：5G小基站芯片设计、NB-IoT技术；产品：5G小基站芯片（基站基带芯片、无线收发信机等在内的基站核心芯片组）、NB-IoT小基站项目 |
+| ENT_PG_375 | 比科奇微电子（杭州）有限公司 | 光通信/光模块 | 下游 | 5G/6G基站光设备 | SUB_OC_038 | 中传设备 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：5G小基站芯片设计、NB-IoT技术；产品：5G小基站芯片（基站基带芯片、无线收发信机等在内的基站核心芯片组）、NB-IoT小基站项目 |
+| ENT_PG_375 | 比科奇微电子（杭州）有限公司 | 光通信/光模块 | 下游 | 5G/6G基站光设备 | SUB_OC_039 | 回传设备 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：5G小基站芯片设计、NB-IoT技术；产品：5G小基站芯片（基站基带芯片、无线收发信机等在内的基站核心芯片组）、NB-IoT小基站项目 |
+| ENT_PG_379 | 杭州洛微科技有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_004 | 硅光芯片 | low | true | rationality_review | manual_review | 合理性分析调整：自研硅基光电芯片是技术基础，但商业化产品偏芯片级激光雷达系统，保留为低置信技术标签 |
+| ENT_PG_429 | 西安奇芯光电科技有限公司 | 光通信/光模块 | 中游 | WDM/OTN器件 | SUB_OC_034 | WDM复用器件 | medium | true | - | - | - |
+| ENT_PG_429 | 西安奇芯光电科技有限公司 | 光通信/光模块 | 下游 | 光传输系统 | SUB_OC_045 | 接入网传输 | medium | true | products,scenario,industry | postgresql | 势。基于该平台发展出多材料三维异质集成混合材料体系。产品涵盖“光传感、光传输、光计算”三大领域，MUX/DEMUX芯片、BiDi光模块、XG(S) Combo PON光模块、直调式Combo PON OLT光模块、同波长单纤双向光模块、大型光开关等 |
+| ENT_PG_435 | 华芯（珠海）半导体有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_001 | 激光器芯片 | medium | true | products | postgresql | HBT异质结双极型晶体管，HEMT 高电子迁移率晶体管，高亮度LED、蓝绿光半导体激光管、垂直腔面发射(VCSEL)光子芯片、DFB光子芯片、EML光子芯片以及高亮度半导体激光芯片 |
+| ENT_PG_435 | 华芯（珠海）半导体有限公司 | 光通信/光模块 | 中游 | 有源光器件 | SUB_OC_018 | EML/DFB器件 | medium | true | products | postgresql | HBT异质结双极型晶体管，HEMT 高电子迁移率晶体管，高亮度LED、蓝绿光半导体激光管、垂直腔面发射(VCSEL)光子芯片、DFB光子芯片、EML光子芯片以及高亮度半导体激光芯片 |
+| ENT_PG_444 | 陕西源杰半导体科技股份有限公司 | 光通信/光模块 | 上游 | 光芯片 | SUB_OC_001 | 激光器芯片 | medium | true | core_tech,products | postgresql | 大功率连续波（CW）激光器芯片 |
+| ENT_PG_4 | 九州云箭空间科技有限公司 | 商业航天 | 中游 | 火箭整箭研制与发射服务 | SUB_SPACE_022 | 可回收火箭 | medium | true | core_tech | postgresql | 液氧甲烷重复使用火箭发动机技术，10吨级"凌云"和80吨级"龙云"发动机 |
+| ENT_PG_38 | 北京智天新航科技有限公司 | 商业航天 | 上游 | 卫星平台核心部组件 | SUB_SPACE_004 | 卫星结构件 | medium | true | - | - | - |
+| ENT_PG_65 | 北京光邮星空科技有限公司 | 商业航天 | 中游 | 地面测运控与星地通信 | SUB_SPACE_025 | 星地通信链路 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：高速星地激光通信终端及解决方案，匹配星地通信链路 |
+| ENT_PG_70 | 上海御风图南科技发展有限公司 | 商业航天 | 中游 | 火箭整箭研制与发射服务 | SUB_SPACE_020 | 商业运载火箭 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：产品为中大型液体火箭，面向商业卫星发射任务，匹配商业运载火箭 |
+| ENT_PG_124 | 北京中星高科科技有限公司 | 商业航天 | 中游 | 卫星整星研制与制造 | SUB_SPACE_018 | 整星总装测试 | low | true | - | - | - |
+| ENT_PG_147 | 上海垣信卫星科技有限公司 | 商业航天 | 中游 | 卫星组网运营与数据平台 | SUB_SPACE_026 | 星座运营平台 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：运营千帆星座低轨卫星星座和低轨宽带卫星互联网服务，匹配星座运营平台 |
+| ENT_PG_150 | 西安朗威科技有限公司 | 商业航天 | 上游 | 星载载荷与传感器 | SUB_SPACE_007 | 通信载荷 | medium | false | manual_lithography_space_review | manual_review | 核心产品激光通信用精指向机构及其控制器；星间激光通信用于卫星高速运动下的激光束高精度跟踪瞄准 |
+| ENT_PG_179 | 上海格思航天科技有限公司 | 商业航天 | 上游 | 卫星平台核心部组件 | SUB_SPACE_003 | 卫星电源与热控 | medium | true | core_tech | postgresql | 发、组装及生产，同时也提供从概念设计到最终交付的卫星全流程解决方案；核心优势： 技术壁垒：首创一箭 18 星堆叠分离技术，柔性太阳翼在轨规模化应用，专利覆盖卫星热控、推进等核心领域；智能制造：长三角首个卫星智能灯塔工厂，脉动生产线 1.5 天 / 颗，年产 300 + 颗，成本为传统方案 60% |
+| ENT_PG_200 | 北京海德利森科技有限公司 | 商业航天 | 中游 | 火箭整箭研制与发射服务 | SUB_SPACE_021 | 发射服务 | low | true | - | - | - |
+| ENT_PG_203 | 西安乾景防务技术有限公司 | 商业航天 | 上游 | 航天电子与高可靠元器件 | SUB_SPACE_015 | 星载通信模块 | medium | true | - | - | - |
+| ENT_PG_247 | 苏州圣荣元电子科技有限公司 | 商业航天 | 上游 | 卫星平台核心部组件 | SUB_SPACE_003 | 卫星电源与热控 | low | true | scenario | postgresql | 高功率服务器散热（最高2000W）、卫星热控系统、数据中心散热、汽车电子散热 |
+| ENT_PG_263 | 西安中科天塔科技股份有限公司 | 商业航天 | 中游 | 地面测运控与星地通信 | SUB_SPACE_024 | 测控系统 | medium | true | core_tech,scenario | postgresql | 卫星测运控软件、航天云立方平台、华山航天大模型 |
+| ENT_PG_305 | 西安大衡天成信息科技有限公司 | 商业航天 | 下游 | 卫星通信与卫星互联网 | SUB_SPACE_031 | 卫星通信终端 | medium | true | products | postgresql | 动中通卫星天线、战场电磁环境仿真软件、复杂电磁环境监测解决方案；[冠军营补充]西安大衡天成获审3000万元建设新型卫星通信终端试验鉴定与产品化项目：1.新型卫星通信终端研制；2.新型卫星通信终端测试与试用；3.新型卫星通信终端改进与定型 |
+| ENT_PG_308 | 北京微纳星空科技股份有限公司 | 商业航天 | 中游 | 卫星整星研制与制造 | SUB_SPACE_017 | 微小卫星平台 | medium | true | core_tech,products | postgresql | 卫星平台（10~2000公斤系列）、卫星部组件（核心单机及部组件）、卫星通信地面终端（移动通信终端、宽带通信终端）、卫星整星设计与集成测试能力、卫星在轨交付服务；[冠军 |
+| ENT_PG_308 | 北京微纳星空科技股份有限公司 | 商业航天 | 中游 | 地面测运控与星地通信 | SUB_SPACE_024 | 测控系统 | medium | true | core_tech | postgresql | 宽带通信终端）、卫星整星设计与集成测试能力、卫星在轨交付服务；[冠军营补充]北京微纳星空科技股份有限公司成立于2017年，主要从事高端卫星整星研发制造业务，以及测运控、火箭发射、许可申请等在内的“一站式”星地一体化系统交付服务 |
+| ENT_PG_324 | 南京控维通信科技有限公司 | 商业航天 | 下游 | 卫星通信与卫星互联网 | SUB_SPACE_029 | 宽带卫星通信 | medium | true | core_tech,products | postgresql | Mbps，国内最高水平）；卫星通信网管理控制技术（管理万级网络规模，提升卫星运营能力，网络可靠性可达电信级）；全系列卫星通信产品及卫星通信系统组网能力；“蓝鲸”宽带卫星通信系统系列产品；[冠军营补充]主要产品包括卫星通信网管系统、便携式卫星通信终端，车载、船载、机载、物联网终端等，高轨、低轨均可兼容 |
+| ENT_PG_324 | 南京控维通信科技有限公司 | 商业航天 | 下游 | 卫星通信与卫星互联网 | SUB_SPACE_030 | 卫星物联网 | medium | true | products | postgresql | 信网管理系统；[冠军营补充]蓝鲸宽带卫星通信系统，FDMA体制，主要面向应急通信应用；虎鲸宽带卫星通信系统，TDMA体制，主要面向卫星互联网、行业专网应用；白鲸卫星物联网系统，TDMA体制，主要面向卫星物联网应用 |
+| ENT_PG_324 | 南京控维通信科技有限公司 | 商业航天 | 下游 | 卫星通信与卫星互联网 | SUB_SPACE_031 | 卫星通信终端 | medium | true | core_tech,products | postgresql | 以调制解调为核心的卫星通信终端技术（业务速率最高36Mbps，国内最高水平）；卫星通信网管理控制技术（管理万级网络规模，提升卫星运营能力，网络可靠性可达电信级）；全系列卫星通信产品及卫星通信 |
+| ENT_PG_342 | 北京九天微星科技发展有限公司 | 商业航天 | 中游 | 卫星整星研制与制造 | SUB_SPACE_017 | 微小卫星平台 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：50-500kg级卫星整星研制与批量化制造，匹配微小卫星平台 |
+| ENT_PG_387 | 苏州纳飞卫星动力科技有限公司 | 商业航天 | 上游 | 卫星平台核心部组件 | SUB_SPACE_002 | 姿轨控部组件 | medium | true | - | - | - |
+| ENT_PG_397 | 宁波天擎航天科技有限公司 | 商业航天 | 上游 | 火箭发动机与动力系统 | SUB_SPACE_010 | 固体火箭发动机 | medium | true | products | postgresql | 军营补充]固体运载火箭研发制造：专注于小型固体运载火箭的设计、开发与生产，致力于为小卫星发射提供高性能、低成本的运载解决方案；火箭发动机研制：自主研发多种型号的固体火箭发动机，涵盖不同直径和推力等级，广泛应用于运载火箭、导弹等领域；航天高端零部组件生产：具备航空航天高端复合材料、金属材料产品生产加工能力，提供发动机壳体、喷管、热防护 |
+| ENT_PG_397 | 宁波天擎航天科技有限公司 | 商业航天 | 中游 | 火箭整箭研制与发射服务 | SUB_SPACE_020 | 商业运载火箭 | medium | true | core_tech,products | postgresql | 固体运载火箭、火箭发动机、航天高端零部组件的研发与制造；[冠军营补充]宁波天擎航天科技有限公司成立于2018年3月，以火箭、反无人与无人装备、动力系统产品的研发及制造为主要 |
+| ENT_PG_400 | 北京星空年代通信技术有限公司 | 商业航天 | 下游 | 卫星通信与卫星互联网 | SUB_SPACE_031 | 卫星通信终端 | medium | true | products | postgresql | 卫星通信终端及解决方案 |
+| ENT_PG_426 | 中科宇航技术股份有限公司 | 商业航天 | 中游 | 火箭整箭研制与发射服务 | SUB_SPACE_020 | 商业运载火箭 | medium | true | products | postgresql | 力箭系列运载火箭、力鸿系列亚轨道飞行器、力擎系列发动机 |
+| ENT_PG_433 | 长光卫星技术股份有限公司 | 商业航天 | 中游 | 卫星整星研制与制造 | SUB_SPACE_019 | 批量卫星制造 | medium | true | - | - | - |
+| ENT_PG_433 | 长光卫星技术股份有限公司 | 商业航天 | 中游 | 卫星组网运营与数据平台 | SUB_SPACE_026 | 星座运营平台 | medium | true | core_tech | postgresql | 商业遥感卫星研制与星座运营技术 |
+| ENT_PG_433 | 长光卫星技术股份有限公司 | 商业航天 | 中游 | 卫星组网运营与数据平台 | SUB_SPACE_027 | 遥感数据处理平台 | medium | true | - | - | - |
+| ENT_PG_434 | 北京四象爱数科技有限公司 | 商业航天 | 上游 | 星载载荷与传感器 | SUB_SPACE_006 | SAR载荷 | medium | true | core_tech,products | postgresql | 以海量遥感卫星数据分析为核心技术，具备遥感影像0-7级的处理能力，擅长根据场景落地不同的遥感数据产品。行业内首家推出光学+SAR融合遥感数据产品的公司。自主研发并成功发射SAR、光学、红外卫星，具备同轨多手段遥感卫星星座 |
+| ENT_PG_442 | 北京江河惠远科技有限公司 | 商业航天 | 中游 | 卫星组网运营与数据平台 | SUB_SPACE_027 | 遥感数据处理平台 | medium | true | core_tech | postgresql | 遥感数据处理及加工、遥感监测分析业务应用、遥感数据平台服务；遥感影像智能识别算法、环境变化监测算法、地质灾害预警模型、三维建模及平台可视化 |
+| ENT_PG_466 | 北京极光星通科技有限公司 | 商业航天 | 中游 | 地面测运控与星地通信 | SUB_SPACE_025 | 星地通信链路 | low | true | scenario | postgresql | 低轨卫星、星间通信、星地通信、临近空间通信 |
+| ENT_PG_472 | 北京微动时空科技有限公司 | 商业航天 | 上游 | 卫星平台核心部组件 | SUB_SPACE_004 | 卫星结构件 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查修正：太阳帆板驱动机构SADM、天线展开与指向机构等属于卫星机构/结构部件，挂卫星结构件 |
+| ENT_PG_36 | 境相（上海）科技有限公司 | 机器人 | 上游 | 编码器与传感器 | SUB_ROBOT_015 | 触觉传感器 | medium | true | core_tech,products | postgresql | 触觉传感器（具体原理涉及传感器结构、三轴力测量机理）；[冠军营补充]触觉传感器(电子皮肤）：单点多维压力传感器尺寸全球最小、成本低、是智能传感器，内置 MCU 直接输出数 |
+| ENT_PG_45 | 上海钛忆科技有限公司 | 机器人 | 中游 | 人形机器人 | SUB_ROBOT_051 | 灵巧手 | medium | true | core_tech,products | postgresql | 形状记忆合金SMA微丝驱动材料技术；[冠军营补充]未来2-3年布局：具身/人形、灵巧手+面部仿真模拟（原理方案已完成，对比传统方案优势明显，Q2能看到样机）十五五规划布局新材料有体现，对项目是个利好 |
+| ENT_PG_48 | 北京星源智机器人科技有限公司 | 机器人 | 上游 | 机器人软件与算法 | SUB_ROBOT_036 | 具身智能算法 | medium | true | core_tech | postgresql | 具身智能控制架构，分层架构（大脑、小脑）和端到端架构 |
+| ENT_PG_64 | 上海松应科技有限公司 | 机器人 | 下游 | 商业服务与家庭场景 | SUB_ROBOT_095 | 家庭服务 | low | true | scenario,industry | postgresql | 为智能制造、数字工厂、仓储物流、家庭服务等领域打造物理级精准数字仿真平台；在具身智能、自动驾驶、低空经济等核心场景中构建专业物理AI训练道场，用于高精度数字环境搭建、深度物理仿真、设计与运行参数优化 |
+| ENT_PG_74 | 源升智能机器人（深圳）有限公司 | 机器人 | 中游 | 人形机器人 | SUB_ROBOT_051 | 灵巧手 | medium | true | core_tech,products,scenario | postgresql | 高自由度触觉灵巧手技术、触觉感知系统 |
+| ENT_PG_84 | 北京金钢科技有限公司 | 机器人 | 上游 | 编码器与传感器 | SUB_ROBOT_013 | 编码器 | medium | true | core_tech,products,domain | postgresql | 磁编码器技术、中空编码器、绝对值编码器、多圈编码器、超薄编码器 |
+| ENT_PG_157 | 智元创新（上海）科技股份有限公司 | 机器人 | 中游 | 人形机器人 | SUB_ROBOT_049 | 双足人形机器人 | medium | true | core_tech,products | postgresql | 双足人形机器人、高精度桌面级机械臂、磁悬浮系统技术 |
+| ENT_PG_157 | 智元创新（上海）科技股份有限公司 | 机器人 | 下游 | 医疗康养 | SUB_ROBOT_089 | 康复机器人 | medium | true | products | postgresql | 统、自平衡自动驾驶自行车、大负载智能无人机、视觉两轮机器人、独轮移动机器人、桌面智能陪伴机器人、双臂核酸采样机器人、餐饮机器人、移乘助行机器人、调酒机器人、全身康复机器人、下肢助行机器人、北京冬奥机器人餐厅 |
+| ENT_PG_210 | 北京航星传动科技有限公司 | 机器人 | 上游 | 伺服电机与驱动 | SUB_ROBOT_005 | 伺服电机 | medium | true | core_tech,products | postgresql | 1. 轻质小型化机电作动器设计技术；2. 高比功率伺服电机设计技术；3. 高比功率伺服控制驱动集成技术；4. 新型智能机构技术；5. 高动态伺服回路控制及结构一体化设计及试验技术。核心产品：中小功率机电伺服（20w-1 |
+| ENT_PG_242 | 深圳市蔚海智芯科技有限公司 | 机器人 | 上游 | 编码器与传感器 | SUB_ROBOT_016 | IMU惯性传感器 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：MEMS陀螺仪、加速度计、压力传感器等，匹配机器人IMU惯性传感器 |
+| ENT_PG_264 | 中科探海（深圳）海洋科技有限责任公司 | 机器人 | 中游 | 特种机器人 | SUB_ROBOT_060 | 水下机器人 | medium | true | products | postgresql | 水下机器人整机、水下声学成像仪、测绘仪器 |
+| ENT_PG_264 | 中科探海（深圳）海洋科技有限责任公司 | 机器人 | 下游 | 巡检安防与特种作业 | SUB_ROBOT_100 | 水下作业 | medium | true | products | postgresql | 水下机器人整机、水下声学成像仪、测绘仪器 |
+| ENT_PG_274 | 义乌宾果智能科技有限公司 | 机器人 | 上游 | 机器视觉与空间感知 | SUB_ROBOT_021 | SLAM导航 | medium | true | core_tech,products | postgresql | 智能家庭服务机器人技术、SLAM自主定位技术 |
+| ENT_PG_274 | 义乌宾果智能科技有限公司 | 机器人 | 下游 | 商业服务与家庭场景 | SUB_ROBOT_095 | 家庭服务 | medium | true | core_tech,products,industry | postgresql | 智能家庭服务机器人技术、SLAM自主定位技术 |
+| ENT_PG_295 | 北京增强智能科技有限公司 | 机器人 | 上游 | 机器人软件与算法 | SUB_ROBOT_032 | 机器人操作系统 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：大模型驱动的端云分布式智能；产品：智慧出行：天琴车载语音助手及智能座舱方案，智慧办公：自主品牌智能硬创思必驰AI办公本系列： 开创性采用新一代柔彩护眼类纸屏，改善传统墨水屏卡顿拖影问题；内置电磁手写笔，集成AI笔记、AI拍照、AI待办及全自动智能会议纪要功能。高端矩阵麦克风（如MA600D）： 高度集成的智能麦克风阵列，内置数十元MEMS麦克风，配合自研音频算法，专为大中型数智化会议室提供高清晰度的人声采集与音频处理。3. … |
+| ENT_PG_295 | 北京增强智能科技有限公司 | 机器人 | 上游 | 机器人软件与算法 | SUB_ROBOT_036 | 具身智能算法 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：大模型驱动的端云分布式智能；产品：智慧出行：天琴车载语音助手及智能座舱方案，智慧办公：自主品牌智能硬创思必驰AI办公本系列： 开创性采用新一代柔彩护眼类纸屏，改善传统墨水屏卡顿拖影问题；内置电磁手写笔，集成AI笔记、AI拍照、AI待办及全自动智能会议纪要功能。高端矩阵麦克风（如MA600D）： 高度集成的智能麦克风阵列，内置数十元MEMS麦克风，配合自研音频算法，专为大中型数智化会议室提供高清晰度的人声采集与音频处理。3. … |
+| ENT_PG_314 | 中科驭数（北京）科技有限公司 | 机器人 | 上游 | 控制器与控制系统 | SUB_ROBOT_001 | 机器人控制器 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：DPU芯片、专用数据处理架构；产品：DPU芯片、核心处理器芯片、专用数据处理架构 |
+| ENT_PG_319 | 北京恩力动力控股有限公司 | 机器人 | 上游 | 电源与电池系统 | SUB_ROBOT_028 | 机器人电池包 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：采用自主开发的锂金属电极界面控制技术以及独特的电解质技术；产品：下一代高性能动力电池（全固态电池），包括纽扣式电池、中型软包电池及针对电动汽车的大型软包动力电池；以固态新型材料、新型工艺设备、固态电池产品；需要薄膜、曲面等电池结构设计的消费类电子产品、射频芯片；需要高热稳定性的特种应用产品如植入式/智能医疗设备、无线传感器等 |
+| ENT_PG_320 | 宁波未感半导体科技有限公司 | 机器人 | 上游 | 编码器与传感器 | SUB_ROBOT_017 | 激光雷达 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：物理层算法oDSP激光雷达技术；产品：长距高分辨率激光雷达、物理层算法芯片、OPA光源模组 |
+| ENT_PG_340 | 西安知象光电科技有限公司 | 机器人 | 上游 | 机器视觉与空间感知 | SUB_ROBOT_019 | 机器人3D视觉 | medium | true | scenario,industry | postgresql | 、模型、手工艺品等爱好者群体；专业设计师、工程师级爱好者；小尺寸、复杂结构、高精度建模和设计人群；大物体、VR/AR设计、人体扫描与建模；自动化焊接、工业检测、机器人视觉引导。 |
+| ENT_PG_340 | 西安知象光电科技有限公司 | 机器人 | 上游 | 机器视觉与空间感知 | SUB_ROBOT_020 | 视觉引导系统 | low | true | scenario,industry | postgresql | 、模型、手工艺品等爱好者群体；专业设计师、工程师级爱好者；小尺寸、复杂结构、高精度建模和设计人群；大物体、VR/AR设计、人体扫描与建模；自动化焊接、工业检测、机器人视觉引导。 |
+| ENT_PG_343 | 安徽爱观视觉科技有限公司 | 机器人 | 上游 | 机器视觉与空间感知 | SUB_ROBOT_019 | 机器人3D视觉 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：仿生眼（电子仿生眼）、3D摄像系统、产品检测系统、3D显微镜及3D内窥镜、泛用型仿生眼；产品：仿生眼(电子仿生眼)、3D摄像系统 |
+| ENT_PG_350 | 西安睿控创合电子科技有限公司 | 机器人 | 上游 | 控制器与控制系统 | SUB_ROBOT_001 | 机器人控制器 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：嵌入式计算机软、硬件产品设计、开发；专业从事嵌入式计算机硬件产品设计、开发和咨询服务的高科技企业；AI边缘计算机；公司研发人员占比超过70%，建立了一支深入掌握X86、PowerPC、ARM、FPGA和国产化飞腾、龙芯处理器等各CPU架构的；产品：基于飞腾、龙芯等国产自主可控芯片的系列化硬件产品和解决方案；标准和定制化嵌入式计算机模块；专业化核心硬件产品和系统级解决方案。板卡，工控机，AI边缘计算。 |
+| ENT_PG_355 | 湖南诠视传感技术有限公司 | 机器人 | 上游 | 机器视觉与空间感知 | SUB_ROBOT_019 | 机器人3D视觉 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：高速低延迟 VSLAM 算法：公司起家的核心底层技术。可在本地实现高精度的实时 6DoF（六自由度）位置追踪、空间定位与建图，摆脱了对外部大算力主机的绝对依赖。多传感器融合与系统标定：掌握针对多相机、IMU（惯性测量单元）、ToF 等多种传感器的内外参精密标定技术，是实现高精度空间计算的基石。SlimEdge XR® 引擎：自研的软硬件边缘计算架构，能够将视觉感知、边缘 AI 推理以及视频编码在模组端本地化处理，降低了XR终… |
+| ENT_PG_355 | 湖南诠视传感技术有限公司 | 机器人 | 上游 | 机器视觉与空间感知 | SUB_ROBOT_021 | SLAM导航 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：高速低延迟 VSLAM 算法：公司起家的核心底层技术。可在本地实现高精度的实时 6DoF（六自由度）位置追踪、空间定位与建图，摆脱了对外部大算力主机的绝对依赖。多传感器融合与系统标定：掌握针对多相机、IMU（惯性测量单元）、ToF 等多种传感器的内外参精密标定技术，是实现高精度空间计算的基石。SlimEdge XR® 引擎：自研的软硬件边缘计算架构，能够将视觉感知、边缘 AI 推理以及视频编码在模组端本地化处理，降低了XR终… |
+| ENT_PG_358 | 深圳劲芯微电子有限公司 | 机器人 | 上游 | 电源与电池系统 | SUB_ROBOT_028 | 机器人电池包 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：无线充电芯片设计（Qi标准）、高集成SoC架构、多相位电荷泵驱动电路、PD快充协议集成技术；无线充电芯片、快充方案设计；劲芯微CV90355是一颗无线充电发射SoC芯片，支持PD2.0/3.；产品：无线充电芯片、有线快充方案设计、MCU。具体产品无线充电发射端芯片（如CV90362A、CV90355）、无线充电接收端芯片（如CV90331）、支持Qi V1.2/V1.3、Qi2、PD快充等协议的芯片，以及全球首款一芯双充芯片… |
+| ENT_PG_358 | 深圳劲芯微电子有限公司 | 机器人 | 上游 | 电源与电池系统 | SUB_ROBOT_030 | 自动充电桩 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：无线充电芯片设计（Qi标准）、高集成SoC架构、多相位电荷泵驱动电路、PD快充协议集成技术；无线充电芯片、快充方案设计；劲芯微CV90355是一颗无线充电发射SoC芯片，支持PD2.0/3.；产品：无线充电芯片、有线快充方案设计、MCU。具体产品无线充电发射端芯片（如CV90362A、CV90355）、无线充电接收端芯片（如CV90331）、支持Qi V1.2/V1.3、Qi2、PD快充等协议的芯片，以及全球首款一芯双充芯片… |
+| ENT_PG_363 | 中研宏科（上海）智能科技股份有限公司 | 机器人 | 中游 | 特种机器人 | SUB_ROBOT_057 | 巡检机器人 | medium | true | products | postgresql | 中研宏科(上海) - 电力/机房/变电站智能巡检机器人；低空经济标杆企业 |
+| ENT_PG_372 | 北京智机科技有限公司 | 机器人 | 上游 | 控制器与控制系统 | SUB_ROBOT_001 | 机器人控制器 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：三维定位与立体视觉重建，AI 缺陷检测与识别，机器人引导控制系统；产品：IMlight 汽车总装涂胶 3D 视觉检测系统，智能钢结构焊接，智能鞋底打磨与涂胶 |
+| ENT_PG_377 | 杰夫微电子（四川）有限公司 | 机器人 | 上游 | 电源与电池系统 | SUB_ROBOT_029 | BMS电池管理 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：IQSmart™ 专利技术：自主研发的超高效内核设计与定制化工艺，解决物联网设备在休眠状态下的漏电问题。nA级极低功耗：芯片的静态电流（IQ）与关断电流（ISD）均达到业界领先的纳安（nA）级别，漏电流比市场同类产品低至50倍。极致微型封装：专为可穿戴设备和智能轻薄产品设计，提供超小尺寸封装（如WLCSP），大幅节省PCB板级空间。高性能兼顾：在保持超低功耗与超小封装的同时，具备极低的导通电阻（RDS(ON)），减少系统导通… |
+| ENT_PG_377 | 杰夫微电子（四川）有限公司 | 机器人 | 上游 | 电源与电池系统 | SUB_ROBOT_030 | 自动充电桩 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：IQSmart™ 专利技术：自主研发的超高效内核设计与定制化工艺，解决物联网设备在休眠状态下的漏电问题。nA级极低功耗：芯片的静态电流（IQ）与关断电流（ISD）均达到业界领先的纳安（nA）级别，漏电流比市场同类产品低至50倍。极致微型封装：专为可穿戴设备和智能轻薄产品设计，提供超小尺寸封装（如WLCSP），大幅节省PCB板级空间。高性能兼顾：在保持超低功耗与超小封装的同时，具备极低的导通电阻（RDS(ON)），减少系统导通… |
+| ENT_PG_378 | 广东致能半导体有限公司 | 机器人 | 上游 | 电源与电池系统 | SUB_ROBOT_029 | BMS电池管理 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：氮化镓功率器件；产品：第三代半导体氮化镓（GaN）功率器件，硅基垂直二维电子气氮化镓（Vertical GaN）功率器件结构 |
+| ENT_PG_378 | 广东致能半导体有限公司 | 机器人 | 上游 | 电源与电池系统 | SUB_ROBOT_030 | 自动充电桩 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：氮化镓功率器件；产品：第三代半导体氮化镓（GaN）功率器件，硅基垂直二维电子气氮化镓（Vertical GaN）功率器件结构 |
+| ENT_PG_379 | 杭州洛微科技有限公司 | 机器人 | 上游 | 编码器与传感器 | SUB_ROBOT_017 | 激光雷达 | low | true | industry | postgresql | 自动驾驶及ADAS、智能座舱、智慧交通、智慧物流、机器人/AGV、工业自动化。 |
+| ENT_PG_379 | 杭州洛微科技有限公司 | 机器人 | 中游 | 移动机器人/AMR/AGV | SUB_ROBOT_046 | AGV自动导引车 | low | true | industry | postgresql | 自动驾驶及ADAS、智能座舱、智慧交通、智慧物流、机器人/AGV、工业自动化。 |
+| ENT_PG_381 | 南京苗米科技有限公司 | 机器人 | 上游 | 机器视觉与空间感知 | SUB_ROBOT_021 | SLAM导航 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：无线智能感知产品，专注于智能路由器、安防监控、系统集成。Wieyes 无线智能感知：多波段信号融合，非接触式算法，全姿态识别能力；产品：无线智能感知产品， 康养医疗无感监测方案，Wifi Eyes 智能感知系统，全屋存在与行动轨迹追踪，远距离手势识别 |
+| ENT_PG_411 | 聚时科技（上海）有限公司 | 机器人 | 上游 | 机器视觉与空间感知 | SUB_ROBOT_019 | 机器人3D视觉 | medium | true | core_tech,scenario | postgresql | 产品，为工业机器提供“视觉洞察力”和“任务执行力”。主要产品包括：聚芯系列半导体缺陷检测量测设备、半导体制程质量分析与良率管理系统、半导体光伏行业AI解决方案、机器人视觉AI控制与重型机器智能系统等，聚焦于工业AI与精密检测仪器设备领域 |
+| ENT_PG_420 | 广东阿达半导体设备股份有限公司 | 机器人 | 中游 | 工业机器人本体 | SUB_ROBOT_038 | SCARA机器人 | medium | true | products | postgresql | 焊线机、固晶机、晶圆级/板级倒装机、扇出封装固晶装备、Mini/MicroLED巨量转移装备、SCARA晶圆机器人。高密度焊线机（ARROW IC）、晶圆级倒装装备（AFC300WL）、板级贴片设备（AD600PLP）、高精度倒装/固晶机（AFC100P）、Mic |
+| ENT_PG_432 | 湖南二零八先进科技有限公司 | 机器人 | 上游 | 编码器与传感器 | SUB_ROBOT_016 | IMU惯性传感器 | medium | true | products | postgresql | 电子仪器、集成电路测试设备、光学仪器；[冠军营补充]产品系列：形成惯性器件组件系列、惯性测量单元（IMU）系列、惯性器件产线生产与测试设备系列等三大类产品，覆盖激光陀螺仪、半球谐振陀螺仪、加速度计等技术领域；技术创新：突破性完成国内首款激光陀螺驱动系列功能芯片研发 |
+| ENT_PG_15 | 北京造物时代科技有限公司 | 激光加工/光学装备 | 上游 | 控制系统与工业软件 | SUB_LA_020 | 数控系统 | medium | true | core_tech | postgresql | 智能化桌面数字加工与消费级CNC技术 |
+| ENT_PG_15 | 北京造物时代科技有限公司 | 激光加工/光学装备 | 中游 | 标准激光加工设备 | SUB_LA_030 | 激光切割设备 | medium | true | products | postgresql | 桌面型3D雕刻机、3D打印机、激光切割机 |
+| ENT_PG_95 | 九维光子科技（昆山）有限公司 | 激光加工/光学装备 | 中游 | 高端/专用激光装备 | SUB_LA_040 | 微纳加工装备 | medium | true | core_tech | postgresql | 相变直写光刻设备（100nm/50nm超分辨纳米光刻）；光互连与半导体微纳加工 |
+| ENT_PG_95 | 九维光子科技（昆山）有限公司 | 激光加工/光学装备 | 下游 | 半导体与精密制造 | SUB_LA_086 | 微纳结构加工 | medium | true | core_tech | postgresql | 相变直写光刻设备（100nm/50nm超分辨纳米光刻）；光互连与半导体微纳加工 |
+| ENT_PG_100 | 同方中科超光科技有限公司 | 激光加工/光学装备 | 中游 | 高端/专用激光装备 | SUB_LA_040 | 微纳加工装备 | low | true | scenario,industry | postgresql | 高功率激光工业清洗、激光生物医疗、精细微加工和科研 |
+| ENT_PG_101 | 致微（苏州）光学技术有限公司 | 激光加工/光学装备 | 上游 | 光学器件与光路部件 | SUB_LA_011 | 半导体精密光学镜组 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：高精度光学系统与镜片制造；高精度车削技术；高精度自由曲面加工和检测；高损伤阈值紫外镀膜技术；光学系统全流程设计能力；球面、非球面、自由面、平面棱镜及复杂光学结构元件制造；高精度精密光学研发与制造；致微光学掌握高端光学底层核心技术；国内首个掌握卫星激光通讯领域高精度离轴非球面加工、检测及镀膜全流程制造的团队；产品：高精度光学镜片、光学系统（全流程设计产品）；具备光学系统全流程设计能力；致微光学元器件产品；定制化的高精度光学系统… |
+| ENT_PG_114 | 上海虹剑光电科技有限公司 | 激光加工/光学装备 | 上游 | 激光器与激光源 | SUB_LA_001 | 光纤激光器 | medium | true | core_tech,products | postgresql | 高性能光纤激光器技术 |
+| ENT_PG_123 | 北京煜鼎增材制造研究院股份有限公司 | 激光加工/光学装备 | 下游 | 金属加工 | SUB_LA_067 | 增材制造/激光熔覆 | medium | true | core_tech,products | postgresql | 重大装备高性能金属增材制造（3D打印）、重大装备关键机械运动零部件表面工程、重大装备高性能金属结构新材料 |
+| ENT_PG_130 | 广东卓劼激光科技有限公司 | 激光加工/光学装备 | 上游 | 激光器与激光源 | SUB_LA_003 | 固体激光器 | medium | true | core_tech,products | postgresql | 紫外及深紫外固体激光器、半导体激光器、准分子激光器的研发、生产、销售 |
+| ENT_PG_130 | 广东卓劼激光科技有限公司 | 激光加工/光学装备 | 上游 | 激光器与激光源 | SUB_LA_004 | 半导体激光器 | medium | true | core_tech,products | postgresql | 紫外及深紫外固体激光器、半导体激光器、准分子激光器的研发、生产、销售 |
+| ENT_PG_130 | 广东卓劼激光科技有限公司 | 激光加工/光学装备 | 上游 | 激光器与激光源 | SUB_LA_005 | 准分子/深紫外光源 | medium | true | core_tech,products | postgresql | 紫外及深紫外固体激光器、半导体激光器、准分子激光器的研发、生产、销售 |
+| ENT_PG_150 | 西安朗威科技有限公司 | 激光加工/光学装备 | 上游 | 光学器件与光路部件 | SUB_LA_092 | 光束指向/快反镜 | medium | false | manual_lithography_space_review | manual_review | 压电快反镜、激光通信用精指向机构及控制器；卫星互联网星链项目关键部件供应商；用于光束高精度跟踪瞄准 |
+| ENT_PG_173 | 苏州芯晟半导体科技有限公司 | 激光加工/光学装备 | 上游 | 激光器与激光源 | SUB_LA_004 | 半导体激光器 | medium | true | products | postgresql | 量子级联激光器（QCL），高功率FP腔量子级联激光器、低功耗高单模稳定的DFB量子级联激光器。专注于中远红外半导体激光器产品 |
+| ENT_PG_182 | 苏州博格科技有限公司 | 激光加工/光学装备 | 上游 | 控制系统与工业软件 | SUB_LA_019 | 运动控制系统 | medium | true | core_tech | postgresql | 以及运动控制平台、隔振平台、高低温平台、特种光源、电输运模块等核心模组 |
+| ENT_PG_182 | 苏州博格科技有限公司 | 激光加工/光学装备 | 中游 | 高端/专用激光装备 | SUB_LA_040 | 微纳加工装备 | low | true | scenario | postgresql | 光学微纳加工、光学微纳检测、功能性检测。具体应用于科研实验、半导体制造、医疗设备等领域的光学精密加工与测量。 |
+| ENT_PG_182 | 苏州博格科技有限公司 | 激光加工/光学装备 | 下游 | 半导体与精密制造 | SUB_LA_086 | 微纳结构加工 | low | true | scenario | postgresql | 光学微纳加工、光学微纳检测、功能性检测。具体应用于科研实验、半导体制造、医疗设备等领域的光学精密加工与测量。 |
+| ENT_PG_225 | 广纳四维（广东）光电科技有限公司 | 激光加工/光学装备 | 中游 | 高端/专用激光装备 | SUB_LA_040 | 微纳加工装备 | medium | true | products | postgresql | 基于新型纳米材料和尖端纳米加工技术的纳米光学相关器件，衍射光波导、透明投影显示（EPDS）、增强平视显示（AR-HUD）、光场显示（裸眼3D）、全透明自发光投影显示、体全息波导、自发光透明纳 |
+| ENT_PG_255 | 深圳市辉宏激光科技有限公司 | 激光加工/光学装备 | 上游 | 激光器与激光源 | SUB_LA_003 | 固体激光器 | medium | false | postgresql_leak_review | manual_review | PostgreSQL漏挂核查确认：高功率脉冲碟片激光器及核心器件，匹配固体激光器 |
+| ENT_PG_273 | 西安中科光凝科技有限公司 | 激光加工/光学装备 | 上游 | 激光器与激光源 | SUB_LA_002 | 超快激光器 | medium | true | core_tech | postgresql | 超快激光精密焊接技术（异质材料焊接、特种材料超精密3D成形 |
+| ENT_PG_273 | 西安中科光凝科技有限公司 | 激光加工/光学装备 | 中游 | 标准激光加工设备 | SUB_LA_031 | 激光焊接设备 | medium | false | comprehensive_rationality_review | manual_review | 综合分析调整：企业核心为超快激光精密焊接技术和半导体封装领域激光设备，较适合挂载激光焊接设备 |
+| ENT_PG_294 | 北京超维景生物科技有限公司 | 激光加工/光学装备 | 上游 | 激光器与激光源 | SUB_LA_001 | 光纤激光器 | low | true | comprehensive_rationality_review | manual_review | 综合分析调整：企业本质为双光子显微成像系统商，自研920nm光纤激光器作为系统光源，低置信保留激光器应用关联 |
+| ENT_PG_302 | 武汉翔明激光科技有限公司 | 激光加工/光学装备 | 中游 | 标准激光加工设备 | SUB_LA_033 | 激光清洗设备 | manual_confirmed | false | core_tech,products | data_management_ui | 核心技术：全自主工艺库：建立了涵盖各类基材和污染物的激光清洗工艺数据库。可精密控制清洗区域及深度，实现对金属基材的“零损伤”精准无损清洗。高精度自动定位与聚焦：开发了专用于复杂、凹凸不平工件表面的自动聚焦技术。通过高精度激光测距传感器进行实时高度补偿，确保清洗过程中的焦距恒定。核心部件独立研制：自主研制激光清洗头及核心控制软件，其设备的扫描激光光线宽度处于行业领先水平。智能化集成控制：支持视觉识别、自动定位、清洗后视觉检测等功能，易于… |
+| ENT_PG_323 | 西安中科光电精密工程有限公司 | 激光加工/光学装备 | 中游 | 自动化集成与单元设备 | SUB_LA_045 | 在线检测集成单元 | low | true | scenario | postgresql | 1. 军工光电装备的精确测量、智能识别与精密控制；2. 工业领域的柔性精密装配、在线检测；3. 自动化立体物流仓储分拣搬运；4. 特定场所（如安防）的入侵目标搜索、跟踪与观测；5. 大尺寸工件的高精度三维测量。 |
+| ENT_PG_329 | 西安唐晶量子科技有限公司 | 激光加工/光学装备 | 上游 | 激光器与激光源 | SUB_LA_004 | 半导体激光器 | medium | true | core_tech,products,scenario | postgresql | 半导体激光器外延片、半导体材料、光电子材料、量子通信技术开发 |
+| ENT_PG_341 | 北京卓镭激光技术股份有限公司 | 激光加工/光学装备 | 上游 | 激光器与激光源 | SUB_LA_002 | 超快激光器 | medium | true | core_tech,products | postgresql | 超快激光器技术（皮秒、飞秒激光） |
+| ENT_PG_367 | 眉山博雅新材料股份有限公司 | 激光加工/光学装备 | 上游 | 光学器件与光路部件 | SUB_LA_006 | 激光镜片 | medium | true | products | postgresql | 硅酸钇镥（LYSO）、锗酸铋（BGO）、钆镓铝石榴石（GAGG）和碘化钠（NaI:Tl）等闪烁晶体、高精密光学元件、碳化硅衬底、碳化硅单晶反射镜 |
+| ENT_PG_382 | 武汉新耐视智能科技有限责任公司 | 激光加工/光学装备 | 中游 | 标准激光加工设备 | SUB_LA_031 | 激光焊接设备 | medium | true | - | - | - |
+| ENT_PG_404 | 西安必盛激光科技有限公司 | 激光加工/光学装备 | 中游 | 激光3D打印/金属增材制造装备 | SUB_LA_053 | 激光熔覆装备 | medium | true | core_tech,products | postgresql | 高功率智能化半导体激光表面处理设备、激光熔覆合金粉末、激光特种加工及再制造（零部件修复）技术 |
+| ENT_PG_404 | 西安必盛激光科技有限公司 | 激光加工/光学装备 | 下游 | 金属加工 | SUB_LA_066 | 表面处理 | medium | true | core_tech,products,scenario,industry | postgresql | 高功率智能化半导体激光表面处理设备、激光熔覆合金粉末、激光特种加工及再制造（零部件修复）技术 |
+| ENT_PG_404 | 西安必盛激光科技有限公司 | 激光加工/光学装备 | 下游 | 金属加工 | SUB_LA_067 | 增材制造/激光熔覆 | medium | true | core_tech,products | postgresql | 高功率智能化半导体激光表面处理设备、激光熔覆合金粉末、激光特种加工及再制造（零部件修复）技术 |
+| ENT_PG_446 | 四川思创激光科技有限公司 | 激光加工/光学装备 | 中游 | 标准激光加工设备 | SUB_LA_032 | 激光打标设备 | medium | true | products | postgresql | 工业激光器、激光加工设备、激光打标/切割/焊接相关系统、定制化激光应用解决方案 |
+| ENT_PG_446 | 四川思创激光科技有限公司 | 激光加工/光学装备 | 中游 | 高端/专用激光装备 | SUB_LA_040 | 微纳加工装备 | low | true | scenario | postgresql | 金属切割、激光焊接、打标雕刻、精密微加工、工业生产线集成应用 |

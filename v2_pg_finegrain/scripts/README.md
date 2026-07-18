@@ -11,5 +11,6 @@
 - `export_postgres_to_staging.sh`：从 PostgreSQL 导出企业和证据文本。
 - `generate_substage_candidates.py`：基于关键词生成候选细分环节挂接。
 - `prepare_neo4j_import.sh`：同步 CSV 到 Neo4j import 目录。
+- `sync_project_from_neo4j.py`：以运行中的 v2 Neo4j 为准回写企业和挂接中间表，并保留关系审计字段。
 
 候选挂接默认 `needs_review=true`，不能直接视为业务确认结果。

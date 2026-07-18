@@ -7,3 +7,4 @@ CHAIN_COMP_001,光电子,光计算,peer,false,与光通信平级的产业链
 CHAIN_FUSION_001,光电子,光融合（量子光学新原理）,peer,false,与光通信平级的产业链
 CHAIN_SPACE_001,商业航天,商业航天,peer,false,与光通信平级的产业链
 CHAIN_ROBOT_001,先进制造,机器人,candidate,false,围绕机器人核心零部件本体系统集成和应用场景的平级候选产业链
+CHAIN_SEMI_001,半导体,光刻与湿法工艺配套,candidate,false,围绕光刻设备核心部件半导体湿法清洗刻蚀与工艺材料的候选产业链
