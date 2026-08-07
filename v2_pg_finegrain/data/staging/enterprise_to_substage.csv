@@ -6,6 +6,8 @@ ENT_PG_2,SUB_COMP_016,medium,官网披露片上光子网络oNOC和片间光子�
 ENT_PG_2,SUB_COMP_018,medium,官网披露片间光子网络oNET 涉及芯片间和板级高速光互连能力,official_website,manual_review,false,,,
 ENT_PG_2,SUB_COMP_024,medium,官网披露以oMAC oNOC oNET提供高效且具成本效益的算力解决方案 破解内存墙和功耗墙,official_website,manual_review,false,,,
 ENT_PG_4,SUB_SPACE_022,medium,"液氧甲烷重复使用火箭发动机技术，10吨级""凌云""和80吨级""龙云""发动机",core_tech,postgresql,true,,,
+ENT_PG_11,SUB_ROBOT_101,manual_confirmed,核心技术：人形机器人散热，数据中心散热及卫星散热用全自由度水力/液磁悬浮轴承技术。；产品：机器人高速悬浮泵、平板泵、液冷散热系统，数据中心悬浮水泵，卫星散热高速悬浮微泵,"core_tech,products",robot_thermal_management_migration,false,,11,2026-07-24T02:10:02.695000000+00:00
+ENT_PG_11,SUB_ROBOT_102,manual_confirmed,核心技术：人形机器人散热，数据中心散热及卫星散热用全自由度水力/液磁悬浮轴承技术。；产品：机器人高速悬浮泵、平板泵、液冷散热系统，数据中心悬浮水泵，卫星散热高速悬浮微泵,"core_tech,products",robot_thermal_management_migration,false,,11,2026-07-24T02:10:02.695000000+00:00
 ENT_PG_15,SUB_LA_020,medium,智能化桌面数字加工与消费级CNC技术,core_tech,postgresql,true,,,
 ENT_PG_15,SUB_LA_030,medium,桌面型3D雕刻机、3D打印机、激光切割机,products,postgresql,true,,,
 ENT_PG_16,SUB_MV_034,low,AI大模型训练与推理加速、矩阵运算加速、低功耗高带宽计算、数据中心内部光互连与算力优化,scenario,postgresql,true,,,
@@ -167,7 +169,8 @@ ENT_PG_323,SUB_MV_041,medium,以多维图像信息及光电传感信息获取、
 ENT_PG_324,SUB_SPACE_029,medium,Mbps，国内最高水平）；卫星通信网管理控制技术（管理万级网络规模，提升卫星运营能力，网络可靠性可达电信级）；全系列卫星通信产品及卫星通信系统组网能力；“蓝鲸”宽带卫星通信系统系列产品；[冠军营补充]主要产品包括卫星通信网管系统、便携式卫星通信终端，车载、船载、机载、物联网终端等，高轨、低轨均可兼容,"core_tech,products",postgresql,true,,,
 ENT_PG_324,SUB_SPACE_030,medium,信网管理系统；[冠军营补充]蓝鲸宽带卫星通信系统，FDMA体制，主要面向应急通信应用；虎鲸宽带卫星通信系统，TDMA体制，主要面向卫星互联网、行业专网应用；白鲸卫星物联网系统，TDMA体制，主要面向卫星物联网应用,products,postgresql,true,,,
 ENT_PG_324,SUB_SPACE_031,medium,以调制解调为核心的卫星通信终端技术（业务速率最高36Mbps，国内最高水平）；卫星通信网管理控制技术（管理万级网络规模，提升卫星运营能力，网络可靠性可达电信级）；全系列卫星通信产品及卫星通信,"core_tech,products",postgresql,true,,,
-ENT_PG_326,SUB_MV_016,low,,,,true,,,
+ENT_PG_326,SUB_MV_016,low,,,,true,,,2026-07-20T08:14:31.646000000+00:00
+ENT_PG_326,SUB_MV_040,manual_confirmed,核心技术：脑感存算一体动态视觉智能SoC；类脑计算专用处理器；产品：类脑智能软硬件一体化解决方案，1. 高能效感知+计算、芯片+软件完整边缘端视觉解决方案；类脑感知相机（融合CIS和DVS优势）；针对自主系统的高速动态视觉解决方案，动态范围>120db，功耗<100mW，成本；超低功耗、超低延时的全栈式类脑智能解决方案与服务,"core_tech,products",data_management_ui,false,,326,2026-07-20T08:14:31.646000000+00:00
 ENT_PG_329,SUB_DISP_001,medium,半导体激光器外延片、半导体材料、光电子材料、量子通信技术开发,"core_tech,products",postgresql,true,,,
 ENT_PG_329,SUB_LA_004,medium,半导体激光器外延片、半导体材料、光电子材料、量子通信技术开发,"core_tech,products,scenario",postgresql,true,,,
 ENT_PG_329,SUB_OC_001,medium,半导体激光器外延片（VCSEL/边发射激光器）,products,postgresql,true,,,

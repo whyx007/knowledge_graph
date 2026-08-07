@@ -64,6 +64,7 @@ MERGE (e:Enterprise {enterprise_id: row.enterprise_id})
 SET e.enterprise_name = row.enterprise_name,
     e.source_system = row.source_system,
     e.source_pk = row.source_pk,
+    e.is_invested = coalesce(toBoolean(row.is_invested), true),
     e.last_sync_at = row.last_sync_at;
 
 LOAD CSV WITH HEADERS FROM 'file:///enterprise_to_substage.csv' AS row

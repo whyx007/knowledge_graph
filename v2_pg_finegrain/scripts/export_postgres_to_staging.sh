@@ -18,6 +18,7 @@ psql -h "$PGHOST" -p "$PGPORT" -U "$PGUSER" -d "$PGDATABASE" \
       enterprise_name,
       source_system,
       source_pk,
+      is_invested,
       last_sync_at
     FROM kg_v2_enterprises
     ORDER BY source_pk::integer

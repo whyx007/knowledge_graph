@@ -17,7 +17,8 @@ SELECT
   maturity,
   created_at,
   'postgresql' AS source_system,
-  now() AS last_sync_at
+  now() AS last_sync_at,
+  is_invested
 FROM companies;
 
 DROP VIEW IF EXISTS kg_v2_enterprise_evidence;

@@ -1,0 +1,7 @@
+# Local database snapshots and generated review reports.
+data/backups/
+data/update_preview/
+
+# User-provided one-off input workbooks.
+PostgreSQL /企业信息确认人工确认.xlsx
+PostgreSQL /遗漏被投企业名单.xlsx

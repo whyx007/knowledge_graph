@@ -28,6 +28,7 @@ ENTERPRISE_FIELDS = [
     "enterprise_name",
     "source_system",
     "source_pk",
+    "is_invested",
     "last_sync_at",
 ]
 MOUNT_FIELDS = [
@@ -67,6 +68,7 @@ def fetch(driver: Driver) -> tuple[list[dict[str, str]], list[dict[str, str]]]:
            e.enterprise_name AS enterprise_name,
            e.source_system AS source_system,
            e.source_pk AS source_pk,
+           e.is_invested AS is_invested,
            e.last_sync_at AS last_sync_at
     """
     mount_query = """

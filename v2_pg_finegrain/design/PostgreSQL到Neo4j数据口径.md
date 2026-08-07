@@ -69,6 +69,7 @@ PostgreSQL 是新版企业与业务事实的数据源，Neo4j 是图谱查询和
 - `enterprise_name`
 - `source_system`
 - `source_pk`
+- `is_invested`
 
 ### enterprise_to_substage.csv
 
