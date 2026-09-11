@@ -10,10 +10,12 @@ from __future__ import annotations
 
 import argparse
 import csv
+import re
 import shutil
 from collections import Counter
-from datetime import date, datetime
+from datetime import date, datetime, timezone
 from pathlib import Path
+from typing import Any
 
 from neo4j import Driver, GraphDatabase
 
@@ -42,8 +44,22 @@ MOUNT_FIELDS = [
     "source",
     "source_pk",
     "updated_at",
+    "status",
+    "audit_status",
+    "audit_decision",
+    "audit_confidence",
+    "audit_evidence",
+    "audit_reason",
+    "audit_model",
+    "audit_method",
+    "audit_batch_id",
+    "audit_reviewed_at",
+    "audited_at",
+    "match_basis",
 ]
 SUMMARY_PATH = ROOT / "docs" / "当前Neo4j企业挂载环节与依据汇总.md"
+SCHEMA_SUMMARY_PATH = ROOT / "docs" / "当前Neo4j结构快照.md"
+SCHEMA_CYPHER_PATH = ROOT / "neo4j" / "cypher" / "current_schema.cypher"
 
 
 def scalar(value: object) -> str:
@@ -82,7 +98,19 @@ def fetch(driver: Driver) -> tuple[list[dict[str, str]], list[dict[str, str]]]:
            r.needs_review AS needs_review,
            r.source AS source,
            r.source_pk AS source_pk,
-           r.updated_at AS updated_at
+           r.updated_at AS updated_at,
+           r.status AS status,
+           r.audit_status AS audit_status,
+           r.audit_decision AS audit_decision,
+           r.audit_confidence AS audit_confidence,
+           r.audit_evidence AS audit_evidence,
+           r.audit_reason AS audit_reason,
+           r.audit_model AS audit_model,
+           r.audit_method AS audit_method,
+           r.audit_batch_id AS audit_batch_id,
+           r.audit_reviewed_at AS audit_reviewed_at,
+           r.audited_at AS audited_at,
+           r.match_basis AS match_basis
     """
     with driver.session() as session:
         enterprises = [
@@ -122,6 +150,225 @@ def fetch_summary_rows(driver: Driver) -> list[dict[str, str]]:
         rows = [{key: scalar(record[key]) for key in record.keys()} for record in session.run(query)]
     rows.sort(key=lambda row: (row["chain_name"], natural_key(row["enterprise_id"]), row["substage_id"]))
     return rows
+
+
+def fetch_schema(driver: Driver) -> dict[str, list[dict[str, Any]]]:
+    queries = {
+        "constraints": """
+            SHOW CONSTRAINTS
+            YIELD name, type, entityType, labelsOrTypes, properties, createStatement
+            RETURN name, type, entityType, labelsOrTypes, properties, createStatement
+            ORDER BY name
+        """,
+        "indexes": """
+            SHOW INDEXES
+            YIELD name, type, entityType, labelsOrTypes, properties,
+                  owningConstraint, options, createStatement
+            WHERE owningConstraint IS NULL AND type <> 'LOOKUP'
+            RETURN name, type, entityType, labelsOrTypes, properties,
+                   options, createStatement
+            ORDER BY name
+        """,
+        "node_properties": """
+            CALL db.schema.nodeTypeProperties()
+            YIELD nodeLabels, propertyName, propertyTypes, mandatory
+            WITH nodeLabels, propertyName, propertyTypes, mandatory
+            MATCH (n)
+            WHERE any(label IN labels(n) WHERE label IN nodeLabels)
+              AND propertyName IN keys(n)
+            RETURN nodeLabels, propertyName, propertyTypes, mandatory,
+                   count(n) AS populated
+            ORDER BY nodeLabels, propertyName
+        """,
+        "relationship_properties": """
+            CALL db.schema.relTypeProperties()
+            YIELD relType, propertyName, propertyTypes, mandatory
+            WITH replace(replace(relType, ':`', ''), '`', '') AS relationshipType,
+                 propertyName, propertyTypes, mandatory
+            MATCH ()-[r]->()
+            WHERE type(r) = relationshipType AND propertyName IN keys(r)
+            RETURN relationshipType, propertyName, propertyTypes, mandatory,
+                   count(r) AS populated
+            ORDER BY relationshipType, propertyName
+        """,
+        "node_counts": """
+            MATCH (n)
+            UNWIND labels(n) AS label
+            RETURN label, count(*) AS count
+            ORDER BY label
+        """,
+        "relationship_counts": """
+            MATCH ()-[r]->()
+            RETURN type(r) AS relationshipType, count(*) AS count
+            ORDER BY relationshipType
+        """,
+        "audit_batches": """
+            MATCH (n:MountAuditSnapshot)
+            RETURN 'MountAuditSnapshot' AS label, n.batch_id AS batchId,
+                   NULL AS correctionBatchId, count(*) AS count
+            UNION ALL
+            MATCH (n:MountAuditDecision)
+            RETURN 'MountAuditDecision' AS label, n.batch_id AS batchId,
+                   n.correction_batch_id AS correctionBatchId, count(*) AS count
+            ORDER BY label, batchId, correctionBatchId
+        """,
+    }
+    result: dict[str, list[dict[str, Any]]] = {}
+    with driver.session() as session:
+        for name, query in queries.items():
+            result[name] = [dict(record) for record in session.run(query)]
+    return result
+
+
+def idempotent_create(statement: str) -> str:
+    return re.sub(
+        r"^(CREATE (?:CONSTRAINT|FULLTEXT INDEX|VECTOR INDEX) `[^`]+`)",
+        r"\1 IF NOT EXISTS",
+        statement,
+    )
+
+
+def write_schema_cypher(path: Path, schema: dict[str, list[dict[str, Any]]]) -> None:
+    lines = [
+        "// Generated from neo4j-kg-v2-finegrain by sync_project_from_neo4j.py.",
+        "// Neo4j-managed LOOKUP indexes are intentionally omitted.",
+        "",
+    ]
+    statements = [
+        record["createStatement"]
+        for section in ("constraints", "indexes")
+        for record in schema[section]
+        if record.get("createStatement")
+    ]
+    for statement in statements:
+        lines.extend([idempotent_create(statement) + ";", ""])
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines), encoding="utf-8")
+
+
+def schema_list(value: Any) -> str:
+    if not value:
+        return "-"
+    if isinstance(value, list):
+        return ", ".join(str(item) for item in value)
+    return str(value)
+
+
+def write_schema_summary(
+    path: Path, schema: dict[str, list[dict[str, Any]]], generated_at: str
+) -> None:
+    node_counts = {row["label"]: row["count"] for row in schema["node_counts"]}
+    rel_counts = {
+        row["relationshipType"]: row["count"]
+        for row in schema["relationship_counts"]
+    }
+    lines = [
+        "# 当前 Neo4j 结构快照",
+        "",
+        "> 数据来源：Docker 容器 `neo4j-kg-v2-finegrain`。",
+        f"> 生成时间：`{generated_at}`。",
+        "> 本文件由 `scripts/sync_project_from_neo4j.py` 生成；属性“完整”表示当前该类型的所有实体都包含该属性，不代表存在性约束。",
+        "",
+        "## 节点类型",
+        "",
+        "| 标签 | 当前节点数 |",
+        "|---|---:|",
+    ]
+    for label, count in node_counts.items():
+        lines.append(f"| `{label}` | {count} |")
+
+    lines += [
+        "",
+        "## 关系类型",
+        "",
+        "| 类型 | 当前关系数 |",
+        "|---|---:|",
+    ]
+    for relationship_type, count in rel_counts.items():
+        lines.append(f"| `{relationship_type}` | {count} |")
+
+    lines += [
+        "",
+        "## 约束",
+        "",
+        "| 名称 | 类型 | 实体 | 标签/类型 | 属性 |",
+        "|---|---|---|---|---|",
+    ]
+    for row in schema["constraints"]:
+        lines.append(
+            f"| `{row['name']}` | {row['type']} | {row['entityType']} | "
+            f"{schema_list(row['labelsOrTypes'])} | {schema_list(row['properties'])} |"
+        )
+
+    lines += [
+        "",
+        "## 用户索引",
+        "",
+        "Neo4j 自动创建的节点/关系 LOOKUP 索引未列入可重建脚本。",
+        "",
+        "| 名称 | 类型 | 实体 | 标签/类型 | 属性 |",
+        "|---|---|---|---|---|",
+    ]
+    for row in schema["indexes"]:
+        lines.append(
+            f"| `{row['name']}` | {row['type']} | {row['entityType']} | "
+            f"{schema_list(row['labelsOrTypes'])} | {schema_list(row['properties'])} |"
+        )
+
+    lines += [
+        "",
+        "## 节点属性",
+        "",
+        "| 标签 | 属性 | 当前类型 | 已填充 | 完整 |",
+        "|---|---|---|---:|---|",
+    ]
+    for row in schema["node_properties"]:
+        labels = schema_list(row["nodeLabels"])
+        lines.append(
+            f"| `{labels}` | `{row['propertyName']}` | "
+            f"{schema_list(row['propertyTypes'])} | {row['populated']} | "
+            f"{'是' if row['mandatory'] else '否'} |"
+        )
+
+    lines += [
+        "",
+        "## 关系属性",
+        "",
+        "| 关系类型 | 属性 | 当前类型 | 已填充 | 完整 |",
+        "|---|---|---|---:|---|",
+    ]
+    for row in schema["relationship_properties"]:
+        lines.append(
+            f"| `{row['relationshipType']}` | `{row['propertyName']}` | "
+            f"{schema_list(row['propertyTypes'])} | {row['populated']} | "
+            f"{'是' if row['mandatory'] else '否'} |"
+        )
+
+    lines += [
+        "",
+        "## 挂载审计批次",
+        "",
+        "| 节点类型 | 批次 | 修正批次 | 节点数 |",
+        "|---|---|---|---:|",
+    ]
+    for row in schema["audit_batches"]:
+        correction = row["correctionBatchId"] or "-"
+        lines.append(
+            f"| `{row['label']}` | `{row['batchId']}` | `{correction}` | {row['count']} |"
+        )
+
+    lines += [
+        "",
+        "## 重建入口",
+        "",
+        "- 约束和用户索引：`neo4j/cypher/current_schema.cypher`",
+        "- 基础图谱和当前挂载：`neo4j/cypher/import_finegrain_base.cypher`",
+        "- 标准中间表：`data/mappings/*.csv`、`data/staging/*.csv`",
+        "- `Enterprise.embedding` 向量值和两个审计节点类型的数据未写入标准中间表；本快照记录其结构、数量和批次。",
+        "",
+    ]
+    path.parent.mkdir(parents=True, exist_ok=True)
+    path.write_text("\n".join(lines), encoding="utf-8")
 
 
 def md_cell(value: str, limit: int = 220) -> str:
@@ -216,6 +463,7 @@ def main() -> None:
     try:
         enterprises, mounts = fetch(driver)
         summary_rows = fetch_summary_rows(driver)
+        schema = fetch_schema(driver)
     finally:
         driver.close()
 
@@ -226,13 +474,18 @@ def main() -> None:
 
     if not args.no_import_copy:
         import_dir = ROOT / "neo4j" / "import"
-        shutil.copy2(enterprise_path, import_dir / enterprise_path.name)
-        shutil.copy2(mount_path, import_dir / mount_path.name)
+        shutil.copyfile(enterprise_path, import_dir / enterprise_path.name)
+        shutil.copyfile(mount_path, import_dir / mount_path.name)
 
     write_summary(SUMMARY_PATH, summary_rows, len(enterprises))
+    generated_at = datetime.now(timezone.utc).isoformat()
+    write_schema_cypher(SCHEMA_CYPHER_PATH, schema)
+    write_schema_summary(SCHEMA_SUMMARY_PATH, schema, generated_at)
 
     print(f"Exported {len(enterprises)} Enterprise nodes")
     print(f"Exported {len(mounts)} LOCATED_IN_SUBSTAGE relationships")
+    print(f"Recorded {len(schema['node_counts'])} node labels")
+    print(f"Recorded {len(schema['relationship_counts'])} relationship types")
 
 
 if __name__ == "__main__":

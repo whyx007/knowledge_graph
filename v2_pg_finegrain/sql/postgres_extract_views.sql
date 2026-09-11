@@ -3,7 +3,11 @@
 -- Confirmed tables: companies, trainees
 -- Do not include passwords in this SQL file.
 
-CREATE OR REPLACE VIEW kg_v2_enterprises AS
+-- Drop before recreating so the export remains refreshable when the source
+-- view gains or loses columns between project revisions.
+DROP VIEW IF EXISTS kg_v2_enterprises;
+
+CREATE VIEW kg_v2_enterprises AS
 SELECT
   ('ENT_PG_' || id::text) AS enterprise_id,
   id::text AS source_pk,

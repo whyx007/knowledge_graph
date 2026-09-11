@@ -56,4 +56,5 @@ scripts/    后续抽取、校验、导入脚本
 python3 scripts/sync_project_from_neo4j.py
 ```
 
-该命令同步 `data/staging/`、`neo4j/import/`，并重新生成当前挂载汇总文档。
+该命令同步 `data/staging/`、`neo4j/import/`，并重新生成当前挂载汇总、
+Neo4j 结构快照和可重建的约束/索引 Cypher。

@@ -11,7 +11,7 @@
 - `export_postgres_to_staging.sh`：从 PostgreSQL 导出企业和证据文本。
 - `generate_substage_candidates.py`：基于关键词生成候选细分环节挂接。
 - `prepare_neo4j_import.sh`：同步 CSV 到 Neo4j import 目录。
-- `sync_project_from_neo4j.py`：以运行中的 v2 Neo4j 为准回写企业和挂接中间表，并保留关系审计字段。
+- `sync_project_from_neo4j.py`：以运行中的 v2 Neo4j 为准回写企业和挂接中间表，保留关系审计字段，并生成当前结构快照及约束/索引 Cypher。
 - `preview_manual_company_updates.py`：只读比对人工确认 Excel 与现有 PostgreSQL，生成字段级更新预览、排除清单和后续事务更新暂存表；不会连接 Neo4j 或写数据库。
 - `apply_manual_company_updates.py`：备份后将人工确认字段增量写入现有 PostgreSQL，并按 PostgreSQL ID 同步现有 Docker Neo4j；包含基线断言、事务、补偿回滚和逐字段验收。
 - `supplement_new_company_fields.py`：依据遗漏被投企业名单，只补充上一批 46 家新增企业的空字段并同步 Neo4j；已有值保持不变。
