@@ -1,7 +1,7 @@
 # 当前 Neo4j 结构快照
 
 > 数据来源：Docker 容器 `neo4j-kg-v2-finegrain`。
-> 生成时间：`2026-09-18T06:12:43.648003+00:00`。
+> 生成时间：`2026-10-14T09:24:17.724869+00:00`。
 > 本文件由 `scripts/sync_project_from_neo4j.py` 生成；属性“完整”表示当前该类型的所有实体都包含该属性，不代表存在性约束。
 
 ## 节点类型
@@ -11,7 +11,7 @@
 | `ChainSegment` | 27 |
 | `ChainStage` | 130 |
 | `ChainSubstage` | 496 |
-| `Enterprise` | 530 |
+| `Enterprise` | 529 |
 | `IndustryChain` | 9 |
 | `MountAuditDecision` | 767 |
 | `MountAuditSnapshot` | 506 |
@@ -71,26 +71,30 @@ Neo4j 自动创建的节点/关系 LOOKUP 索引未列入可重建脚本。
 | `ChainSubstage` | `substage_id` | String | 496 | 是 |
 | `ChainSubstage` | `substage_name` | String | 496 | 是 |
 | `ChainSubstage` | `updated_at` | DateTime | 27 | 否 |
-| `Enterprise` | `cert_ip` | String | 525 | 否 |
-| `Enterprise` | `core_tech` | String | 527 | 否 |
-| `Enterprise` | `customers` | String | 513 | 否 |
-| `Enterprise` | `domain` | String | 525 | 否 |
-| `Enterprise` | `embedding` | DoubleArray | 525 | 否 |
-| `Enterprise` | `embedding_model` | String | 525 | 否 |
-| `Enterprise` | `embedding_text` | String | 525 | 否 |
-| `Enterprise` | `embedding_updated_at` | DateTime | 525 | 否 |
-| `Enterprise` | `enterprise_id` | String | 530 | 是 |
-| `Enterprise` | `enterprise_name` | String | 530 | 是 |
+| `Enterprise` | `cert_ip` | String | 524 | 否 |
+| `Enterprise` | `city` | String | 1 | 否 |
+| `Enterprise` | `company_profile` | String | 1 | 否 |
+| `Enterprise` | `competitors` | String | 528 | 否 |
+| `Enterprise` | `core_tech` | String | 528 | 否 |
+| `Enterprise` | `customers` | String | 528 | 否 |
+| `Enterprise` | `domain` | String | 524 | 否 |
+| `Enterprise` | `embedding` | DoubleArray | 524 | 否 |
+| `Enterprise` | `embedding_model` | String | 524 | 否 |
+| `Enterprise` | `embedding_text` | String | 524 | 否 |
+| `Enterprise` | `embedding_updated_at` | DateTime | 524 | 否 |
+| `Enterprise` | `enterprise_id` | String | 529 | 是 |
+| `Enterprise` | `enterprise_name` | String | 529 | 是 |
 | `Enterprise` | `industry` | String | 512 | 否 |
-| `Enterprise` | `is_invested` | Boolean | 526 | 否 |
-| `Enterprise` | `last_profile_sync_at` | DateTime | 21 | 否 |
-| `Enterprise` | `last_sync_at` | String, DateTime | 530 | 是 |
-| `Enterprise` | `products` | String | 522 | 否 |
-| `Enterprise` | `profile_source` | String | 21 | 否 |
-| `Enterprise` | `scenario` | String | 522 | 否 |
-| `Enterprise` | `source_pk` | String | 530 | 是 |
-| `Enterprise` | `source_system` | String | 530 | 是 |
-| `Enterprise` | `suppliers` | String | 517 | 否 |
+| `Enterprise` | `is_invested` | Boolean | 525 | 否 |
+| `Enterprise` | `last_profile_sync_at` | String, DateTime | 528 | 否 |
+| `Enterprise` | `last_sync_at` | String, DateTime | 529 | 是 |
+| `Enterprise` | `products` | String | 528 | 否 |
+| `Enterprise` | `profile_source` | String | 528 | 否 |
+| `Enterprise` | `scenario` | String | 521 | 否 |
+| `Enterprise` | `source_pk` | String | 529 | 是 |
+| `Enterprise` | `source_system` | String | 529 | 是 |
+| `Enterprise` | `suppliers` | String | 528 | 否 |
+| `Enterprise` | `website` | String | 1 | 否 |
 | `IndustryChain` | `chain_id` | String | 9 | 是 |
 | `IndustryChain` | `chain_name` | String | 9 | 是 |
 | `IndustryChain` | `description` | String | 9 | 是 |
